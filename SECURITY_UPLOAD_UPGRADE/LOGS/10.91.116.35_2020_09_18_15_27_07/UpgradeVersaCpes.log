@@ -1,0 +1,26 @@
+2020-09-18 15:27:07,903 - Main - INFO - SCRIPT Started
+2020-09-18 15:27:07,903 - Main - INFO - Result  File : /home/blr/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.91.116.35_2020_09_18_15_27_07//RESULT.csv
+2020-09-18 15:27:07,903 - Main - INFO - LOG FILES Path: /home/blr/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.91.116.35_2020_09_18_15_27_07/
+2020-09-18 15:27:56,094 - Main - INFO - total batches : 1
+2020-09-18 15:27:56,094 - Main - INFO - batch List : [1]
+2020-09-18 15:27:56,104 - Main - INFO - DAY :1
+2020-09-18 15:27:56,104 - Main - INFO - Batch : 1
+2020-09-18 15:27:56,104 - Main - INFO - CPEs LIST:
+2020-09-18 15:27:56,106 - Main - INFO - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S
+2020-09-18 15:27:59,124 - Main - DEBUG - 32707
+2020-09-18 15:27:59,137 - Main - DEBUG - 859902a2f3221d835cdfffb0e63d2a4d
+2020-09-18 15:27:59,137 - Main - DEBUG - Source File Checksum : 859902a2f3221d835cdfffb0e63d2a4d
+2020-09-18 15:27:59,141 - Main - INFO - starting thread :Thread-1 For device CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S
+
+2020-09-18 15:28:06,396 - Main - DEBUG - 
+2020-09-18 15:28:08,600 - Main - DEBUG - versa: Automated@CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S-cli>
+2020-09-18 15:28:08,801 - Main - DEBUG - <netmiko.versa.versa_ssh.VersaSSH object at 0x7f345b898110> connection opened
+2020-09-18 15:28:20,296 - Main - DEBUG - <netmiko.versa.versa_ssh.VersaSSH object at 0x7f345b898110> connection closed
+2020-09-18 15:28:20,297 - Main - DEBUG - Error: unable to start 
+2020-09-18 15:28:20,297 - Main - INFO - <<<<<patch execution RESULT>>>
+2020-09-18 15:28:20,297 - Main - INFO - 'cpe', 'filename', 'patch_upgrade_status'
+2020-09-18 15:28:20,298 - Main - INFO - ['CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S', 'fdc_r2s9_patch3.bin', 'fdc_r2s9_patch3.bin  Patch Execution success']
+2020-09-18 15:28:20,298 - Main - INFO - Time elapsed: 0:01:12.395808
+
+2020-09-18 15:28:20,299 - Main - INFO - Result Stored in /home/blr/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.91.116.35_2020_09_18_15_27_07//RESULT.csv
+2020-09-18 15:28:20,299 - Main - INFO - LOG FILES Path: /home/blr/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.91.116.35_2020_09_18_15_27_07/

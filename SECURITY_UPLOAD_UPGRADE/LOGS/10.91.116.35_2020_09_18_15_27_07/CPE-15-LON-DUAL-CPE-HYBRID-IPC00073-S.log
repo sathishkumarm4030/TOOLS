@@ -1,0 +1,31 @@
+2020-09-18 15:28:10,206 - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S - DEBUG - ls -ltr /home/versa/packages/f 
+dc_r2s9_patch3.bin
+-rwxr-x--x+ 1 aaauser versa 32707 Sep 18 09:49 [0m[01;32m/home/versa/packages/fdc_r2s9_patch3.bin[0m
+aaaadmin@CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S:~$ 
+2020-09-18 15:28:10,207 - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S - INFO - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S file size: 32707
+2020-09-18 15:28:10,610 - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S - DEBUG - n
+859902a2f3221d835cdfffb0e63d2a4d  /home/versa/packages/fdc_r2s9_patch3.bin
+aaaadmin@CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S:~$ 
+2020-09-18 15:28:10,611 - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S - DEBUG - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S File Checksum : 859902a2f3221d835cdfffb0e63d2a4d
+2020-09-18 15:28:12,013 - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S - DEBUG - root@CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S:~# 
+2020-09-18 15:28:12,816 - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S - DEBUG - Auto@12345: command not found
+root@CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S:~# 
+2020-09-18 15:28:13,218 - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S - DEBUG - chmod a+x /home/versa/packages/fdc 
+_r2s9_patch3.bin
+root@CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S:~# 
+2020-09-18 15:28:13,619 - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S - DEBUG - exit
+aaaadmin@CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S:~$ 
+2020-09-18 15:28:13,620 - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S - DEBUG - vnf patch execution Logfile : /tmp/packtrack_2020_09_18_15_27_07
+2020-09-18 15:28:13,620 - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S - DEBUG - sudo /home/versa/packages/fdc_r2s9_patch3.bin > /tmp/packtrack_2020_09_18_15_27_07 2>&1 &
+2020-09-18 15:28:14,021 - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S - DEBUG - &
+[1] 18542
+aaaadmin@CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S:~$ 
+2020-09-18 15:28:19,429 - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S - DEBUG - ..............18542[1]+Donesudo/home/versa/packages/fdc_r2s9_patch3.bin>/tmp/packtrack_2020_09_18_15_27_072>&1aaaadmin@CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S:~$..........
+2020-09-18 15:28:20,232 - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S - DEBUG - cat /tmp/packtrack_2020_09_18_ 
+15_27_07
+Verifying archive integrity... All good.
+Uncompressing Versa DPDK Unbind fix (with wsm check)     0%    78%  100%  
+Installing..
+Checking...
+Done
+aaaadmin@CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S:~$ 

@@ -1,0 +1,28 @@
+2020-09-18 13:10:13,314 - Main - INFO - SCRIPT Started
+2020-09-18 13:10:13,315 - Main - INFO - Result  File : /home/blr/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.91.116.35_2020_09_18_13_10_13//RESULT.csv
+2020-09-18 13:10:13,315 - Main - INFO - LOG FILES Path: /home/blr/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.91.116.35_2020_09_18_13_10_13/
+2020-09-18 13:11:14,575 - Main - DEBUG - total batches : 1
+2020-09-18 13:11:14,578 - Main - DEBUG - batch List : [1]
+2020-09-18 13:11:14,597 - Main - DEBUG - DAY :1
+2020-09-18 13:11:14,598 - Main - DEBUG - Batch : 1
+2020-09-18 13:11:14,598 - Main - INFO - CPEs LIST:
+2020-09-18 13:11:14,604 - Main - INFO - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S
+2020-09-18 13:11:17,620 - Main - DEBUG - 32707
+2020-09-18 13:11:17,646 - Main - DEBUG - 859902a2f3221d835cdfffb0e63d2a4d
+2020-09-18 13:11:17,646 - Main - DEBUG - Source File Checksum : 859902a2f3221d835cdfffb0e63d2a4d
+2020-09-18 13:11:18,652 - Main - INFO - starting thread :Thread-1 For device CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S
+
+2020-09-18 13:11:18,653 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin admin@20.20.73.15:/home/versa/packages --progress; exit 0
+2020-09-18 13:11:18,789 - Main - DEBUG - ssh: connect to host 20.20.73.15 port 22: Connection refused
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-09-18 13:11:18,790 - Main - DEBUG - VD to CPE 20.20.73.15 file transfer Failed.
+2020-09-18 13:11:18,790 - Main - DEBUG - Error: unable to start 
+2020-09-18 13:11:18,791 - Main - INFO - <<<<<Security patch execution RESULT>>>
+2020-09-18 13:11:18,791 - Main - INFO - 'cpe', 'filename', 'patch_upgrade_status'
+2020-09-18 13:11:18,791 - Main - INFO - ['CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : ssh: connect to host 20.20.73.15 port 22: Connection refused\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-09-18 13:11:18,792 - Main - INFO - Time elapsed: 0:01:05.478009
+
+2020-09-18 13:11:18,793 - Main - INFO - Result Stored in /home/blr/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.91.116.35_2020_09_18_13_10_13//RESULT.csv
+2020-09-18 13:11:18,793 - Main - INFO - LOG FILES Path: /home/blr/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.91.116.35_2020_09_18_13_10_13/

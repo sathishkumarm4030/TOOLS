@@ -1,0 +1,30 @@
+2020-09-18 15:25:36,656 - Main - INFO - SCRIPT Started
+2020-09-18 15:25:36,657 - Main - INFO - Result  File : /home/blr/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.91.116.35_2020_09_18_15_25_36//RESULT.csv
+2020-09-18 15:25:36,657 - Main - INFO - LOG FILES Path: /home/blr/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.91.116.35_2020_09_18_15_25_36/
+2020-09-18 15:26:30,533 - Main - DEBUG - total batches : 1
+2020-09-18 15:26:30,533 - Main - DEBUG - batch List : [1]
+2020-09-18 15:26:30,553 - Main - DEBUG - DAY :1
+2020-09-18 15:26:30,553 - Main - DEBUG - Batch : 1
+2020-09-18 15:26:30,553 - Main - INFO - CPEs LIST:
+2020-09-18 15:26:30,559 - Main - INFO - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S
+2020-09-18 15:26:33,577 - Main - DEBUG - 32707
+2020-09-18 15:26:33,606 - Main - DEBUG - 859902a2f3221d835cdfffb0e63d2a4d
+2020-09-18 15:26:33,606 - Main - DEBUG - Source File Checksum : 859902a2f3221d835cdfffb0e63d2a4d
+2020-09-18 15:26:34,612 - Main - INFO - starting thread :Thread-1 For device CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S
+
+2020-09-18 15:26:34,612 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin Automated@20.20.73.15:/home/versa/packages --progress; exit 0
+2020-09-18 15:26:35,376 - Main - DEBUG - fdc_r2s9_patch3.bin
+            700   2%    0.00kB/s    0:00:00           32,707 100%   30.52MB/s    0:00:00 (xfr#1, to-chk=0/1)
+
+sent 280 bytes  received 317 bytes  398.00 bytes/sec
+total size is 32,707  speedup is 54.79
+
+2020-09-18 15:26:35,377 - Main - DEBUG - CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S : file transfer Success
+2020-09-18 15:26:35,378 - Main - DEBUG - Error: unable to start 
+2020-09-18 15:26:35,378 - Main - INFO - <<<<<Security patch execution RESULT>>>
+2020-09-18 15:26:35,378 - Main - INFO - 'cpe', 'filename', 'patch_upgrade_status'
+2020-09-18 15:26:35,379 - Main - INFO - ['CPE-15-LON-DUAL-CPE-HYBRID-IPC00073-S', 'fdc_r2s9_patch3.bin', 'File Transfer Success : Transfered size 32707']
+2020-09-18 15:26:35,380 - Main - INFO - Time elapsed: 0:00:58.723305
+
+2020-09-18 15:26:35,380 - Main - INFO - Result Stored in /home/blr/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.91.116.35_2020_09_18_15_25_36//RESULT.csv
+2020-09-18 15:26:35,380 - Main - INFO - LOG FILES Path: /home/blr/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.91.116.35_2020_09_18_15_25_36/
