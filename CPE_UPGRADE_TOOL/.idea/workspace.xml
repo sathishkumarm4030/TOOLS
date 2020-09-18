@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/Utils/Commands_with_threads.py" description="close_connection(netconnect)" line="280" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="01086aba-c0e9-4899-89bf-1299cbd98f0b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/Commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Commands.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/Commands_with_threads.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Commands_with_threads.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/Variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/Variables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/templates.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/templates.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DoCpeUpgrade_with_threads.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DoCpeUpgrade_with_threads.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Commands_with_threads.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Utils/Commands_with_threads.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-169">
+              <caret line="958" column="5" selection-start-line="958" selection-start-column="5" selection-end-line="958" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="templates.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/templates.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Variables.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/Variables.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cpe_logger.info</find>
+      <find>model</find>
+      <find>CPE16-SIN-MPLSONLY</find>
+      <find>%1</find>
+      <find>close_cr</find>
+      <find>UpgradeAction(</find>
+      <find>cmd1</find>
+      <find>route_match</find>
+      <find>parse_</find>
+      <find>parse3</find>
+      <find>route</find>
+      <find>do_cross_connection</find>
+      <find>global_delay_factor</find>
+      <find>make_connection</find>
+      <find>has</find>
+      <find>versa-tasks.errormessages</find>
+      <find>software</find>
+      <find>intf_dict['PACKAGE_ID'] = values[0]</find>
+      <find>upgrade_dev_url</find>
+      <find>false1</find>
+      <find>/nms/actions/packages/upgrade/</find>
+      <find>def rest</find>
+      <find>rest</find>
+      <find>error_</find>
+      <find>upgrade_</find>
+      <find>error_inf</find>
+      <find>upload</find>
+      <find>error_info</find>
+      <find>run_in_thread_to_take_states</find>
+      <find>preupgr</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>cpe_logger.debug</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Python27\Lib\site-packages\paramiko</dir>
+      <dir>C:\Python27\Lib\site-packages</dir>
+      <dir>C:\Softwares_mine\newcode_download\PRODUCTION_UPGRADE_TOOL\Utils</dir>
+      <dir>C:\Softwares_mine\newcode_download\PRODUCTION_UPGRADE_TOOL\LOGS\10.91.127.194_2019_07_18_16_34_53_115000</dir>
+      <dir>C:\Softwares_mine\newcode_download\PRODUCTION_UPGRADE_TOOL\LOGS\10.91.127.194_2019_07_18_16_34_53_115000\PARSED_DATA</dir>
+      <dir>C:\Softwares_mine\newcode_download\PRODUCTION_UPGRADE_TOOL\LOGS\10.91.127.194_2019_07_19_12_27_09_922000</dir>
+      <dir>C:\Softwares_mine\newcode_download\PRODUCTION_UPGRADE_TOOL\LOGS</dir>
+      <dir>C:\Softwares_mine\newcode_download\PRODUCTION_UPGRADE_TOOL\LOGS\10.91.127.194_2019_10_16_11_15_54\PARSED_DATA</dir>
+      <dir>C:\Python27\Lib\site-packages\netmiko-2.2.2-py2.7.egg!\netmiko</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/DoCpeUpgrade.py" />
+        <option value="$PROJECT_DIR$/DoCpeUpgrade_with_threads.py" />
+        <option value="$PROJECT_DIR$/Utils/Commands.py" />
+        <option value="$PROJECT_DIR$/Utils/templates.py" />
+        <option value="$PROJECT_DIR$/Utils/Variables.py" />
+        <option value="$PROJECT_DIR$/Utils/Commands_with_threads.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PRODUCTION_UPGRADE_TOOL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PRODUCTION_UPGRADE_TOOL" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Softwares_mine\newcode_download\PRODUCTION_UPGRADE_TOOL" />
+      <recent name="C:\Softwares_mine\newcode_download\PRODUCTION_UPGRADE_TOOL\Utils" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.DoCpeUpgrade_with_threads">
+    <configuration name="Commands" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PRODUCTION_UPGRADE_TOOL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/Commands.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Commands_with_threads" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PRODUCTION_UPGRADE_TOOL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/Commands_with_threads.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="DoCpeUpgrade" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PRODUCTION_UPGRADE_TOOL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DoCpeUpgrade.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="DoCpeUpgrade_with_threads" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PRODUCTION_UPGRADE_TOOL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DoCpeUpgrade_with_threads.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.DoCpeUpgrade" />
+      <item itemvalue="Python.DoCpeUpgrade_with_threads" />
+      <item itemvalue="Python.Commands_with_threads" />
+      <item itemvalue="Python.Commands" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.DoCpeUpgrade_with_threads" />
+        <item itemvalue="Python.Commands" />
+        <item itemvalue="Python.DoCpeUpgrade" />
+        <item itemvalue="Python.Commands_with_threads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\SMurugesan2\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>true</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="01086aba-c0e9-4899-89bf-1299cbd98f0b" name="Default" comment="" />
+      <created>1561026095896</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561026095896</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.4275093" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.5521173" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.32984293" />
+      <window_info anchor="bottom" id="Python Console" order="3" weight="0.32736155" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.54885995" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.267101" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Find" order="5" visible="true" weight="0.35667753" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="64" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>data1['versa-tasks.task']['versa-tasks.errormessages']['versa-tasks.errormessage'][1].has_key('versa-tasks.error-message')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>data1['versa-tasks.task']['versa-tasks.errormessages']['versa-tasks.errormessage'][0].has_key('versa-tasks.error-message')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>isinstance(data1['versa-tasks.task']['versa-tasks.errormessages']['versa-tasks.errormessage'], list) and data1['versa-tasks.task']['versa-tasks.errormessages']['versa-tasks.errormessage']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>data1['versa-tasks.task']['versa-tasks.errormessages'].has_key('versa-tasks.errormessage')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>isinstance(data1['versa-tasks.task']['versa-tasks.errormessages'], dict) and data1['versa-tasks.task']['versa-tasks.errormessages'].has_key('versa-tasks.errormessage')</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>isinstance(data1['versa-tasks.task']['versa-tasks.errormessages'], dict)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>data1['versa-tasks.task']['versa-tasks.errormessages']['versa-tasks.errormessage'][0]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>data1['versa-tasks.task']['versa-tasks.errormessages']['versa-tasks.errormessage'][0]['versa-tasks.error-message']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>if data1['versa-tasks.task']['versa-tasks.errormessages']['versa-tasks.errormessage'][0]['versa-tasks.error-message']:</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://C:/Python27/Lib/logging/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19805">
+          <caret line="1165" selection-start-line="1165" selection-end-line="1165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_14_12_53_43/UpgradeVersaCpes.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_14_15_35_56/UpgradeVersaCpes.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_14_14_40_40/UpgradeVersaCpes.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_14_15_35_56/CPE5_upgrade.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_15_17_58_30/CPE-14_upgrade.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_15_17_58_30/PARSED_DATA/CPE-50_outputs.txt" />
+    <entry file="file://C:/Python27/Lib/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="901" column="8" selection-start-line="901" selection-start-column="8" selection-end-line="901" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_15_19_10_15/UpgradeVersaCpes.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_15_19_12_46/UpgradeVersaCpes.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_15_19_10_15/CPE-14_upgrade.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_15_19_10_15/CPE16-SIN-MPLSONLY_upgrade.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_15_19_10_15/CPE20_upgrade.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_15_19_15_12/CPE16-SIN-MPLSONLY_upgrade.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_15_19_15_12/UpgradeVersaCpes.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_15_19_15_12/CPE20_upgrade.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_15_19_15_12/PARSED_DATA/CPE20_outputs.txt" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_15_19_15_12/PARSED_DATA/CPE22HKG-HYBRID_outputs.txt" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_15_19_15_12/PARSED_DATA/CPE25-Performance-DUT_outputs.txt" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_15_19_15_12/PARSED_DATA/CPE26-HKG2-DUAL-HYB-IPC00194_outputs.txt" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_15_19_15_12/PARSED_DATA/CPE-14_outputs.txt" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_15_19_15_12/PARSED_DATA/CPE16-SIN-MPLSONLY_outputs.txt" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_16_11_15_54/PARSED_DATA/CPE4-SIN-HYBRID_outputs.txt" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_16_11_15_54/PARSED_DATA/CPE5_outputs.txt" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_16_11_15_54/CPE5_upgrade.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_16_11_15_54/CPE6_upgrade.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_16_11_15_54/CPE4-SIN-HYBRID_upgrade.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_16_11_15_54/UpgradeVersaCpes.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_16_17_46_00/PARSED_DATA/CPE27-HKG2-SINGLE-CPE-DUAL-INTERNET18_outputs.txt" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_16_17_46_00/CPE27-HKG2-SINGLE-CPE-DUAL-INTERNET18_upgrade.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_16_17_46_00/CPE26-HKG2-DUAL-HYB-IPC00194_upgrade.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_16_17_46_00/UpgradeVersaCpes.log" />
+    <entry file="file://$PROJECT_DIR$/DoCpeUpgrade.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_18_15_44_42/UpgradeVersaCpes.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_22_12_48_53/CPE4-SIN-HYBRID_upgrade.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_22_12_48_53/CPE1-SIN-HYBRID_upgrade.log" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_22_13_39_52/PARSED_DATA/CPE4-SIN-HYBRID_outputs.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17913" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_22_12_48_53/PARSED_DATA/CPE4-SIN-HYBRID_outputs.txt" />
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_22_13_39_52/CPE4-SIN-HYBRID_upgrade.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="1120" column="49" selection-start-line="1120" selection-start-column="49" selection-end-line="1120" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Python27/Lib/site-packages/netmiko-2.2.2-py2.7.egg!/netmiko/ssh_dispatcher.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2499">
+          <caret line="208" column="4" selection-start-line="208" selection-start-column="4" selection-end-line="208" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/requests/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="871" column="8" selection-start-line="871" selection-start-column="8" selection-end-line="871" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Python27/Lib/site-packages/netmiko-2.2.2-py2.7.egg!/netmiko/base_connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="37" column="48" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LOGS/10.91.127.194_2019_10_22_13_39_52/UpgradeVersaCpes.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/Commands.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="210" column="11" selection-start-line="210" selection-start-column="7" selection-end-line="210" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/TEXTFSM/versa_bgp_neighbor_template">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="100" column="4" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/TEXTFSM/versa_bgp_nbr_br">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="32" selection-start-line="3" selection-start-column="20" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/Variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DoCpeUpgrade_with_threads.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/templates.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/Commands_with_threads.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-169">
+          <caret line="958" column="5" selection-start-line="958" selection-start-column="5" selection-end-line="958" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

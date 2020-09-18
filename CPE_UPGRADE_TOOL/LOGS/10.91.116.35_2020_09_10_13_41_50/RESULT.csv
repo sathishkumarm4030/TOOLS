@@ -1,0 +1,2 @@
+cpe,upgrade,interface,bgp_nbr_match,route_match,config_match
+CPE-21-BLR-SINGLE-CPE-MPLSONLY-IPC00073,FAILED : Error while upgrading device: Database operation failed due to internal error: com.tailf.maapi.MaapiException: RPC error towards CPE-21-BLR-SINGLE-CPE-MPLSONLY-IPC00073: operation_failed: for /nc:rpc/act:action/act:data/system:system/system:package/system:upgrade: New package (built for Sandybridge CPU) cannot be installed. Please use the appropriate package

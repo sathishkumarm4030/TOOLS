@@ -1,0 +1,2 @@
+device_name_in_vd,ip,day,batch,org,type,softwareVersion,ping-status,sync-status,serialNo,model,existing-packageName,package_name,package_info
+CPE-111-IPC00010,20.20.10.111,1,1,IPC00010,branch,20.2.2-GA 63668a2 20200606,REACHABLE,IN_SYNC,CPE-111-IPC00010,FWA-2320,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm,FlexVNF-20.2.2-wsm,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm
