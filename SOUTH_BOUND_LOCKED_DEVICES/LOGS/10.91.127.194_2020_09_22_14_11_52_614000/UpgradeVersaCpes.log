@@ -1,0 +1,9 @@
+2020-09-22 14:11:52,614 - Main - INFO - SCRIPT Started
+2020-09-22 14:12:15,032 - Main - INFO - 
+2020-09-22 14:12:21,062 - Main - DEBUG - versa: Automated@VDir-BLR-NEW-01>
+2020-09-22 14:12:21,062 - Main - DEBUG - <netmiko.versa.versa_ssh.VersaSSH object at 0x0000000003369A20> connection opened
+2020-09-22 14:12:24,263 - Main - INFO - SCRIPT Ended
+2020-09-22 14:12:24,263 - Main - INFO - Time elapsed: 0:00:31.649000
+
+2020-09-22 14:12:24,263 - Main - INFO - LOG FILE Path: C:\Softwares_mine\production_scripts_download_sep14\REC_SERIAL_NUMBER/LOGS/10.91.127.194_2020_09_22_14_11_52_614000/
+2020-09-22 14:12:24,263 - Main - INFO - RECORD File: C:\Softwares_mine\production_scripts_download_sep14\REC_SERIAL_NUMBER/09_2020_Record.xlsx
