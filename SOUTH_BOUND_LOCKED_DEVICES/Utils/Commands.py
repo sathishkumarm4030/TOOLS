@@ -26,7 +26,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
-
+import re
 
 
 urllib3.disable_warnings()
@@ -62,6 +62,7 @@ logging.getLogger('').addHandler(console)
 
 
 def setup_logger(name, filename, level=logging.DEBUG):
+    global log_file
     log_file = logfile_dir + filename  + ".log"
     handler = logging.FileHandler(log_file)
     handler.setFormatter(formatter)
@@ -71,7 +72,7 @@ def setup_logger(name, filename, level=logging.DEBUG):
     logger = logging.getLogger(name)
     return logger
 
-main_logger = setup_logger('Main', 'UpgradeVersaCpes')
+main_logger = setup_logger('Main', 'VD')
 
 def make_connection(a_device):
     global main_logger
@@ -153,6 +154,7 @@ def write_excel_sheet(data_dict):
     #daily_book.close()
 
 def send_mail():
+    global output, log_file
     fromaddr = "nv-bh01-pgt@colt.net"
     toaddr = ["sathishkumar.murugesan@colt.net"]
     #toaddr = ["Stefano.Campostrini@colt.net", "sathishkumar.murugesan@colt.net", "Radu.Dragomir@colt.net", "Manish.Kumar@colt.net"]
@@ -165,10 +167,9 @@ def send_mail():
     msg['Subject'] = "South Bound Locked Devices Recorded on " + currday
 
     body = "Hi Team,\n" \
-           "Current day & month record is attached in this Mail. \n" \
+            "Current day & month record is attached in this Mail. \n" \
            "ALL Records Logged & saved in  <bastion host : nv-bh01-pgt > <folder:/opt/script/SOUTH_BOUND_LOCKED_DEVICES/>.\n" \
            "<EOM>"
-
     msg.attach(MIMEText(body, 'plain'))
 
     # filename = "Record.xlsx"
@@ -178,8 +179,15 @@ def send_mail():
     part.set_payload((attachment).read())
     encoders.encode_base64(part)
     part.add_header('Content-Disposition', "attachment; filename= %s" % currmonth + "_southboundlocked.xlsx")
-
     msg.attach(part)
+
+    # filename = ".log"
+    attachment1 = open(log_file, "rb")
+    part1 = MIMEBase('application', 'octet-stream')
+    part1.set_payload((attachment1).read())
+    encoders.encode_base64(part1)
+    part1.add_header('Content-Disposition', "attachment; filename= %s" % currmonth + "_VD.log")
+    msg.attach(part1)
 
     server = smtplib.SMTP('nv-mo01-pgt.nv.colt.net', 25)
     #server = smtplib.SMTP('10.91.140.228', 25)
@@ -194,17 +202,22 @@ def Rec_ser_num():
     send_mail()
 
 def Southbound_locked():
+    global output
     netconnect = make_connection(vd_ssh_dict)
-    cmd = "show configuration devices device * state admin-state | match southbound-locked | display set | except ScratchPad | except DataStore | tab"
-    output = netconnect.send_command_expect(cmd, max_loops=5000)
+    cmd = "show configuration devices device * state admin-state | match southbound-locked | display set | except ScratchPad | except DataStore | nomore"
+    output = netconnect.send_command_expect(cmd, max_loops=5000, strip_prompt=False, strip_command=False)
     main_logger.info(output)
-    output_list = output.split("\n")
     device_dict = {}
-    for i in output_list:
-        if "southbound-locked" in i:
-            j = i.split()[0]
-            print j
-            device_dict[j] = "southbound-locked"
+    #output_list = output.split("\n")
+    # for i in output_list:
+    #     if "state admin-state southbound-locked" in i:
+    #         i = i.replace("set devices device ", "").replace("state admin-state southbound-locked", "")
+    #         j = i.split()[0]
+    #         print j
+    #         device_dict[j] = "southbound-locked"
+    devices = re.findall(r'set devices device (\S+) state admin-state southbound-locked', output)
+    for device in devices:
+        device_dict[device] = "southbound-locked"
     write_excel_sheet(device_dict)
     send_mail()
 # main()
