@@ -158,7 +158,7 @@ def send_mail():
     fromaddr = "nv-bh01-pgt@colt.net"
     #toaddr = ["sathishkumar.murugesan@colt.net"]
     toaddr = ["Stefano.Campostrini@colt.net", "sathishkumar.murugesan@colt.net", "Radu.Dragomir@colt.net", \
-              "Manish.Kumar@colt.net", "Anand.Chaluvaiah@colt.net", "Mahesh.Gollapudi@colt.net", "Simon.Farrell@colt.net", "Dharma.Rao@colt.net"]
+              "Manish.Kumar@colt.net", "Anand.Chaluvaiah@colt.net", "Mahesh.Gollapudi@colt.net", "NovitasDevOps@colt.net"]
     #emails = ["mike@somewhere.org", "nedry@jp.net"]
 
     msg = MIMEMultipart()
