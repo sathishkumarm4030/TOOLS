@@ -1,0 +1,2020 @@
+2020-10-15 13:57:32,880 - VNF-V-SIN000136 - DEBUG - CMD>> : show system package-info | tab
+2020-10-15 13:57:36,887 - VNF-V-SIN000136 - DEBUG - show system package-info | tab
+PACKAGE                                                                                   BUILD                                    
+ID       MAJOR  MINOR  DATE      PACKAGE NAME                                    RELTYPE  TYPE   BRANCH                   CREATOR  
+-----------------------------------------------------------------------------------------------------------------------------------
+80561de  16     1      20191106  versa-flexvnf-20191106-113931-80561de-16.1R2S9  R2       S9     Release_16.1R2S9jenkins  jenkins  
+
+[ok][2020-10-15 12:57:36]
+smurugesan2@VNF-V-SIN000136-cli> 
+2020-10-15 13:57:36,888 - VNF-V-SIN000136 - DEBUG - CMD>> : request system create-snapshot description PRE-UPGRADE-2020-10-15-13:57:36 no-confirm
+2020-10-15 13:57:39,894 - VNF-V-SIN000136 - DEBUG - request system create-snapshot description PRE-UPGRADE-2020-10-15-13:57:36 no-confirm
+-----------------------------------------^
+syntax error: incomplete path
+[error][2020-10-15 12:57:39]
+smurugesan2@VNF-V-SIN000136-cli> 
+2020-10-15 13:57:39,894 - VNF-V-SIN000136 - INFO - CMD>> : show system snapshots | tab | match PRE-UPGRADE-2020-10-15-13:57:36
+2020-10-15 13:57:43,900 - VNF-V-SIN000136 - INFO - show system snapshots | tab | match PRE-UPGRADE-2020-10-15-13:57:36
+[ok][2020-10-15 12:57:43]
+smurugesan2@VNF-V-SIN000136-cli> 
+2020-10-15 13:57:43,901 - VNF-V-SIN000136 - DEBUG - CMD>> : show interfaces brief | tab | nomore | except vni-0/20
+2020-10-15 13:57:46,906 - VNF-V-SIN000136 - DEBUG - show interfaces brief | tab | nomore | except vni-0/20
+NAME         MAC                OPER  ADMIN  TENANT  VRF                   IP                      
+---------------------------------------------------------------------------------------------------
+eth-0/0      fa:16:3e:da:90:69  up    up     0       global                10.63.216.50/29         
+ptvi34       n/a                up    up     2       IPC04248-Control-VR   10.17.64.11/32          
+ptvi35       n/a                up    up     2       IPC04248-Control-VR   10.17.64.12/32          
+tvi-0/34     n/a                up    up     -       -                                             
+tvi-0/34.0   n/a                up    up     2       IPC04248-Control-VR   172.24.14.191/32        
+tvi-0/35     n/a                up    up     -       -                                             
+tvi-0/35.0   n/a                up    up     2       IPC04248-Control-VR   100.110.9.217/32        
+vni-0/0      fa:16:3e:39:27:1c  down  down   -       -                                             
+vni-0/1      fa:16:3e:a8:c0:4e  down  down   -       -                                             
+vni-0/2      fa:16:3e:c9:16:9f  up    up     -       -                                             
+vni-0/2.0    fa:16:3e:c9:16:9f  up    up     2       INT-WAN-Transport-VR  80.169.27.27/29         
+vni-0/3      fa:16:3e:3b:fc:5c  down  down   -       -                                             
+vni-0/4      fa:16:3e:ac:ba:57  up    up     -       -                                             
+vni-0/4.0    fa:16:3e:ac:ba:57  up    up     2       LAN1-VRF              192.168.120.1/24        
+                                                                           2001:920:999:999::1/64  
+vni-0/4.991  fa:16:3e:ac:ba:57  up    up     2       LAN1-VRF              192.168.91.1/24         
+vni-0/4.992  fa:16:3e:ac:ba:57  up    up     2       LAN1-VRF              192.168.92.1/24         
+vni-0/5      fa:16:3e:0f:bc:d5  down  down   -       -                                             
+vni-0/6      fa:16:3e:27:da:21  down  down   -       -                                             
+
+[ok][2020-10-15 12:57:46]
+smurugesan2@VNF-V-SIN000136-cli> 
+2020-10-15 13:57:47,909 - VNF-V-SIN000136 - DEBUG - CMD>> : show bgp neighbor org IPC04248 brief | nomore
+2020-10-15 13:57:50,914 - VNF-V-SIN000136 - DEBUG - show bgp neighbor org IPC04248 brief | nomore
+routing-instance: IPC04248-Control-VR
+
+Neighbor        Uptime       State       PfxRcd      PfxSent   local-port  remote-port
+10.17.64.11     1w2d04h    Established     141           9      40060        179
+10.17.64.12     1w2d04h    Established     125           9      39826        179
+[ok][2020-10-15 12:57:50]
+smurugesan2@VNF-V-SIN000136-cli> 
+2020-10-15 13:57:51,916 - VNF-V-SIN000136 - DEBUG - CMD>> : show configuration | display set | nomore
+2020-10-15 13:57:57,931 - VNF-V-SIN000136 - DEBUG - show configuration | display set | nomore
+set alias ^details expansion "show system details"
+set alias ^pkg expansion "show system package-info"
+set alias ^top expansion "show processes cpu"
+set alias ^uptime expansion "show system uptime"
+set confdConfig notifications
+set confdConfig notifications eventStreams stream oam description "Versa notifications"
+set confdConfig notifications eventStreams stream oam replaySupport false
+set confdConfig hideGroup debug password $1$F8/rcfNO$b5AULD3NDiutp/.8bMifu.
+set confdConfig hideGroup full
+set confdConfig hideGroup hidemib-group
+set confdConfig logs
+set confdConfig logs syslogConfig
+set confdConfig logs syslogConfig facility daemon
+set confdConfig logs syslogConfig udp
+set confdConfig logs syslogConfig udp disabled
+set confdConfig logs syslogConfig udp host syslogsrv.example.com
+set confdConfig logs syslogConfig udp port 514
+set confdConfig logs confdLog
+set confdConfig logs confdLog enabled
+set confdConfig logs confdLog file
+set confdConfig logs confdLog file enabled
+set confdConfig logs confdLog file name /var/log/versa/confd/confd.log
+set confdConfig logs developerLog
+set confdConfig logs developerLog enabled
+set confdConfig logs developerLog file
+set confdConfig logs developerLog file enabled
+set confdConfig logs developerLog file name /var/log/versa/confd/devel.log
+set confdConfig logs auditLog
+set confdConfig logs auditLog enabled
+set confdConfig logs auditLog file
+set confdConfig logs auditLog file enabled
+set confdConfig logs auditLog file name /var/log/versa/confd/audit.log
+set confdConfig logs netconfLog
+set confdConfig logs netconfLog enabled
+set confdConfig logs netconfLog file
+set confdConfig logs netconfLog file enabled
+set confdConfig logs netconfLog file name /var/log/versa/confd/netconf.log
+set confdConfig logs snmpLog
+set confdConfig logs snmpLog enabled
+set confdConfig logs snmpLog file
+set confdConfig logs snmpLog file enabled
+set confdConfig logs snmpLog file name /var/log/versa/confd/snmp.log
+set confdConfig logs webuiAccessLog
+set confdConfig logs webuiAccessLog enabled
+set confdConfig logs webuiAccessLog dir /var/log/versa/confd
+set confdConfig logs netconfTraceLog
+set confdConfig logs netconfTraceLog disabled
+set confdConfig logs netconfTraceLog filename /var/log/versa/confd/netconf.trace.log
+set confdConfig logs errorLog
+set confdConfig logs errorLog enabled
+set confdConfig logs errorLog filename /var/log/versa/confd/confderr.log
+set confdConfig logs errorLog maxSize S10M
+set confdConfig ssh
+set confdConfig ssh algorithms
+set confdConfig ssh algorithms kex diffie-hellman-group14-sha1,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1
+set confdConfig ssh algorithms mac hmac-sha2-256,hmac-sha2-512
+set confdConfig ssh algorithms encryption aes128-ctr,aes192-ctr,aes256-ctr
+set confdConfig ssh clientAliveInterval 30s
+set confdConfig ssh clientAliveCountMax 3
+set confdConfig cli
+set confdConfig cli banner "Access to this network/system is limited to users authorised by Colt for its legitimate business purposes. Unauthorised access, use, installation of files or modification of any data is prohibited. Use of this system/network will be audited"
+set confdConfig cli bannerFile /opt/versa/etc/cbanner
+set confdConfig cli prompt1 "\u@\h-cli\M> "
+set confdConfig cli prompt2 "\u@\h-cli\M% "
+set confdConfig cli cStylePromptInJStyle true
+set confdConfig cli autoWizard
+set confdConfig cli autoWizard disabled
+set confdConfig cli historyRemoveDuplicates true
+set confdConfig webui
+set confdConfig webui disabled
+set confdConfig webui docroot /opt/versa/confd/src/confd/webui_ng/docroot
+set confdConfig webui transport
+set confdConfig webui transport tcp
+set confdConfig webui transport tcp disabled
+set confdConfig webui transport ssl
+set confdConfig webui transport ssl enabled
+set confdConfig webui transport ssl ip 0.0.0.0
+set confdConfig webui transport ssl port 8443
+set confdConfig webui transport ssl extraIpPorts [ :::8443 ]
+set confdConfig webui transport ssl keyFile /opt/versa/var/cert/vshost.key
+set confdConfig webui transport ssl certFile /opt/versa/var/cert/vshost.crt
+set confdConfig webui transport ssl caCertFile /opt/versa/var/cert/ca.crt
+set confdConfig webui transport ssl verify 2
+set confdConfig webui transport ssl ciphers DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES256-SHA256
+set confdConfig webui transport ssl protocols "tlsv1.1 tlsv1.2"
+set confdConfig webui cgi
+set confdConfig webui cgi disabled
+set confdConfig rest
+set confdConfig rest enabled
+set confdConfig netconf
+set confdConfig netconf enabled
+set confdConfig netconf transport
+set confdConfig netconf transport ssh
+set confdConfig netconf transport ssh enabled
+set confdConfig netconf transport ssh ip 0.0.0.0
+set confdConfig netconf transport ssh port 2022
+set confdConfig netconf transport ssh extraIpPorts [ :::2022 ]
+set confdConfig netconf idleTimeout 30s
+set confdConfig netconf writeTimeout 60s
+set snmp agent enabled
+set snmp agent ip 127.0.0.1
+set snmp agent udp-port 161
+set snmp agent extra-listen ::1 161
+set snmp agent version v3
+set snmp agent engine-id
+set snmp agent engine-id enterprise-number 42359
+set snmp agent engine-id from-ip 100.110.9.217
+set snmp agent max-message-size 50000
+set snmp system contact ""
+set snmp system name VNF-V-SIN000136
+set snmp system location "RAFFLES PLACE_3,Singapore, Singapore"
+set snmp target v3_10.5.2.83 ip 10.5.2.83
+set snmp target v3_10.5.2.83 udp-port 162
+set snmp target v3_10.5.2.83 tag [ std_v3_inform std_v3_trap ]
+set snmp target v3_10.5.2.83 timeout 1500
+set snmp target v3_10.5.2.83 retries 3
+set snmp target v3_10.5.2.83 usm user-name coltuser
+set snmp target v3_10.5.2.83 usm sec-level auth-priv
+set snmp notify std_v1_trap tag std_v1_trap
+set snmp notify std_v1_trap type trap
+set snmp notify std_v2_inform tag std_v2_inform
+set snmp notify std_v2_inform type inform
+set snmp notify std_v2_trap tag std_v2_trap
+set snmp notify std_v2_trap type trap
+set snmp notify std_v3_inform tag std_v3_inform
+set snmp notify std_v3_inform type inform
+set snmp notify std_v3_trap tag std_v3_trap
+set snmp notify std_v3_trap type trap
+set snmp target-source 100.110.9.217
+set snmp vacm group access-v3-vuser-internet member coltuser sec-model [ usm ]
+set snmp vacm group access-v3-vuser-internet access any auth-priv read-view internet
+set snmp vacm group access-v3-vuser-internet access any auth-priv notify-view internet
+set snmp vacm view internet subtree 1.2 included
+set snmp vacm view internet subtree 1.3 included
+set snmp vacm view internet subtree 1.3.6.1 included
+set snmp usm local user coltuser auth
+set snmp usm local user coltuser auth sha
+set snmp usm local user coltuser auth sha password Colt1234
+set snmp usm local user coltuser priv
+set snmp usm local user coltuser priv aes
+set snmp usm local user coltuser priv aes password Colt1234
+set interfaces vni-0/2 description "Customer[KVHISTEST D]SID[IPC04248]Site[2005H0080]L3BEnd[UCPE-SIN000136]Cct[SIN/SIN/IA-245789]Type[INTSDWAN]"
+set interfaces vni-0/2 enable true
+set interfaces vni-0/2 unit 0 vlan-id 0
+set interfaces vni-0/2 unit 0 enable true
+set interfaces vni-0/2 unit 0 family
+set interfaces vni-0/2 unit 0 family inet
+set interfaces vni-0/2 unit 0 family inet address 80.169.27.27/29
+set interfaces vni-0/4 enable true
+set interfaces vni-0/4 unit 0 vlan-id 0
+set interfaces vni-0/4 unit 0 enable true
+set interfaces vni-0/4 unit 0 family
+set interfaces vni-0/4 unit 0 family inet
+set interfaces vni-0/4 unit 0 family inet address 192.168.120.1/24
+set interfaces vni-0/4 unit 0 family inet6
+set interfaces vni-0/4 unit 0 family inet6 address 2001:920:999:999::1/64
+set interfaces vni-0/4 unit 0 family inet6 mode router
+set interfaces vni-0/4 unit 991 vlan-id 991
+set interfaces vni-0/4 unit 991 enable true
+set interfaces vni-0/4 unit 991 family
+set interfaces vni-0/4 unit 991 family inet
+set interfaces vni-0/4 unit 991 family inet address 192.168.91.1/24
+set interfaces vni-0/4 unit 992 vlan-id 992
+set interfaces vni-0/4 unit 992 enable true
+set interfaces vni-0/4 unit 992 family
+set interfaces vni-0/4 unit 992 family inet
+set interfaces vni-0/4 unit 992 family inet address 192.168.92.1/24
+set interfaces tvi-0/34 description "VXLAN Tunnel Interface for IPC04248 Control VR"
+set interfaces tvi-0/34 enable true
+set interfaces tvi-0/34 mode ipsec
+set interfaces tvi-0/34 type p2mp-vxlan
+set interfaces tvi-0/34 unit 0 enable true
+set interfaces tvi-0/34 unit 0 family
+set interfaces tvi-0/34 unit 0 family inet
+set interfaces tvi-0/34 unit 0 family inet address 172.24.14.191/32
+set interfaces tvi-0/35 description "ESP Tunnel Interface for IPC04248 Control VR"
+set interfaces tvi-0/35 enable true
+set interfaces tvi-0/35 mode ipsec
+set interfaces tvi-0/35 type p2mp-esp
+set interfaces tvi-0/35 unit 0 enable true
+set interfaces tvi-0/35 unit 0 family
+set interfaces tvi-0/35 unit 0 family inet
+set interfaces tvi-0/35 unit 0 family inet address 100.110.9.217/32
+set interfaces ptvi34 parent-interface tvi-0/35.0
+set interfaces ptvi34 remote-address 10.17.64.11
+set interfaces ptvi35 parent-interface tvi-0/35.0
+set interfaces ptvi35 remote-address 10.17.64.12
+set networks INT-WAN interfaces [ vni-0/2.0 ]
+set networks LAN1 interfaces [ vni-0/4.0 ]
+set networks LAN1_VLAN991 interfaces [ vni-0/4.991 ]
+set networks LAN1_VLAN992 interfaces [ vni-0/4.992 ]
+set ntp server 10.5.2.14 source-interface tvi-0/35.0
+set ntp server 10.5.2.14 enable true
+set dhcp-profiles dhcp-limits description "DHCP profile"
+set dhcp-profiles dhcp-limits dhcp-options max-servers 100
+set dhcp-profiles dhcp-limits dhcp-options max-relays 100
+set dhcp-profiles dhcp-limits dhcp-options max-clients 8192
+set orgs org IPC04248 appliance-owner
+set orgs org IPC04248 services [ sdwan ]
+set orgs org IPC04248 available-routing-instances [ INT-WAN-Transport-VR IPC04248-Control-VR LAN1-VRF ]
+set orgs org IPC04248 owned-routing-instances [ INT-WAN-Transport-VR IPC04248-Control-VR LAN1-VRF ]
+set orgs org IPC04248 available-networks [ INT-WAN LAN1 LAN1_VLAN991 LAN1_VLAN992 ]
+set orgs org IPC04248 dhcp-profile dhcp-limits
+set orgs org IPC04248 traffic-identification using [ ptvi34 ptvi35 tvi-0/34.0 tvi-0/35.0 ]
+set orgs org IPC04248 traffic-identification using-networks [ INT-WAN LAN1 LAN1_VLAN991 LAN1_VLAN992 ]
+set orgs org IPC04248 sd-wan site
+set orgs org IPC04248 sd-wan site global-tenant-id 17
+set orgs org IPC04248 sd-wan site site-name VNF-V-SIN000136
+set orgs org IPC04248 sd-wan site management-routing-instance IPC04248-Control-VR
+set orgs org IPC04248 sd-wan site wan-interfaces vni-0/2.0 sla-monitoring fc_nc interval 10
+set orgs org IPC04248 sd-wan site wan-interfaces vni-0/2.0 sla-monitoring fc_nc send-to controller
+set orgs org IPC04248 sd-wan site wan-interfaces vni-0/2.0 sla-monitoring fc_ef interval 2
+set orgs org IPC04248 sd-wan site wan-interfaces vni-0/2.0 sla-monitoring fc_ef send-to branches
+set orgs org IPC04248 sd-wan site wan-interfaces vni-0/2.0 sla-monitoring fc_ef adaptive-monitoring
+set orgs org IPC04248 sd-wan controllers NV-WC1-SIN management-addresses IKE ip-address 10.17.0.11
+set orgs org IPC04248 sd-wan controllers NV-WC1-SIN management-addresses IKE routing-instance IPC04248-Control-VR
+set orgs org IPC04248 sd-wan controllers NV-WC1-SIN management-addresses secure ip-address 10.17.64.11
+set orgs org IPC04248 sd-wan controllers NV-WC1-SIN management-addresses secure routing-instance IPC04248-Control-VR
+set orgs org IPC04248 sd-wan controllers NV-WC2-SIN management-addresses IKE ip-address 10.17.0.12
+set orgs org IPC04248 sd-wan controllers NV-WC2-SIN management-addresses IKE routing-instance IPC04248-Control-VR
+set orgs org IPC04248 sd-wan controllers NV-WC2-SIN management-addresses secure ip-address 10.17.64.12
+set orgs org IPC04248 sd-wan controllers NV-WC2-SIN management-addresses secure routing-instance IPC04248-Control-VR
+set orgs org IPC04248 available-service-node-groups [ default-sng ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules IPSEC_IN match source zone zone-list [ Intf-INT-WAN-Zone ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules IPSEC_IN match services predefined-services-list [ ESP ICMP ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules IPSEC_IN match services services-list [ IPSEC IPSecAH ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules IPSEC_IN set action allow
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules IPSEC_OUT match destination zone zone-list [ Intf-INT-WAN-Zone ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules IPSEC_OUT match services predefined-services-list [ ESP ICMP ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules IPSEC_OUT match services services-list [ IPSEC IPSIPSecAH ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules IPSEC_OUT set action allow
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules ARP_IN match source zone zone-list [ Intf-INT-WAN-Zone ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules ARP_IN match ether-type ARP
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules ARP_IN set action allow
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules ARP_OUT match destination zone zone-list [ Intf-INT-WAN-Zone ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules ARP_OUT match ether-type ARP
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules ARP_OUT set action allow
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules DHCP_IN match source zone zone-list [ Intf-INT-WAN-Zone ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules DHCP_IN match services services-list [ DHCP-67 DHCP-68 ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules DHCP_IN set action allow
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules DHCP_OUT match destination zone zone-list [ Intf-INT-WAN-Zone ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules DHCP_OUT match services services-list [ DHCP-67 DHCP-68 ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules DHCP_OUT set action allow
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules BW-TEST_IN match source zone zone-list [ Intf-INT-WAN-Zone ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules BW-TEST_IN match services services-list [ IPERF SPEED-TEST ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules BW-TEST_IN set action allow
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules WAN_IN match source zone zone-list [ Intf-INT-WAN-Zone ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules WAN_IN set action deny
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules WAN_OUT match destination zone zone-list [ Intf-INT-WAN-Zone ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules WAN_OUT set action deny
+set orgs org-services IPC04248 class-of-service app-qos-policies Default-Policy
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN992 giaddr 192.168.92.1
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN992 upstream-servers-and-relays FWD-IPC04248-DHCP-VLAN992 forwarding-address [ 192.168.50.100 ]
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN992 upstream-servers-and-relays FWD-IPC04248-DHCP-VLAN992 source-address 192.168.92.1
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN992 upstream-servers-and-relays FWD-IPC04248-DHCP-VLAN992 fwd-routing-instance LAN1-VRF
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN992 pass-thru-mode keep
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN991 giaddr 192.168.91.1
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN991 upstream-servers-and-relays FWD-IPC04248-DHCP-VLAN991 forwarding-address [ 192.168.50.100 ]
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN991 upstream-servers-and-relays FWD-IPC04248-DHCP-VLAN991 source-address 192.168.91.1
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN991 upstream-servers-and-relays FWD-IPC04248-DHCP-VLAN991 fwd-routing-instance LAN1-VRF
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN991 pass-thru-mode keep
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay log-unmatched-requests false
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay lef-profile Default-Logging-Profile
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay service-profiles IPC04248-DHCP-VLAN992 dhcp-request-match networks [ LAN1_VLAN992 ]
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay service-profiles IPC04248-DHCP-VLAN992 dhcp-service-type relay IPC04248-DHCP-VLAN992
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay service-profiles IPC04248-DHCP-VLAN992 dhcp-log-settings log-new-allocations false
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay service-profiles IPC04248-DHCP-VLAN992 dhcp-log-settings log-renewals false
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay service-profiles IPC04248-DHCP-VLAN991 dhcp-request-match networks [ LAN1_VLAN991 ]
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay service-profiles IPC04248-DHCP-VLAN991 dhcp-service-type relay IPC04248-DHCP-VLAN991
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay service-profiles IPC04248-DHCP-VLAN991 dhcp-log-settings log-new-allocations false
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay service-profiles IPC04248-DHCP-VLAN991 dhcp-log-settings log-renewals false
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile vpn-type branch-sdwan
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile branch-sdwan-profile b2b-sdwan
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile local-auth-info
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile local-auth-info auth-type psk
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile local-auth-info id-type email
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile local-auth-info key EJWMTUV7lRNfut3a
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile local-auth-info id-string VNF-V-SIN000136@IPC04248.com
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile local
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile local interface-name tvi-0/34.0
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile routing-instance IPC04248-Control-VR
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile tunnel-routing-instance IPC04248-Control-VR
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile tunnel-initiate automatic
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile ipsec transform esp-aes256-sha256
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile ipsec life duration 28000
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile ike group mod19
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile ike transform aes256-sha256
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile ike lifetime 28800
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile ike dpd-timeout 10
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile peer-auth-info
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile peer-auth-info auth-type psk
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile peer-auth-info id-type email
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile peer-auth-info key "6#17&IP8424c#238"
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile peer-auth-info id-string "6#17&IP8424c#238@colt.net"
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile peer
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile peer address [ 10.17.0.11 ]
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile tunnel-interface ptvi34
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile vpn-type branch-sdwan
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile branch-sdwan-profile b2b-sdwan
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile local-auth-info
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile local-auth-info auth-type psk
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile local-auth-info id-type email
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile local-auth-info key aiwG3quDqoue8xuQ
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile local-auth-info id-string VNF-V-SIN000136@IPC04248.com
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile local
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile local interface-name tvi-0/34.0
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile routing-instance IPC04248-Control-VR
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile tunnel-routing-instance IPC04248-Control-VR
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile tunnel-initiate automatic
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile ipsec transform esp-aes256-sha256
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile ipsec life duration 28000
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile ike group mod19
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile ike transform aes256-sha256
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile ike lifetime 28800
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile ike dpd-timeout 10
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile peer-auth-info
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile peer-auth-info auth-type psk
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile peer-auth-info id-type email
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile peer-auth-info key "6#17&IP8424c%238"
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile peer-auth-info id-string "6#17&IP8424c%238@colt.net"
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile peer
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile peer address [ 10.17.0.12 ]
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile tunnel-interface ptvi35
+set orgs org-services IPC04248 ipsec branch-sdwan-profile b2b-sdwan life-time 28800
+set orgs org-services IPC04248 ipsec branch-sdwan-profile b2b-sdwan rekey-time 6300
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector1 destination-address 10.5.22.100
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector1 destination-port 5140
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector1 routing-instance IPC04248-Control-VR
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector1 transport tcp
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector1 template Default-LEF-Template
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector2 destination-address 10.5.22.101
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector2 destination-port 5140
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector2 routing-instance IPC04248-Control-VR
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector2 transport tcp
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector2 template Default-LEF-Template
+set orgs org-services IPC04248 lef collector-groups Default-Collector-Group collectors [ LEF-Collector-log_collector1 LEF-Collector-log_collector2 ]
+set orgs org-services IPC04248 lef templates Default-LEF-Template type ipfix
+set orgs org-services IPC04248 lef profiles Default-Logging-Profile collector-group Default-Collector-Group
+set orgs org-services IPC04248 lef default-profile Default-Logging-Profile
+set orgs org-services IPC04248 sd-wan forwarding-profiles DEFAULT-TRAFFIC-PROFILE circuit-priorities priority 1 circuit-names local [ INT-WAN ]
+set orgs org-services IPC04248 sd-wan forwarding-profiles DEFAULT-TRAFFIC-PROFILE circuit-priorities priority 1 circuit-names remote [ INT-WAN INT-WAN1 INT-WAN2 ]
+set orgs org-services IPC04248 sd-wan forwarding-profiles DEFAULT-TRAFFIC-PROFILE circuit-priorities priority 2 circuit-names local [ INT-WAN ]
+set orgs org-services IPC04248 sd-wan forwarding-profiles DEFAULT-TRAFFIC-PROFILE circuit-priorities priority 2 circuit-names remote [ LTE-WAN ]
+set orgs org-services IPC04248 sd-wan forwarding-profiles DEFAULT-TRAFFIC-PROFILE connection-selection-method weighted-round-robin
+set orgs org-services IPC04248 sd-wan forwarding-profiles DEFAULT-TRAFFIC-PROFILE recompute-timer 40
+set orgs org-services IPC04248 sd-wan forwarding-profiles DEFAULT-TRAFFIC-PROFILE encryption optional
+set orgs org-services IPC04248 sd-wan forwarding-profiles DEFAULT-TRAFFIC-PROFILE symmetric-forwarding enable
+set orgs org-services IPC04248 sd-wan forwarding-profiles Default-FP
+set orgs org-services IPC04248 sd-wan policies Default-Policy rules DEFAULT-TRAFFIC-RULE description DEFAULT-TRAFFIC-RULE
+set orgs org-services IPC04248 sd-wan policies Default-Policy rules DEFAULT-TRAFFIC-RULE set action allow
+set orgs org-services IPC04248 sd-wan policies Default-Policy rules DEFAULT-TRAFFIC-RULE set forwarding-profile DEFAULT-TRAFFIC-PROFILE
+set orgs org-services IPC04248 objects zones Intf-MPLS-WAN-Zone
+set orgs org-services IPC04248 objects zones RTI-MPLS-WAN-Zone
+set orgs org-services IPC04248 objects zones W-ST-LAN1-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN1-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN2-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN2-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN3-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN3-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN4-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN4-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN5-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN5-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN6-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN6-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN7-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN7-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN8-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN8-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN9-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN9-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN10-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN10-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones Intf-INT-WAN-Zone networks [ INT-WAN ]
+set orgs org-services IPC04248 objects zones RTI-INT-WAN-Zone routing-instance INT-WAN-Transport-VR
+set orgs org-services IPC04248 objects zones W-ST-LAN1-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN1-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN2-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN2-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN3-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN3-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN4-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN4-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN5-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN5-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN6-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN6-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN7-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN7-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN8-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN8-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN9-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN9-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN10-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN10-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones Intf-CHAIN-UCPE-Zone
+set orgs org-services IPC04248 objects zones RTI-CHAIN-UCPE-Zone
+set orgs org-services IPC04248 objects zones W-ST-LAN1-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN1-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones W-ST-LAN2-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN2-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones W-ST-LAN3-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN3-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones W-ST-LAN4-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN4-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones W-ST-LAN5-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN5-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones W-ST-LAN6-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN6-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones W-ST-LAN7-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN7-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones W-ST-LAN8-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN8-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones W-ST-LAN9-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN9-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones W-ST-LAN10-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN10-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones Intf-INT-WAN1-Zone
+set orgs org-services IPC04248 objects zones RTI-INT-WAN1-Zone
+set orgs org-services IPC04248 objects zones W-ST-LAN1-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN1-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN2-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN2-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN3-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN3-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN4-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN4-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN5-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN5-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN6-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN6-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN7-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN7-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN8-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN8-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN9-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN9-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN10-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN10-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones Intf-INT-WAN2-Zone
+set orgs org-services IPC04248 objects zones RTI-INT-WAN2-Zone
+set orgs org-services IPC04248 objects zones W-ST-LAN1-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN1-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN2-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN2-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN3-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN3-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN4-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN4-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN5-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN5-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN6-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN6-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN7-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN7-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN8-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN8-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN9-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN9-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN10-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN10-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones Intf-LTE-WAN-Zone
+set orgs org-services IPC04248 objects zones RTI-LTE-WAN-Zone
+set orgs org-services IPC04248 objects zones W-ST-LAN1-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN1-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN2-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN2-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN3-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN3-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN4-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN4-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN5-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN5-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN6-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN6-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN7-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN7-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN8-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN8-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN9-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN9-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN10-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN10-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones Intf-MPLS-WAN1-Zone
+set orgs org-services IPC04248 objects zones RTI-MPLS-WAN1-Zone
+set orgs org-services IPC04248 objects zones W-ST-LAN1-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN1-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN2-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN2-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN3-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN3-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN4-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN4-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN5-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN5-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN6-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN6-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN7-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN7-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN8-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN8-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN9-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN9-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN10-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN10-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones Intf-MPLS-WAN2-Zone
+set orgs org-services IPC04248 objects zones RTI-MPLS-WAN2-Zone
+set orgs org-services IPC04248 objects zones W-ST-LAN1-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN1-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN2-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN2-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN3-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN3-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN4-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN4-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN5-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN5-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN6-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN6-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN7-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN7-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN8-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN8-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN9-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN9-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN10-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN10-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones ptvi
+set orgs org-services IPC04248 objects zones Intf-LAN1-Zone description LAN1
+set orgs org-services IPC04248 objects zones Intf-LAN1-Zone networks [ LAN1 ]
+set orgs org-services IPC04248 objects zones Intf-LAN1-Zone lef-profile Default-Logging-Profile
+set orgs org-services IPC04248 objects zones Intf-LAN1_VLAN991-Zone networks [ LAN1_VLAN991 ]
+set orgs org-services IPC04248 objects zones Intf-LAN1_VLAN992-Zone networks [ LAN1_VLAN992 ]
+set orgs org-services IPC04248 objects services DHCP-67 protocol UDP
+set orgs org-services IPC04248 objects services DHCP-67 port 67
+set orgs org-services IPC04248 objects services DHCP-68 protocol UDP
+set orgs org-services IPC04248 objects services DHCP-68 port 68
+set orgs org-services IPC04248 objects services IPERF protocol TCP_OR_UDP
+set orgs org-services IPC04248 objects services IPERF port 5021-5029
+set orgs org-services IPC04248 objects services IPSEC protocol UDP
+set orgs org-services IPC04248 objects services IPSEC destination-port 4790,4500,500
+set orgs org-services IPC04248 objects services IPSIPSecAH protocol AH
+set orgs org-services IPC04248 objects services IPSecAH protocol AH
+set orgs org-services IPC04248 objects services SPEED-TEST protocol TCP
+set orgs org-services IPC04248 objects services SPEED-TEST port 5201
+set orgs org-services IPC04248 traffic-monitoring logging-control Default-Logging-Control profile Default-Logging-Profile
+set orgs org-services IPC04248 traffic-monitoring logging-control Default-Logging-Control options
+set orgs org-services IPC04248 traffic-monitoring logging-control Default-Logging-Control options stats
+set orgs org-services IPC04248 traffic-monitoring logging-control Default-Logging-Control options stats all
+set routing-instances INT-WAN-Transport-VR instance-type virtual-router
+set routing-instances INT-WAN-Transport-VR networks [ INT-WAN ]
+set routing-instances INT-WAN-Transport-VR routing-options static route 0.0.0.0/0 80.169.27.25 none tag 0
+set routing-instances IPC04248-Control-VR instance-type virtual-router
+set routing-instances IPC04248-Control-VR policy-options redistribution-policy Control-VR-Policy term Paired-TVI-Reject match address 169.254.0.0/16
+set routing-instances IPC04248-Control-VR policy-options redistribution-policy Control-VR-Policy term Paired-TVI-Reject action reject
+set routing-instances IPC04248-Control-VR policy-options redistribution-policy Control-VR-Policy term SDWAN-TVI1-Reject match address 172.24.14.191/32
+set routing-instances IPC04248-Control-VR policy-options redistribution-policy Control-VR-Policy term SDWAN-TVI1-Reject action reject
+set routing-instances IPC04248-Control-VR policy-options redistribution-policy Control-VR-Policy term SDWAN-TVI2-Reject match address 100.110.9.217/32
+set routing-instances IPC04248-Control-VR policy-options redistribution-policy Control-VR-Policy term SDWAN-TVI2-Reject action reject
+set routing-instances IPC04248-Control-VR policy-options redistribution-policy Control-VR-Policy term DIRECT match protocol direct
+set routing-instances IPC04248-Control-VR policy-options redistribution-policy Control-VR-Policy term DIRECT action accept
+set routing-instances IPC04248-Control-VR policy-options redistribution-policy Control-VR-Policy term DIRECT action set-origin igp
+set routing-instances IPC04248-Control-VR policy-options redistribute-to-bgp Control-VR-Policy
+set routing-instances IPC04248-Control-VR mpls-vpn-core
+set routing-instances IPC04248-Control-VR interfaces [ ptvi34 ptvi35 tvi-0/34.0 tvi-0/35.0 ]
+set routing-instances IPC04248-Control-VR routing-options mpls-vpn-local-router-interface family inet
+set routing-instances IPC04248-Control-VR routing-options mpls-vpn-local-router-interface interface tvi-0/35.0
+set routing-instances IPC04248-Control-VR protocols bgp 17 hold-time 90
+set routing-instances IPC04248-Control-VR protocols bgp 17 local-address 100.110.9.217
+set routing-instances IPC04248-Control-VR protocols bgp 17 graceful-restart enable
+set routing-instances IPC04248-Control-VR protocols bgp 17 graceful-restart maximum-restart-time 15
+set routing-instances IPC04248-Control-VR protocols bgp 17 graceful-restart recovery-time 15
+set routing-instances IPC04248-Control-VR protocols bgp 17 graceful-restart select-defer-time 15
+set routing-instances IPC04248-Control-VR protocols bgp 17 graceful-restart stalepath-time 15
+set routing-instances IPC04248-Control-VR protocols bgp 17 graceful-restart dynamic-peer-restart-time 0
+set routing-instances IPC04248-Control-VR protocols bgp 17 graceful-restart multiplier 8
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1 match family inet-vpn
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1 match community "(^|,)([0-9]*:11)($|,)"
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1 action accept
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1 action community 8009:8009
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1 action community-action set-specific
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1 action set-local-preference 80
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1-v6 match family inet6-vpn
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1-v6 match community "(^|,)([0-9]*:11)($|,)"
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1-v6 action accept
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1-v6 action community 8009:8009
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1-v6 action community-action set-specific
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1-v6 action set-local-preference 80
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2 match family inet-vpn
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2 match community "(^|,)([0-9]*:12)($|,)"
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2 action accept
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2 action community 8009:8009
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2 action community-action set-specific
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2 action set-local-preference 60
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2-v6 match family inet6-vpn
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2-v6 match community "(^|,)([0-9]*:12)($|,)"
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2-v6 action accept
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2-v6 action community 8009:8009
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2-v6 action community-action set-specific
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2-v6 action set-local-preference 60
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term Allow-All action accept
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term Allow-All action community 8009:8009
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term Allow-All action community-action set-specific
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term Allow-VersaPvt-All match family versa-private
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term Allow-VersaPvt-All action accept
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term Wildcard match family inet-vpn
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term Wildcard action accept
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term Wildcard action community 65:10
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term Wildcard action community-action set-specific
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term Wildcard-v6 match family inet6-vpn
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term Wildcard-v6 action accept
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term Wildcard-v6 action community 65:10
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term Wildcard-v6 action community-action set-specific
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term VersaPvt-Wildcard match family versa-private
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term VersaPvt-Wildcard action accept
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term VersaPvt-Wildcard action community 65:10
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term VersaPvt-Wildcard action community-action set-specific
+set routing-instances IPC04248-Control-VR protocols bgp 17 router-id 100.110.9.217
+set routing-instances IPC04248-Control-VR protocols bgp 17 local-as as-number 65505
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group type internal
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group family inet unicast
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group family inet versa-private
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group family inet-vpn unicast
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group family inet6-vpn unicast
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group import Import-From-SDWAN-Policy
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group export TO_SDWAN
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group peer-as 65505
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group neighbor 10.17.64.11
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group neighbor 10.17.64.12
+set routing-instances LAN1-VRF instance-type vrf
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T1-Paired-TVI-Direct match protocol direct
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T1-Paired-TVI-Direct match address 169.254.0.0/16
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T1-Paired-TVI-Direct action reject
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T2-DIRECT match protocol direct
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T2-DIRECT action accept
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T2-DIRECT action set-origin igp
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T2-DIRECT action set-local-preference 110
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T3-STATIC match protocol static
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T3-STATIC action accept
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T3-STATIC action set-origin igp
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T3-STATIC action set-local-preference 110
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP6 term T2-DIRECT match protocol direct
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP6 term T2-DIRECT action accept
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP6 term T2-DIRECT action set-origin igp
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP6 term T2-DIRECT action set-local-preference 110
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP6 term T3-STATIC match protocol static
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP6 term T3-STATIC action accept
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP6 term T3-STATIC action set-origin igp
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP6 term T3-STATIC action set-local-preference 110
+set routing-instances LAN1-VRF policy-options redistribute-to-bgp Default-Policy-To-BGP
+set routing-instances LAN1-VRF policy-options redistribute-to-bgp6 Default-Policy-To-BGP6
+set routing-instances LAN1-VRF global-vrf-id 290
+set routing-instances LAN1-VRF networks [ LAN1 LAN1_VLAN991 LAN1_VLAN992 ]
+set routing-instances LAN1-VRF mpls-vpn-core-instance IPC04248-Control-VR
+set routing-instances LAN1-VRF route-distinguisher 290L:290
+set routing-instances LAN1-VRF vrf-import-target target:290L:2902
+set routing-instances LAN1-VRF vrf-both-target target:290L:290
+set routing-instances LAN1-VRF routing-options static route 2001:920:999::/52 2001:920:999:999::10 vni-0/4.0 preference 1
+set service-node-groups default-sng id 0
+set service-node-groups default-sng type internal
+set service-node-groups default-sng services [ cgnat sdwan ]
+set system vnf-manager ip-addresses [ 10.5.2.0/24 10.5.20.64/26 10.5.22.0/24 10.7.1.80/32 212.74.77.202/32 ]
+set system vnf-manager vnf-mgmt-interfaces [ tvi-0/35.0 ]
+set system identification name VNF-V-SIN000136
+set system identification location "RAFFLES PLACE_3,Singapore, Singapore"
+set system identification latitude 0.0
+set system identification longitude 0.0
+set system session timeout-udp 3600
+set system session check-tcp-syn false
+set system session reevaluate-reverse-flow false
+set system session tcp-send-reset false
+set system session tcp-secure-reset false
+set system session tcp-adjust-mss enable true
+set system session tcp-adjust-mss interface-types all
+set system services ssh enabled
+set system services sftp disabled
+set system services www enabled
+set system arp rate-limit 9000
+set system subjugate enabled
+set system time-zone Greenwich
+set system users admin login shell
+set system users admin role admin
+set system users versa login shell
+set system users versa role admin
+set system users webuser password $6$D/zay94gwIEb/Gku$0B.Jfw8ybZf3cmwaVr7DL3BbtxlL0ZLZVfiBScAbMZV8IdY7r0LW0q2iUOSIzKsozPLrapZ7X5EX3NKPSWzIQ1
+set system users webuser login none
+set system users webuser role oper
+set system service-options qos-frame-overhead auto-adjust true
+set system service-options run-mode manual
+set system service-options min-idle-sleep-time 5
+set system service-options max-idle-sleep-time 20
+set system ssh client-alive-interval 300
+set system ssh client-alive-count-max 0
+set system sd-wan
+set system sd-wan site site-type branch
+set system sd-wan site chassis-id SNG-094D7F5E75094FDC610286C715ABBF28
+set system sd-wan site site-id 2511
+set system sd-wan site provider-org IPC04248
+set system sd-wan site wan-interfaces vni-0/2.0 transport-domains [ INTERNET-TD ]
+set system sd-wan site wan-interfaces vni-0/2.0 inet
+set system sd-wan site wan-interfaces vni-0/2.0 inet circuit-name INT-WAN
+set system sd-wan transport-domains INTERNET-TD id 10
+set system sd-wan controllers NV-WC1-SIN site-name NV-WC1-SIN
+set system sd-wan controllers NV-WC1-SIN site-id 11
+set system sd-wan controllers NV-WC1-SIN transport-addresses NV-WC1-SIN-Transport-INT-WAN ip-address 157.120.245.82
+set system sd-wan controllers NV-WC1-SIN transport-addresses NV-WC1-SIN-Transport-INT-WAN transport-domains [ INTERNET-TD ]
+set system sd-wan controllers NV-WC2-SIN site-name NV-WC2-SIN
+set system sd-wan controllers NV-WC2-SIN site-id 12
+set system sd-wan controllers NV-WC2-SIN transport-addresses NV-WC2-SIN-Transport-INT-WAN ip-address 157.120.245.86
+set system sd-wan controllers NV-WC2-SIN transport-addresses NV-WC2-SIN-Transport-INT-WAN transport-domains [ INTERNET-TD ]
+set system external-aaa auth-order remote-then-local
+set system external-aaa tacacs-plus
+set system external-aaa tacacs-plus server 10.5.22.116 key C:ifiiape.
+set system external-aaa tacacs-plus server 10.5.22.117 key C:ifiiape.
+set system external-aaa tacacs-plus action [ authentication accounting ]
+set nacm write-default permit
+set nacm groups group IPC04248-adc-admin-group
+set nacm groups group IPC04248-cgnat-admin-group
+set nacm groups group IPC04248-network-admin-group
+set nacm groups group IPC04248-oper-group
+set nacm groups group IPC04248-sdwan-admin-group
+set nacm groups group IPC04248-security-admin-group
+set nacm groups group IPC04248-tenant-admin-group
+set nacm groups group admin user-name [ admin versa ]
+set nacm groups group oper user-name [ restuser webuser ]
+set nacm rule-list admin group [ admin ]
+set nacm rule-list admin rule any-access action permit
+set nacm rule-list admin cmdrule all_cmds command *
+set nacm rule-list admin cmdrule all_cmds access-operations *
+set nacm rule-list admin cmdrule all_cmds action permit
+set nacm rule-list any-group group [ * ]
+set nacm rule-list any-group rule tailf-aaa-authentication module-name tailf-aaa
+set nacm rule-list any-group rule tailf-aaa-authentication path /aaa/authentication/users/user[name='$USER']
+set nacm rule-list any-group rule tailf-aaa-authentication access-operations read,update
+set nacm rule-list any-group rule tailf-aaa-authentication action permit
+set nacm rule-list any-group rule tailf-aaa-user module-name tailf-aaa
+set nacm rule-list any-group rule tailf-aaa-user path /user[name='$USER']
+set nacm rule-list any-group rule tailf-aaa-user access-operations create,read,update,delete
+set nacm rule-list any-group rule tailf-aaa-user action permit
+set nacm rule-list any-group rule tailf-webui-user module-name tailf-webui
+set nacm rule-list any-group rule tailf-webui-user path /webui/data-stores/user-profile[username='$USER']
+set nacm rule-list any-group rule tailf-webui-user access-operations create,read,update,delete
+set nacm rule-list any-group rule tailf-webui-user action permit
+set nacm rule-list oper group [ oper ]
+set nacm rule-list oper rule allow access-operations read
+set nacm rule-list oper rule allow action permit
+set nacm rule-list oper rule rest action deny
+set nacm rule-list oper cmdrule denyshell command shell
+set nacm rule-list oper cmdrule denyshell action deny
+set nacm rule-list oper cmdrule denysystem command "request system"
+set nacm rule-list oper cmdrule denysystem action deny
+set nacm rule-list oper cmdrule denyclear command "request clear"
+set nacm rule-list oper cmdrule denyclear action deny
+set nacm rule-list oper cmdrule denyrbk command rollback
+set nacm rule-list oper cmdrule denyrbk action deny
+set nacm rule-list oper cmdrule read_only command *
+set nacm rule-list oper cmdrule read_only access-operations read,exec
+set nacm rule-list oper cmdrule read_only action permit
+set nacm rule-list IPC04248-adc-admin-rules group [ IPC04248-adc-admin-group ]
+set nacm rule-list IPC04248-adc-admin-rules rule r1 path /orgs/org-services[name='IPC04248']/adc
+set nacm rule-list IPC04248-adc-admin-rules rule r1 access-operations *
+set nacm rule-list IPC04248-adc-admin-rules rule r1 action permit
+set nacm rule-list IPC04248-adc-admin-rules rule r2 path /
+set nacm rule-list IPC04248-adc-admin-rules rule r2 access-operations *
+set nacm rule-list IPC04248-adc-admin-rules rule r2 action deny
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r3 command request
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r3 access-operations *
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r3 action deny
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r4 command shell
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r4 access-operations *
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r4 action deny
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r5 command rollback
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r5 access-operations *
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r5 action deny
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r6 command *
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r6 action permit
+set nacm rule-list IPC04248-cgnat-admin-rules group [ IPC04248-cgnat-admin-group ]
+set nacm rule-list IPC04248-cgnat-admin-rules rule r1 path /orgs/org-services[name='IPC04248']/cgnat
+set nacm rule-list IPC04248-cgnat-admin-rules rule r1 access-operations *
+set nacm rule-list IPC04248-cgnat-admin-rules rule r1 action permit
+set nacm rule-list IPC04248-cgnat-admin-rules rule r2 path /
+set nacm rule-list IPC04248-cgnat-admin-rules rule r2 access-operations *
+set nacm rule-list IPC04248-cgnat-admin-rules rule r2 action deny
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r3 command request
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r3 access-operations *
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r3 action deny
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r4 command shell
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r4 access-operations *
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r4 action deny
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r5 command rollback
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r5 access-operations *
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r5 action deny
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r6 command *
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r6 action permit
+set nacm rule-list IPC04248-network-admin-rules group [ IPC04248-network-admin-group ]
+set nacm rule-list IPC04248-network-admin-rules rule r1 path /interfaces
+set nacm rule-list IPC04248-network-admin-rules rule r1 access-operations *
+set nacm rule-list IPC04248-network-admin-rules rule r1 action permit
+set nacm rule-list IPC04248-network-admin-rules rule r2 path /routing-instances
+set nacm rule-list IPC04248-network-admin-rules rule r2 access-operations *
+set nacm rule-list IPC04248-network-admin-rules rule r2 action permit
+set nacm rule-list IPC04248-network-admin-rules rule r3 path /networks
+set nacm rule-list IPC04248-network-admin-rules rule r3 access-operations *
+set nacm rule-list IPC04248-network-admin-rules rule r3 action permit
+set nacm rule-list IPC04248-network-admin-rules cmdrule r4 command request
+set nacm rule-list IPC04248-network-admin-rules cmdrule r4 access-operations *
+set nacm rule-list IPC04248-network-admin-rules cmdrule r4 action deny
+set nacm rule-list IPC04248-network-admin-rules cmdrule r5 command shell
+set nacm rule-list IPC04248-network-admin-rules cmdrule r5 access-operations *
+set nacm rule-list IPC04248-network-admin-rules cmdrule r5 action deny
+set nacm rule-list IPC04248-network-admin-rules cmdrule r6 command rollback
+set nacm rule-list IPC04248-network-admin-rules cmdrule r6 access-operations *
+set nacm rule-list IPC04248-network-admin-rules cmdrule r6 action deny
+set nacm rule-list IPC04248-network-admin-rules cmdrule r7 command *
+set nacm rule-list IPC04248-network-admin-rules cmdrule r7 action permit
+set nacm rule-list IPC04248-oper-rules group [ IPC04248-oper-group ]
+set nacm rule-list IPC04248-oper-rules rule r1 path /orgs/org-services[name='IPC04248']
+set nacm rule-list IPC04248-oper-rules rule r1 access-operations read
+set nacm rule-list IPC04248-oper-rules rule r1 action permit
+set nacm rule-list IPC04248-oper-rules rule r2 path /
+set nacm rule-list IPC04248-oper-rules rule r2 access-operations *
+set nacm rule-list IPC04248-oper-rules rule r2 action deny
+set nacm rule-list IPC04248-oper-rules cmdrule r3 command "request clear"
+set nacm rule-list IPC04248-oper-rules cmdrule r3 access-operations *
+set nacm rule-list IPC04248-oper-rules cmdrule r3 action deny
+set nacm rule-list IPC04248-oper-rules cmdrule r4 command "request system"
+set nacm rule-list IPC04248-oper-rules cmdrule r4 access-operations *
+set nacm rule-list IPC04248-oper-rules cmdrule r4 action deny
+set nacm rule-list IPC04248-oper-rules cmdrule r5 command shell
+set nacm rule-list IPC04248-oper-rules cmdrule r5 access-operations *
+set nacm rule-list IPC04248-oper-rules cmdrule r5 action deny
+set nacm rule-list IPC04248-oper-rules cmdrule r6 command rollback
+set nacm rule-list IPC04248-oper-rules cmdrule r6 access-operations *
+set nacm rule-list IPC04248-oper-rules cmdrule r6 action deny
+set nacm rule-list IPC04248-oper-rules cmdrule r7 command *
+set nacm rule-list IPC04248-oper-rules cmdrule r7 action permit
+set nacm rule-list IPC04248-sdwan-admin-rules group [ IPC04248-sdwan-admin-group ]
+set nacm rule-list IPC04248-sdwan-admin-rules rule r1 path /system/sd-wan
+set nacm rule-list IPC04248-sdwan-admin-rules rule r1 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules rule r1 action permit
+set nacm rule-list IPC04248-sdwan-admin-rules rule r2 path /routing-instances
+set nacm rule-list IPC04248-sdwan-admin-rules rule r2 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules rule r2 action permit
+set nacm rule-list IPC04248-sdwan-admin-rules rule r3 path /orgs/org[name='IPC04248']/sd-wan
+set nacm rule-list IPC04248-sdwan-admin-rules rule r3 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules rule r3 action permit
+set nacm rule-list IPC04248-sdwan-admin-rules rule r4 path /orgs/org-services[name='IPC04248']/lef
+set nacm rule-list IPC04248-sdwan-admin-rules rule r4 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules rule r4 action permit
+set nacm rule-list IPC04248-sdwan-admin-rules rule r5 path /orgs/org-services[name='IPC04248']/ipsec
+set nacm rule-list IPC04248-sdwan-admin-rules rule r5 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules rule r5 action permit
+set nacm rule-list IPC04248-sdwan-admin-rules rule r6 path /orgs/org-services[name='IPC04248']/cgnat
+set nacm rule-list IPC04248-sdwan-admin-rules rule r6 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules rule r6 action permit
+set nacm rule-list IPC04248-sdwan-admin-rules rule r7 path /orgs/org-services[name='IPC04248']/sd-wan
+set nacm rule-list IPC04248-sdwan-admin-rules rule r7 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules rule r7 action permit
+set nacm rule-list IPC04248-sdwan-admin-rules rule r8 path /
+set nacm rule-list IPC04248-sdwan-admin-rules rule r8 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules rule r8 action deny
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r9 command request
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r9 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r9 action deny
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r10 command shell
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r10 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r10 action deny
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r11 command rollback
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r11 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r11 action deny
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r12 command *
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r12 action permit
+set nacm rule-list IPC04248-security-admin-rules group [ IPC04248-security-admin-group ]
+set nacm rule-list IPC04248-security-admin-rules rule r1 path /predefineded-actions
+set nacm rule-list IPC04248-security-admin-rules rule r1 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r1 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r2 path /predefineded-appid
+set nacm rule-list IPC04248-security-admin-rules rule r2 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r2 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r3 path /predefined-file-extract-apps
+set nacm rule-list IPC04248-security-admin-rules rule r3 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r3 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r4 path /predefined-file-extract-apps
+set nacm rule-list IPC04248-security-admin-rules rule r4 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r4 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r5 path /predefined-file-types
+set nacm rule-list IPC04248-security-admin-rules rule r5 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r5 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r6 path /predefined-filefilter
+set nacm rule-list IPC04248-security-admin-rules rule r6 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r6 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r7 path /predefined-geoip
+set nacm rule-list IPC04248-security-admin-rules rule r7 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r7 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r8 path /predefined-iprep
+set nacm rule-list IPC04248-security-admin-rules rule r8 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r8 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r9 path /predefined-ips-scanner-parameters
+set nacm rule-list IPC04248-security-admin-rules rule r9 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r9 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r10 path /predefined-ips-scanners
+set nacm rule-list IPC04248-security-admin-rules rule r10 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r10 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r11 path /predefined-ips
+set nacm rule-list IPC04248-security-admin-rules rule r11 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r11 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r12 path /predefined-services
+set nacm rule-list IPC04248-security-admin-rules rule r12 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r12 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r13 path /predefined-url-categories
+set nacm rule-list IPC04248-security-admin-rules rule r13 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r13 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r14 path /predefined-url-reputations
+set nacm rule-list IPC04248-security-admin-rules rule r14 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r14 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r15 path /networks
+set nacm rule-list IPC04248-security-admin-rules rule r15 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r15 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r16 path /orgs/org-services[name='IPC04248']/lef
+set nacm rule-list IPC04248-security-admin-rules rule r16 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r16 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r17 path /orgs/org-services[name='IPC04248']/security
+set nacm rule-list IPC04248-security-admin-rules rule r17 access-operations *
+set nacm rule-list IPC04248-security-admin-rules rule r17 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r18 path /orgs/org-services[name='IPC04248']/objects
+set nacm rule-list IPC04248-security-admin-rules rule r18 access-operations *
+set nacm rule-list IPC04248-security-admin-rules rule r18 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r19 path /
+set nacm rule-list IPC04248-security-admin-rules rule r19 access-operations *
+set nacm rule-list IPC04248-security-admin-rules rule r19 action deny
+set nacm rule-list IPC04248-security-admin-rules cmdrule r20 command request
+set nacm rule-list IPC04248-security-admin-rules cmdrule r20 access-operations *
+set nacm rule-list IPC04248-security-admin-rules cmdrule r20 action deny
+set nacm rule-list IPC04248-security-admin-rules cmdrule r21 command shell
+set nacm rule-list IPC04248-security-admin-rules cmdrule r21 access-operations *
+set nacm rule-list IPC04248-security-admin-rules cmdrule r21 action deny
+set nacm rule-list IPC04248-security-admin-rules cmdrule r22 command *
+set nacm rule-list IPC04248-security-admin-rules cmdrule r22 action permit
+set nacm rule-list IPC04248-tenant-admin-rules group [ IPC04248-tenant-admin-group ]
+set nacm rule-list IPC04248-tenant-admin-rules rule r1 path /orgs/org-services[name='IPC04248']
+set nacm rule-list IPC04248-tenant-admin-rules rule r1 access-operations *
+set nacm rule-list IPC04248-tenant-admin-rules rule r1 action permit
+set nacm rule-list IPC04248-tenant-admin-rules rule r2 path /
+set nacm rule-list IPC04248-tenant-admin-rules rule r2 access-operations *
+set nacm rule-list IPC04248-tenant-admin-rules rule r2 action deny
+set nacm rule-list IPC04248-tenant-admin-rules cmdrule r3 command shell
+set nacm rule-list IPC04248-tenant-admin-rules cmdrule r3 access-operations *
+set nacm rule-list IPC04248-tenant-admin-rules cmdrule r3 action deny
+set nacm rule-list IPC04248-tenant-admin-rules cmdrule r4 command rollback
+set nacm rule-list IPC04248-tenant-admin-rules cmdrule r4 access-operations *
+set nacm rule-list IPC04248-tenant-admin-rules cmdrule r4 action deny
+set nacm rule-list IPC04248-tenant-admin-rules cmdrule r5 command *
+set nacm rule-list IPC04248-tenant-admin-rules cmdrule r5 action permit
+set nacm cmd-read-default deny
+set nacm cmd-exec-default deny
+[ok][2020-10-15 12:57:56]
+smurugesan2@VNF-V-SIN000136-cli> 
+2020-10-15 13:59:13,926 - VNF-V-SIN000136 - DEBUG - CMD>> : show system package-info | tab
+2020-10-15 13:59:17,933 - VNF-V-SIN000136 - DEBUG - show system package-info | tab
+PACKAGE                                                                                   BUILD                                    
+ID       MAJOR  MINOR  DATE      PACKAGE NAME                                    RELTYPE  TYPE   BRANCH                   CREATOR  
+-----------------------------------------------------------------------------------------------------------------------------------
+80561de  16     1      20191106  versa-flexvnf-20191106-113931-80561de-16.1R2S9  R2       S9     Release_16.1R2S9jenkins  jenkins  
+
+[ok][2020-10-15 12:59:17]
+smurugesan2@VNF-V-SIN000136-cli> 
+2020-10-15 13:59:17,933 - VNF-V-SIN000136 - DEBUG - CMD>> : show interfaces brief | tab | nomore | except vni-0/20
+2020-10-15 13:59:20,938 - VNF-V-SIN000136 - DEBUG - show interfaces brief | tab | nomore | except vni-0/20
+NAME         MAC                OPER  ADMIN  TENANT  VRF                   IP                      
+---------------------------------------------------------------------------------------------------
+eth-0/0      fa:16:3e:da:90:69  up    up     0       global                10.63.216.50/29         
+ptvi34       n/a                up    up     2       IPC04248-Control-VR   10.17.64.11/32          
+ptvi35       n/a                up    up     2       IPC04248-Control-VR   10.17.64.12/32          
+tvi-0/34     n/a                up    up     -       -                                             
+tvi-0/34.0   n/a                up    up     2       IPC04248-Control-VR   172.24.14.191/32        
+tvi-0/35     n/a                up    up     -       -                                             
+tvi-0/35.0   n/a                up    up     2       IPC04248-Control-VR   100.110.9.217/32        
+vni-0/0      fa:16:3e:39:27:1c  down  down   -       -                                             
+vni-0/1      fa:16:3e:a8:c0:4e  down  down   -       -                                             
+vni-0/2      fa:16:3e:c9:16:9f  up    up     -       -                                             
+vni-0/2.0    fa:16:3e:c9:16:9f  up    up     2       INT-WAN-Transport-VR  80.169.27.27/29         
+vni-0/3      fa:16:3e:3b:fc:5c  down  down   -       -                                             
+vni-0/4      fa:16:3e:ac:ba:57  up    up     -       -                                             
+vni-0/4.0    fa:16:3e:ac:ba:57  up    up     2       LAN1-VRF              192.168.120.1/24        
+                                                                           2001:920:999:999::1/64  
+vni-0/4.991  fa:16:3e:ac:ba:57  up    up     2       LAN1-VRF              192.168.91.1/24         
+vni-0/4.992  fa:16:3e:ac:ba:57  up    up     2       LAN1-VRF              192.168.92.1/24         
+vni-0/5      fa:16:3e:0f:bc:d5  down  down   -       -                                             
+vni-0/6      fa:16:3e:27:da:21  down  down   -       -                                             
+
+[ok][2020-10-15 12:59:20]
+smurugesan2@VNF-V-SIN000136-cli> 
+2020-10-15 13:59:21,941 - VNF-V-SIN000136 - DEBUG - CMD>> : show bgp neighbor org IPC04248 brief | nomore
+2020-10-15 13:59:24,946 - VNF-V-SIN000136 - DEBUG - show bgp neighbor org IPC04248 brief | nomore
+routing-instance: IPC04248-Control-VR
+
+Neighbor        Uptime       State       PfxRcd      PfxSent   local-port  remote-port
+10.17.64.11     1w2d05h    Established     141           9      40060        179
+10.17.64.12     1w2d05h    Established     125           9      39826        179
+[ok][2020-10-15 12:59:24]
+smurugesan2@VNF-V-SIN000136-cli> 
+2020-10-15 13:59:25,949 - VNF-V-SIN000136 - DEBUG - CMD>> : show configuration | display set | nomore
+2020-10-15 13:59:31,963 - VNF-V-SIN000136 - DEBUG - show configuration | display set | nomore
+set alias ^details expansion "show system details"
+set alias ^pkg expansion "show system package-info"
+set alias ^top expansion "show processes cpu"
+set alias ^uptime expansion "show system uptime"
+set confdConfig notifications
+set confdConfig notifications eventStreams stream oam description "Versa notifications"
+set confdConfig notifications eventStreams stream oam replaySupport false
+set confdConfig hideGroup debug password $1$F8/rcfNO$b5AULD3NDiutp/.8bMifu.
+set confdConfig hideGroup full
+set confdConfig hideGroup hidemib-group
+set confdConfig logs
+set confdConfig logs syslogConfig
+set confdConfig logs syslogConfig facility daemon
+set confdConfig logs syslogConfig udp
+set confdConfig logs syslogConfig udp disabled
+set confdConfig logs syslogConfig udp host syslogsrv.example.com
+set confdConfig logs syslogConfig udp port 514
+set confdConfig logs confdLog
+set confdConfig logs confdLog enabled
+set confdConfig logs confdLog file
+set confdConfig logs confdLog file enabled
+set confdConfig logs confdLog file name /var/log/versa/confd/confd.log
+set confdConfig logs developerLog
+set confdConfig logs developerLog enabled
+set confdConfig logs developerLog file
+set confdConfig logs developerLog file enabled
+set confdConfig logs developerLog file name /var/log/versa/confd/devel.log
+set confdConfig logs auditLog
+set confdConfig logs auditLog enabled
+set confdConfig logs auditLog file
+set confdConfig logs auditLog file enabled
+set confdConfig logs auditLog file name /var/log/versa/confd/audit.log
+set confdConfig logs netconfLog
+set confdConfig logs netconfLog enabled
+set confdConfig logs netconfLog file
+set confdConfig logs netconfLog file enabled
+set confdConfig logs netconfLog file name /var/log/versa/confd/netconf.log
+set confdConfig logs snmpLog
+set confdConfig logs snmpLog enabled
+set confdConfig logs snmpLog file
+set confdConfig logs snmpLog file enabled
+set confdConfig logs snmpLog file name /var/log/versa/confd/snmp.log
+set confdConfig logs webuiAccessLog
+set confdConfig logs webuiAccessLog enabled
+set confdConfig logs webuiAccessLog dir /var/log/versa/confd
+set confdConfig logs netconfTraceLog
+set confdConfig logs netconfTraceLog disabled
+set confdConfig logs netconfTraceLog filename /var/log/versa/confd/netconf.trace.log
+set confdConfig logs errorLog
+set confdConfig logs errorLog enabled
+set confdConfig logs errorLog filename /var/log/versa/confd/confderr.log
+set confdConfig logs errorLog maxSize S10M
+set confdConfig ssh
+set confdConfig ssh algorithms
+set confdConfig ssh algorithms kex diffie-hellman-group14-sha1,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1
+set confdConfig ssh algorithms mac hmac-sha2-256,hmac-sha2-512
+set confdConfig ssh algorithms encryption aes128-ctr,aes192-ctr,aes256-ctr
+set confdConfig ssh clientAliveInterval 30s
+set confdConfig ssh clientAliveCountMax 3
+set confdConfig cli
+set confdConfig cli banner "Access to this network/system is limited to users authorised by Colt for its legitimate business purposes. Unauthorised access, use, installation of files or modification of any data is prohibited. Use of this system/network will be audited"
+set confdConfig cli bannerFile /opt/versa/etc/cbanner
+set confdConfig cli prompt1 "\u@\h-cli\M> "
+set confdConfig cli prompt2 "\u@\h-cli\M% "
+set confdConfig cli cStylePromptInJStyle true
+set confdConfig cli autoWizard
+set confdConfig cli autoWizard disabled
+set confdConfig cli historyRemoveDuplicates true
+set confdConfig webui
+set confdConfig webui disabled
+set confdConfig webui docroot /opt/versa/confd/src/confd/webui_ng/docroot
+set confdConfig webui transport
+set confdConfig webui transport tcp
+set confdConfig webui transport tcp disabled
+set confdConfig webui transport ssl
+set confdConfig webui transport ssl enabled
+set confdConfig webui transport ssl ip 0.0.0.0
+set confdConfig webui transport ssl port 8443
+set confdConfig webui transport ssl extraIpPorts [ :::8443 ]
+set confdConfig webui transport ssl keyFile /opt/versa/var/cert/vshost.key
+set confdConfig webui transport ssl certFile /opt/versa/var/cert/vshost.crt
+set confdConfig webui transport ssl caCertFile /opt/versa/var/cert/ca.crt
+set confdConfig webui transport ssl verify 2
+set confdConfig webui transport ssl ciphers DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES256-SHA256
+set confdConfig webui transport ssl protocols "tlsv1.1 tlsv1.2"
+set confdConfig webui cgi
+set confdConfig webui cgi disabled
+set confdConfig rest
+set confdConfig rest enabled
+set confdConfig netconf
+set confdConfig netconf enabled
+set confdConfig netconf transport
+set confdConfig netconf transport ssh
+set confdConfig netconf transport ssh enabled
+set confdConfig netconf transport ssh ip 0.0.0.0
+set confdConfig netconf transport ssh port 2022
+set confdConfig netconf transport ssh extraIpPorts [ :::2022 ]
+set confdConfig netconf idleTimeout 30s
+set confdConfig netconf writeTimeout 60s
+set snmp agent enabled
+set snmp agent ip 127.0.0.1
+set snmp agent udp-port 161
+set snmp agent extra-listen ::1 161
+set snmp agent version v3
+set snmp agent engine-id
+set snmp agent engine-id enterprise-number 42359
+set snmp agent engine-id from-ip 100.110.9.217
+set snmp agent max-message-size 50000
+set snmp system contact ""
+set snmp system name VNF-V-SIN000136
+set snmp system location "RAFFLES PLACE_3,Singapore, Singapore"
+set snmp target v3_10.5.2.83 ip 10.5.2.83
+set snmp target v3_10.5.2.83 udp-port 162
+set snmp target v3_10.5.2.83 tag [ std_v3_inform std_v3_trap ]
+set snmp target v3_10.5.2.83 timeout 1500
+set snmp target v3_10.5.2.83 retries 3
+set snmp target v3_10.5.2.83 usm user-name coltuser
+set snmp target v3_10.5.2.83 usm sec-level auth-priv
+set snmp notify std_v1_trap tag std_v1_trap
+set snmp notify std_v1_trap type trap
+set snmp notify std_v2_inform tag std_v2_inform
+set snmp notify std_v2_inform type inform
+set snmp notify std_v2_trap tag std_v2_trap
+set snmp notify std_v2_trap type trap
+set snmp notify std_v3_inform tag std_v3_inform
+set snmp notify std_v3_inform type inform
+set snmp notify std_v3_trap tag std_v3_trap
+set snmp notify std_v3_trap type trap
+set snmp target-source 100.110.9.217
+set snmp vacm group access-v3-vuser-internet member coltuser sec-model [ usm ]
+set snmp vacm group access-v3-vuser-internet access any auth-priv read-view internet
+set snmp vacm group access-v3-vuser-internet access any auth-priv notify-view internet
+set snmp vacm view internet subtree 1.2 included
+set snmp vacm view internet subtree 1.3 included
+set snmp vacm view internet subtree 1.3.6.1 included
+set snmp usm local user coltuser auth
+set snmp usm local user coltuser auth sha
+set snmp usm local user coltuser auth sha password Colt1234
+set snmp usm local user coltuser priv
+set snmp usm local user coltuser priv aes
+set snmp usm local user coltuser priv aes password Colt1234
+set interfaces vni-0/2 description "Customer[KVHISTEST D]SID[IPC04248]Site[2005H0080]L3BEnd[UCPE-SIN000136]Cct[SIN/SIN/IA-245789]Type[INTSDWAN]"
+set interfaces vni-0/2 enable true
+set interfaces vni-0/2 unit 0 vlan-id 0
+set interfaces vni-0/2 unit 0 enable true
+set interfaces vni-0/2 unit 0 family
+set interfaces vni-0/2 unit 0 family inet
+set interfaces vni-0/2 unit 0 family inet address 80.169.27.27/29
+set interfaces vni-0/4 enable true
+set interfaces vni-0/4 unit 0 vlan-id 0
+set interfaces vni-0/4 unit 0 enable true
+set interfaces vni-0/4 unit 0 family
+set interfaces vni-0/4 unit 0 family inet
+set interfaces vni-0/4 unit 0 family inet address 192.168.120.1/24
+set interfaces vni-0/4 unit 0 family inet6
+set interfaces vni-0/4 unit 0 family inet6 address 2001:920:999:999::1/64
+set interfaces vni-0/4 unit 0 family inet6 mode router
+set interfaces vni-0/4 unit 991 vlan-id 991
+set interfaces vni-0/4 unit 991 enable true
+set interfaces vni-0/4 unit 991 family
+set interfaces vni-0/4 unit 991 family inet
+set interfaces vni-0/4 unit 991 family inet address 192.168.91.1/24
+set interfaces vni-0/4 unit 992 vlan-id 992
+set interfaces vni-0/4 unit 992 enable true
+set interfaces vni-0/4 unit 992 family
+set interfaces vni-0/4 unit 992 family inet
+set interfaces vni-0/4 unit 992 family inet address 192.168.92.1/24
+set interfaces tvi-0/34 description "VXLAN Tunnel Interface for IPC04248 Control VR"
+set interfaces tvi-0/34 enable true
+set interfaces tvi-0/34 mode ipsec
+set interfaces tvi-0/34 type p2mp-vxlan
+set interfaces tvi-0/34 unit 0 enable true
+set interfaces tvi-0/34 unit 0 family
+set interfaces tvi-0/34 unit 0 family inet
+set interfaces tvi-0/34 unit 0 family inet address 172.24.14.191/32
+set interfaces tvi-0/35 description "ESP Tunnel Interface for IPC04248 Control VR"
+set interfaces tvi-0/35 enable true
+set interfaces tvi-0/35 mode ipsec
+set interfaces tvi-0/35 type p2mp-esp
+set interfaces tvi-0/35 unit 0 enable true
+set interfaces tvi-0/35 unit 0 family
+set interfaces tvi-0/35 unit 0 family inet
+set interfaces tvi-0/35 unit 0 family inet address 100.110.9.217/32
+set interfaces ptvi34 parent-interface tvi-0/35.0
+set interfaces ptvi34 remote-address 10.17.64.11
+set interfaces ptvi35 parent-interface tvi-0/35.0
+set interfaces ptvi35 remote-address 10.17.64.12
+set networks INT-WAN interfaces [ vni-0/2.0 ]
+set networks LAN1 interfaces [ vni-0/4.0 ]
+set networks LAN1_VLAN991 interfaces [ vni-0/4.991 ]
+set networks LAN1_VLAN992 interfaces [ vni-0/4.992 ]
+set ntp server 10.5.2.14 source-interface tvi-0/35.0
+set ntp server 10.5.2.14 enable true
+set dhcp-profiles dhcp-limits description "DHCP profile"
+set dhcp-profiles dhcp-limits dhcp-options max-servers 100
+set dhcp-profiles dhcp-limits dhcp-options max-relays 100
+set dhcp-profiles dhcp-limits dhcp-options max-clients 8192
+set orgs org IPC04248 appliance-owner
+set orgs org IPC04248 services [ sdwan ]
+set orgs org IPC04248 available-routing-instances [ INT-WAN-Transport-VR IPC04248-Control-VR LAN1-VRF ]
+set orgs org IPC04248 owned-routing-instances [ INT-WAN-Transport-VR IPC04248-Control-VR LAN1-VRF ]
+set orgs org IPC04248 available-networks [ INT-WAN LAN1 LAN1_VLAN991 LAN1_VLAN992 ]
+set orgs org IPC04248 dhcp-profile dhcp-limits
+set orgs org IPC04248 traffic-identification using [ ptvi34 ptvi35 tvi-0/34.0 tvi-0/35.0 ]
+set orgs org IPC04248 traffic-identification using-networks [ INT-WAN LAN1 LAN1_VLAN991 LAN1_VLAN992 ]
+set orgs org IPC04248 sd-wan site
+set orgs org IPC04248 sd-wan site global-tenant-id 17
+set orgs org IPC04248 sd-wan site site-name VNF-V-SIN000136
+set orgs org IPC04248 sd-wan site management-routing-instance IPC04248-Control-VR
+set orgs org IPC04248 sd-wan site wan-interfaces vni-0/2.0 sla-monitoring fc_nc interval 10
+set orgs org IPC04248 sd-wan site wan-interfaces vni-0/2.0 sla-monitoring fc_nc send-to controller
+set orgs org IPC04248 sd-wan site wan-interfaces vni-0/2.0 sla-monitoring fc_ef interval 2
+set orgs org IPC04248 sd-wan site wan-interfaces vni-0/2.0 sla-monitoring fc_ef send-to branches
+set orgs org IPC04248 sd-wan site wan-interfaces vni-0/2.0 sla-monitoring fc_ef adaptive-monitoring
+set orgs org IPC04248 sd-wan controllers NV-WC1-SIN management-addresses IKE ip-address 10.17.0.11
+set orgs org IPC04248 sd-wan controllers NV-WC1-SIN management-addresses IKE routing-instance IPC04248-Control-VR
+set orgs org IPC04248 sd-wan controllers NV-WC1-SIN management-addresses secure ip-address 10.17.64.11
+set orgs org IPC04248 sd-wan controllers NV-WC1-SIN management-addresses secure routing-instance IPC04248-Control-VR
+set orgs org IPC04248 sd-wan controllers NV-WC2-SIN management-addresses IKE ip-address 10.17.0.12
+set orgs org IPC04248 sd-wan controllers NV-WC2-SIN management-addresses IKE routing-instance IPC04248-Control-VR
+set orgs org IPC04248 sd-wan controllers NV-WC2-SIN management-addresses secure ip-address 10.17.64.12
+set orgs org IPC04248 sd-wan controllers NV-WC2-SIN management-addresses secure routing-instance IPC04248-Control-VR
+set orgs org IPC04248 available-service-node-groups [ default-sng ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules IPSEC_IN match source zone zone-list [ Intf-INT-WAN-Zone ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules IPSEC_IN match services predefined-services-list [ ESP ICMP ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules IPSEC_IN match services services-list [ IPSEC IPSecAH ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules IPSEC_IN set action allow
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules IPSEC_OUT match destination zone zone-list [ Intf-INT-WAN-Zone ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules IPSEC_OUT match services predefined-services-list [ ESP ICMP ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules IPSEC_OUT match services services-list [ IPSEC IPSIPSecAH ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules IPSEC_OUT set action allow
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules ARP_IN match source zone zone-list [ Intf-INT-WAN-Zone ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules ARP_IN match ether-type ARP
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules ARP_IN set action allow
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules ARP_OUT match destination zone zone-list [ Intf-INT-WAN-Zone ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules ARP_OUT match ether-type ARP
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules ARP_OUT set action allow
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules DHCP_IN match source zone zone-list [ Intf-INT-WAN-Zone ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules DHCP_IN match services services-list [ DHCP-67 DHCP-68 ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules DHCP_IN set action allow
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules DHCP_OUT match destination zone zone-list [ Intf-INT-WAN-Zone ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules DHCP_OUT match services services-list [ DHCP-67 DHCP-68 ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules DHCP_OUT set action allow
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules BW-TEST_IN match source zone zone-list [ Intf-INT-WAN-Zone ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules BW-TEST_IN match services services-list [ IPERF SPEED-TEST ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules BW-TEST_IN set action allow
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules WAN_IN match source zone zone-list [ Intf-INT-WAN-Zone ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules WAN_IN set action deny
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules WAN_OUT match destination zone zone-list [ Intf-INT-WAN-Zone ]
+set orgs org-services IPC04248 class-of-service qos-policies Default-Policy rules WAN_OUT set action deny
+set orgs org-services IPC04248 class-of-service app-qos-policies Default-Policy
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN992 giaddr 192.168.92.1
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN992 upstream-servers-and-relays FWD-IPC04248-DHCP-VLAN992 forwarding-address [ 192.168.50.100 ]
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN992 upstream-servers-and-relays FWD-IPC04248-DHCP-VLAN992 source-address 192.168.92.1
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN992 upstream-servers-and-relays FWD-IPC04248-DHCP-VLAN992 fwd-routing-instance LAN1-VRF
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN992 pass-thru-mode keep
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN991 giaddr 192.168.91.1
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN991 upstream-servers-and-relays FWD-IPC04248-DHCP-VLAN991 forwarding-address [ 192.168.50.100 ]
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN991 upstream-servers-and-relays FWD-IPC04248-DHCP-VLAN991 source-address 192.168.91.1
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN991 upstream-servers-and-relays FWD-IPC04248-DHCP-VLAN991 fwd-routing-instance LAN1-VRF
+set orgs org-services IPC04248 dhcp dhcp4-relay-profiles IPC04248-DHCP-VLAN991 pass-thru-mode keep
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay log-unmatched-requests false
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay lef-profile Default-Logging-Profile
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay service-profiles IPC04248-DHCP-VLAN992 dhcp-request-match networks [ LAN1_VLAN992 ]
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay service-profiles IPC04248-DHCP-VLAN992 dhcp-service-type relay IPC04248-DHCP-VLAN992
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay service-profiles IPC04248-DHCP-VLAN992 dhcp-log-settings log-new-allocations false
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay service-profiles IPC04248-DHCP-VLAN992 dhcp-log-settings log-renewals false
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay service-profiles IPC04248-DHCP-VLAN991 dhcp-request-match networks [ LAN1_VLAN991 ]
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay service-profiles IPC04248-DHCP-VLAN991 dhcp-service-type relay IPC04248-DHCP-VLAN991
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay service-profiles IPC04248-DHCP-VLAN991 dhcp-log-settings log-new-allocations false
+set orgs org-services IPC04248 dhcp dhcp4-server-and-relay service-profiles IPC04248-DHCP-VLAN991 dhcp-log-settings log-renewals false
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile vpn-type branch-sdwan
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile branch-sdwan-profile b2b-sdwan
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile local-auth-info
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile local-auth-info auth-type psk
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile local-auth-info id-type email
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile local-auth-info key EJWMTUV7lRNfut3a
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile local-auth-info id-string VNF-V-SIN000136@IPC04248.com
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile local
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile local interface-name tvi-0/34.0
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile routing-instance IPC04248-Control-VR
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile tunnel-routing-instance IPC04248-Control-VR
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile tunnel-initiate automatic
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile ipsec transform esp-aes256-sha256
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile ipsec life duration 28000
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile ike group mod19
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile ike transform aes256-sha256
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile ike lifetime 28800
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile ike dpd-timeout 10
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile peer-auth-info
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile peer-auth-info auth-type psk
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile peer-auth-info id-type email
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile peer-auth-info key "6#17&IP8424c#238"
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile peer-auth-info id-string "6#17&IP8424c#238@colt.net"
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile peer
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile peer address [ 10.17.0.11 ]
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC1-SIN-Profile tunnel-interface ptvi34
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile vpn-type branch-sdwan
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile branch-sdwan-profile b2b-sdwan
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile local-auth-info
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile local-auth-info auth-type psk
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile local-auth-info id-type email
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile local-auth-info key aiwG3quDqoue8xuQ
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile local-auth-info id-string VNF-V-SIN000136@IPC04248.com
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile local
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile local interface-name tvi-0/34.0
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile routing-instance IPC04248-Control-VR
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile tunnel-routing-instance IPC04248-Control-VR
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile tunnel-initiate automatic
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile ipsec transform esp-aes256-sha256
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile ipsec life duration 28000
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile ike group mod19
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile ike transform aes256-sha256
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile ike lifetime 28800
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile ike dpd-timeout 10
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile peer-auth-info
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile peer-auth-info auth-type psk
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile peer-auth-info id-type email
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile peer-auth-info key "6#17&IP8424c%238"
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile peer-auth-info id-string "6#17&IP8424c%238@colt.net"
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile peer
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile peer address [ 10.17.0.12 ]
+set orgs org-services IPC04248 ipsec vpn-profile NV-WC2-SIN-Profile tunnel-interface ptvi35
+set orgs org-services IPC04248 ipsec branch-sdwan-profile b2b-sdwan life-time 28800
+set orgs org-services IPC04248 ipsec branch-sdwan-profile b2b-sdwan rekey-time 6300
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector1 destination-address 10.5.22.100
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector1 destination-port 5140
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector1 routing-instance IPC04248-Control-VR
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector1 transport tcp
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector1 template Default-LEF-Template
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector2 destination-address 10.5.22.101
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector2 destination-port 5140
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector2 routing-instance IPC04248-Control-VR
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector2 transport tcp
+set orgs org-services IPC04248 lef collectors LEF-Collector-log_collector2 template Default-LEF-Template
+set orgs org-services IPC04248 lef collector-groups Default-Collector-Group collectors [ LEF-Collector-log_collector1 LEF-Collector-log_collector2 ]
+set orgs org-services IPC04248 lef templates Default-LEF-Template type ipfix
+set orgs org-services IPC04248 lef profiles Default-Logging-Profile collector-group Default-Collector-Group
+set orgs org-services IPC04248 lef default-profile Default-Logging-Profile
+set orgs org-services IPC04248 sd-wan forwarding-profiles DEFAULT-TRAFFIC-PROFILE circuit-priorities priority 1 circuit-names local [ INT-WAN ]
+set orgs org-services IPC04248 sd-wan forwarding-profiles DEFAULT-TRAFFIC-PROFILE circuit-priorities priority 1 circuit-names remote [ INT-WAN INT-WAN1 INT-WAN2 ]
+set orgs org-services IPC04248 sd-wan forwarding-profiles DEFAULT-TRAFFIC-PROFILE circuit-priorities priority 2 circuit-names local [ INT-WAN ]
+set orgs org-services IPC04248 sd-wan forwarding-profiles DEFAULT-TRAFFIC-PROFILE circuit-priorities priority 2 circuit-names remote [ LTE-WAN ]
+set orgs org-services IPC04248 sd-wan forwarding-profiles DEFAULT-TRAFFIC-PROFILE connection-selection-method weighted-round-robin
+set orgs org-services IPC04248 sd-wan forwarding-profiles DEFAULT-TRAFFIC-PROFILE recompute-timer 40
+set orgs org-services IPC04248 sd-wan forwarding-profiles DEFAULT-TRAFFIC-PROFILE encryption optional
+set orgs org-services IPC04248 sd-wan forwarding-profiles DEFAULT-TRAFFIC-PROFILE symmetric-forwarding enable
+set orgs org-services IPC04248 sd-wan forwarding-profiles Default-FP
+set orgs org-services IPC04248 sd-wan policies Default-Policy rules DEFAULT-TRAFFIC-RULE description DEFAULT-TRAFFIC-RULE
+set orgs org-services IPC04248 sd-wan policies Default-Policy rules DEFAULT-TRAFFIC-RULE set action allow
+set orgs org-services IPC04248 sd-wan policies Default-Policy rules DEFAULT-TRAFFIC-RULE set forwarding-profile DEFAULT-TRAFFIC-PROFILE
+set orgs org-services IPC04248 objects zones Intf-MPLS-WAN-Zone
+set orgs org-services IPC04248 objects zones RTI-MPLS-WAN-Zone
+set orgs org-services IPC04248 objects zones W-ST-LAN1-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN1-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN2-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN2-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN3-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN3-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN4-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN4-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN5-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN5-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN6-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN6-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN7-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN7-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN8-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN8-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN9-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN9-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN10-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN10-VRF-MPLS-WAN
+set orgs org-services IPC04248 objects zones Intf-INT-WAN-Zone networks [ INT-WAN ]
+set orgs org-services IPC04248 objects zones RTI-INT-WAN-Zone routing-instance INT-WAN-Transport-VR
+set orgs org-services IPC04248 objects zones W-ST-LAN1-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN1-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN2-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN2-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN3-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN3-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN4-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN4-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN5-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN5-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN6-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN6-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN7-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN7-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN8-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN8-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN9-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN9-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN10-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN10-VRF-INT-WAN
+set orgs org-services IPC04248 objects zones Intf-CHAIN-UCPE-Zone
+set orgs org-services IPC04248 objects zones RTI-CHAIN-UCPE-Zone
+set orgs org-services IPC04248 objects zones W-ST-LAN1-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN1-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones W-ST-LAN2-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN2-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones W-ST-LAN3-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN3-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones W-ST-LAN4-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN4-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones W-ST-LAN5-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN5-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones W-ST-LAN6-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN6-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones W-ST-LAN7-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN7-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones W-ST-LAN8-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN8-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones W-ST-LAN9-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN9-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones W-ST-LAN10-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones L-ST-LAN10-VRF-CHAIN-UCPE
+set orgs org-services IPC04248 objects zones Intf-INT-WAN1-Zone
+set orgs org-services IPC04248 objects zones RTI-INT-WAN1-Zone
+set orgs org-services IPC04248 objects zones W-ST-LAN1-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN1-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN2-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN2-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN3-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN3-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN4-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN4-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN5-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN5-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN6-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN6-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN7-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN7-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN8-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN8-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN9-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN9-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN10-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN10-VRF-INT-WAN1
+set orgs org-services IPC04248 objects zones Intf-INT-WAN2-Zone
+set orgs org-services IPC04248 objects zones RTI-INT-WAN2-Zone
+set orgs org-services IPC04248 objects zones W-ST-LAN1-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN1-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN2-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN2-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN3-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN3-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN4-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN4-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN5-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN5-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN6-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN6-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN7-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN7-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN8-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN8-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN9-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN9-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN10-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN10-VRF-INT-WAN2
+set orgs org-services IPC04248 objects zones Intf-LTE-WAN-Zone
+set orgs org-services IPC04248 objects zones RTI-LTE-WAN-Zone
+set orgs org-services IPC04248 objects zones W-ST-LAN1-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN1-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN2-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN2-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN3-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN3-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN4-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN4-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN5-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN5-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN6-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN6-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN7-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN7-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN8-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN8-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN9-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN9-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones W-ST-LAN10-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones L-ST-LAN10-VRF-LTE-WAN
+set orgs org-services IPC04248 objects zones Intf-MPLS-WAN1-Zone
+set orgs org-services IPC04248 objects zones RTI-MPLS-WAN1-Zone
+set orgs org-services IPC04248 objects zones W-ST-LAN1-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN1-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN2-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN2-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN3-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN3-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN4-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN4-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN5-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN5-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN6-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN6-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN7-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN7-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN8-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN8-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN9-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN9-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones W-ST-LAN10-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones L-ST-LAN10-VRF-MPLS-WAN1
+set orgs org-services IPC04248 objects zones Intf-MPLS-WAN2-Zone
+set orgs org-services IPC04248 objects zones RTI-MPLS-WAN2-Zone
+set orgs org-services IPC04248 objects zones W-ST-LAN1-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN1-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN2-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN2-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN3-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN3-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN4-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN4-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN5-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN5-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN6-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN6-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN7-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN7-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN8-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN8-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN9-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN9-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones W-ST-LAN10-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones L-ST-LAN10-VRF-MPLS-WAN2
+set orgs org-services IPC04248 objects zones ptvi
+set orgs org-services IPC04248 objects zones Intf-LAN1-Zone description LAN1
+set orgs org-services IPC04248 objects zones Intf-LAN1-Zone networks [ LAN1 ]
+set orgs org-services IPC04248 objects zones Intf-LAN1-Zone lef-profile Default-Logging-Profile
+set orgs org-services IPC04248 objects zones Intf-LAN1_VLAN991-Zone networks [ LAN1_VLAN991 ]
+set orgs org-services IPC04248 objects zones Intf-LAN1_VLAN992-Zone networks [ LAN1_VLAN992 ]
+set orgs org-services IPC04248 objects services DHCP-67 protocol UDP
+set orgs org-services IPC04248 objects services DHCP-67 port 67
+set orgs org-services IPC04248 objects services DHCP-68 protocol UDP
+set orgs org-services IPC04248 objects services DHCP-68 port 68
+set orgs org-services IPC04248 objects services IPERF protocol TCP_OR_UDP
+set orgs org-services IPC04248 objects services IPERF port 5021-5029
+set orgs org-services IPC04248 objects services IPSEC protocol UDP
+set orgs org-services IPC04248 objects services IPSEC destination-port 4790,4500,500
+set orgs org-services IPC04248 objects services IPSIPSecAH protocol AH
+set orgs org-services IPC04248 objects services IPSecAH protocol AH
+set orgs org-services IPC04248 objects services SPEED-TEST protocol TCP
+set orgs org-services IPC04248 objects services SPEED-TEST port 5201
+set orgs org-services IPC04248 traffic-monitoring logging-control Default-Logging-Control profile Default-Logging-Profile
+set orgs org-services IPC04248 traffic-monitoring logging-control Default-Logging-Control options
+set orgs org-services IPC04248 traffic-monitoring logging-control Default-Logging-Control options stats
+set orgs org-services IPC04248 traffic-monitoring logging-control Default-Logging-Control options stats all
+set routing-instances INT-WAN-Transport-VR instance-type virtual-router
+set routing-instances INT-WAN-Transport-VR networks [ INT-WAN ]
+set routing-instances INT-WAN-Transport-VR routing-options static route 0.0.0.0/0 80.169.27.25 none tag 0
+set routing-instances IPC04248-Control-VR instance-type virtual-router
+set routing-instances IPC04248-Control-VR policy-options redistribution-policy Control-VR-Policy term Paired-TVI-Reject match address 169.254.0.0/16
+set routing-instances IPC04248-Control-VR policy-options redistribution-policy Control-VR-Policy term Paired-TVI-Reject action reject
+set routing-instances IPC04248-Control-VR policy-options redistribution-policy Control-VR-Policy term SDWAN-TVI1-Reject match address 172.24.14.191/32
+set routing-instances IPC04248-Control-VR policy-options redistribution-policy Control-VR-Policy term SDWAN-TVI1-Reject action reject
+set routing-instances IPC04248-Control-VR policy-options redistribution-policy Control-VR-Policy term SDWAN-TVI2-Reject match address 100.110.9.217/32
+set routing-instances IPC04248-Control-VR policy-options redistribution-policy Control-VR-Policy term SDWAN-TVI2-Reject action reject
+set routing-instances IPC04248-Control-VR policy-options redistribution-policy Control-VR-Policy term DIRECT match protocol direct
+set routing-instances IPC04248-Control-VR policy-options redistribution-policy Control-VR-Policy term DIRECT action accept
+set routing-instances IPC04248-Control-VR policy-options redistribution-policy Control-VR-Policy term DIRECT action set-origin igp
+set routing-instances IPC04248-Control-VR policy-options redistribute-to-bgp Control-VR-Policy
+set routing-instances IPC04248-Control-VR mpls-vpn-core
+set routing-instances IPC04248-Control-VR interfaces [ ptvi34 ptvi35 tvi-0/34.0 tvi-0/35.0 ]
+set routing-instances IPC04248-Control-VR routing-options mpls-vpn-local-router-interface family inet
+set routing-instances IPC04248-Control-VR routing-options mpls-vpn-local-router-interface interface tvi-0/35.0
+set routing-instances IPC04248-Control-VR protocols bgp 17 hold-time 90
+set routing-instances IPC04248-Control-VR protocols bgp 17 local-address 100.110.9.217
+set routing-instances IPC04248-Control-VR protocols bgp 17 graceful-restart enable
+set routing-instances IPC04248-Control-VR protocols bgp 17 graceful-restart maximum-restart-time 15
+set routing-instances IPC04248-Control-VR protocols bgp 17 graceful-restart recovery-time 15
+set routing-instances IPC04248-Control-VR protocols bgp 17 graceful-restart select-defer-time 15
+set routing-instances IPC04248-Control-VR protocols bgp 17 graceful-restart stalepath-time 15
+set routing-instances IPC04248-Control-VR protocols bgp 17 graceful-restart dynamic-peer-restart-time 0
+set routing-instances IPC04248-Control-VR protocols bgp 17 graceful-restart multiplier 8
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1 match family inet-vpn
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1 match community "(^|,)([0-9]*:11)($|,)"
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1 action accept
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1 action community 8009:8009
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1 action community-action set-specific
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1 action set-local-preference 80
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1-v6 match family inet6-vpn
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1-v6 match community "(^|,)([0-9]*:11)($|,)"
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1-v6 action accept
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1-v6 action community 8009:8009
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1-v6 action community-action set-specific
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 1GW1-v6 action set-local-preference 80
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2 match family inet-vpn
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2 match community "(^|,)([0-9]*:12)($|,)"
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2 action accept
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2 action community 8009:8009
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2 action community-action set-specific
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2 action set-local-preference 60
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2-v6 match family inet6-vpn
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2-v6 match community "(^|,)([0-9]*:12)($|,)"
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2-v6 action accept
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2-v6 action community 8009:8009
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2-v6 action community-action set-specific
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term 2GW2-v6 action set-local-preference 60
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term Allow-All action accept
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term Allow-All action community 8009:8009
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term Allow-All action community-action set-specific
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term Allow-VersaPvt-All match family versa-private
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy Import-From-SDWAN-Policy term Allow-VersaPvt-All action accept
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term Wildcard match family inet-vpn
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term Wildcard action accept
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term Wildcard action community 65:10
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term Wildcard action community-action set-specific
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term Wildcard-v6 match family inet6-vpn
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term Wildcard-v6 action accept
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term Wildcard-v6 action community 65:10
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term Wildcard-v6 action community-action set-specific
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term VersaPvt-Wildcard match family versa-private
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term VersaPvt-Wildcard action accept
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term VersaPvt-Wildcard action community 65:10
+set routing-instances IPC04248-Control-VR protocols bgp 17 routing-peer-policy TO_SDWAN term VersaPvt-Wildcard action community-action set-specific
+set routing-instances IPC04248-Control-VR protocols bgp 17 router-id 100.110.9.217
+set routing-instances IPC04248-Control-VR protocols bgp 17 local-as as-number 65505
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group type internal
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group family inet unicast
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group family inet versa-private
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group family inet-vpn unicast
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group family inet6-vpn unicast
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group import Import-From-SDWAN-Policy
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group export TO_SDWAN
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group peer-as 65505
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group neighbor 10.17.64.11
+set routing-instances IPC04248-Control-VR protocols bgp 17 group Controllers-Group neighbor 10.17.64.12
+set routing-instances LAN1-VRF instance-type vrf
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T1-Paired-TVI-Direct match protocol direct
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T1-Paired-TVI-Direct match address 169.254.0.0/16
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T1-Paired-TVI-Direct action reject
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T2-DIRECT match protocol direct
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T2-DIRECT action accept
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T2-DIRECT action set-origin igp
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T2-DIRECT action set-local-preference 110
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T3-STATIC match protocol static
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T3-STATIC action accept
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T3-STATIC action set-origin igp
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP term T3-STATIC action set-local-preference 110
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP6 term T2-DIRECT match protocol direct
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP6 term T2-DIRECT action accept
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP6 term T2-DIRECT action set-origin igp
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP6 term T2-DIRECT action set-local-preference 110
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP6 term T3-STATIC match protocol static
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP6 term T3-STATIC action accept
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP6 term T3-STATIC action set-origin igp
+set routing-instances LAN1-VRF policy-options redistribution-policy Default-Policy-To-BGP6 term T3-STATIC action set-local-preference 110
+set routing-instances LAN1-VRF policy-options redistribute-to-bgp Default-Policy-To-BGP
+set routing-instances LAN1-VRF policy-options redistribute-to-bgp6 Default-Policy-To-BGP6
+set routing-instances LAN1-VRF global-vrf-id 290
+set routing-instances LAN1-VRF networks [ LAN1 LAN1_VLAN991 LAN1_VLAN992 ]
+set routing-instances LAN1-VRF mpls-vpn-core-instance IPC04248-Control-VR
+set routing-instances LAN1-VRF route-distinguisher 290L:290
+set routing-instances LAN1-VRF vrf-import-target target:290L:2902
+set routing-instances LAN1-VRF vrf-both-target target:290L:290
+set routing-instances LAN1-VRF routing-options static route 2001:920:999::/52 2001:920:999:999::10 vni-0/4.0 preference 1
+set service-node-groups default-sng id 0
+set service-node-groups default-sng type internal
+set service-node-groups default-sng services [ cgnat sdwan ]
+set system vnf-manager ip-addresses [ 10.5.2.0/24 10.5.20.64/26 10.5.22.0/24 10.7.1.80/32 212.74.77.202/32 ]
+set system vnf-manager vnf-mgmt-interfaces [ tvi-0/35.0 ]
+set system identification name VNF-V-SIN000136
+set system identification location "RAFFLES PLACE_3,Singapore, Singapore"
+set system identification latitude 0.0
+set system identification longitude 0.0
+set system session timeout-udp 3600
+set system session check-tcp-syn false
+set system session reevaluate-reverse-flow false
+set system session tcp-send-reset false
+set system session tcp-secure-reset false
+set system session tcp-adjust-mss enable true
+set system session tcp-adjust-mss interface-types all
+set system services ssh enabled
+set system services sftp disabled
+set system services www enabled
+set system arp rate-limit 9000
+set system subjugate enabled
+set system time-zone Greenwich
+set system users admin login shell
+set system users admin role admin
+set system users versa login shell
+set system users versa role admin
+set system users webuser password $6$D/zay94gwIEb/Gku$0B.Jfw8ybZf3cmwaVr7DL3BbtxlL0ZLZVfiBScAbMZV8IdY7r0LW0q2iUOSIzKsozPLrapZ7X5EX3NKPSWzIQ1
+set system users webuser login none
+set system users webuser role oper
+set system service-options qos-frame-overhead auto-adjust true
+set system service-options run-mode manual
+set system service-options min-idle-sleep-time 5
+set system service-options max-idle-sleep-time 20
+set system ssh client-alive-interval 300
+set system ssh client-alive-count-max 0
+set system sd-wan
+set system sd-wan site site-type branch
+set system sd-wan site chassis-id SNG-094D7F5E75094FDC610286C715ABBF28
+set system sd-wan site site-id 2511
+set system sd-wan site provider-org IPC04248
+set system sd-wan site wan-interfaces vni-0/2.0 transport-domains [ INTERNET-TD ]
+set system sd-wan site wan-interfaces vni-0/2.0 inet
+set system sd-wan site wan-interfaces vni-0/2.0 inet circuit-name INT-WAN
+set system sd-wan transport-domains INTERNET-TD id 10
+set system sd-wan controllers NV-WC1-SIN site-name NV-WC1-SIN
+set system sd-wan controllers NV-WC1-SIN site-id 11
+set system sd-wan controllers NV-WC1-SIN transport-addresses NV-WC1-SIN-Transport-INT-WAN ip-address 157.120.245.82
+set system sd-wan controllers NV-WC1-SIN transport-addresses NV-WC1-SIN-Transport-INT-WAN transport-domains [ INTERNET-TD ]
+set system sd-wan controllers NV-WC2-SIN site-name NV-WC2-SIN
+set system sd-wan controllers NV-WC2-SIN site-id 12
+set system sd-wan controllers NV-WC2-SIN transport-addresses NV-WC2-SIN-Transport-INT-WAN ip-address 157.120.245.86
+set system sd-wan controllers NV-WC2-SIN transport-addresses NV-WC2-SIN-Transport-INT-WAN transport-domains [ INTERNET-TD ]
+set system external-aaa auth-order remote-then-local
+set system external-aaa tacacs-plus
+set system external-aaa tacacs-plus server 10.5.22.116 key C:ifiiape.
+set system external-aaa tacacs-plus server 10.5.22.117 key C:ifiiape.
+set system external-aaa tacacs-plus action [ authentication accounting ]
+set nacm write-default permit
+set nacm groups group IPC04248-adc-admin-group
+set nacm groups group IPC04248-cgnat-admin-group
+set nacm groups group IPC04248-network-admin-group
+set nacm groups group IPC04248-oper-group
+set nacm groups group IPC04248-sdwan-admin-group
+set nacm groups group IPC04248-security-admin-group
+set nacm groups group IPC04248-tenant-admin-group
+set nacm groups group admin user-name [ admin versa ]
+set nacm groups group oper user-name [ restuser webuser ]
+set nacm rule-list admin group [ admin ]
+set nacm rule-list admin rule any-access action permit
+set nacm rule-list admin cmdrule all_cmds command *
+set nacm rule-list admin cmdrule all_cmds access-operations *
+set nacm rule-list admin cmdrule all_cmds action permit
+set nacm rule-list any-group group [ * ]
+set nacm rule-list any-group rule tailf-aaa-authentication module-name tailf-aaa
+set nacm rule-list any-group rule tailf-aaa-authentication path /aaa/authentication/users/user[name='$USER']
+set nacm rule-list any-group rule tailf-aaa-authentication access-operations read,update
+set nacm rule-list any-group rule tailf-aaa-authentication action permit
+set nacm rule-list any-group rule tailf-aaa-user module-name tailf-aaa
+set nacm rule-list any-group rule tailf-aaa-user path /user[name='$USER']
+set nacm rule-list any-group rule tailf-aaa-user access-operations create,read,update,delete
+set nacm rule-list any-group rule tailf-aaa-user action permit
+set nacm rule-list any-group rule tailf-webui-user module-name tailf-webui
+set nacm rule-list any-group rule tailf-webui-user path /webui/data-stores/user-profile[username='$USER']
+set nacm rule-list any-group rule tailf-webui-user access-operations create,read,update,delete
+set nacm rule-list any-group rule tailf-webui-user action permit
+set nacm rule-list oper group [ oper ]
+set nacm rule-list oper rule allow access-operations read
+set nacm rule-list oper rule allow action permit
+set nacm rule-list oper rule rest action deny
+set nacm rule-list oper cmdrule denyshell command shell
+set nacm rule-list oper cmdrule denyshell action deny
+set nacm rule-list oper cmdrule denysystem command "request system"
+set nacm rule-list oper cmdrule denysystem action deny
+set nacm rule-list oper cmdrule denyclear command "request clear"
+set nacm rule-list oper cmdrule denyclear action deny
+set nacm rule-list oper cmdrule denyrbk command rollback
+set nacm rule-list oper cmdrule denyrbk action deny
+set nacm rule-list oper cmdrule read_only command *
+set nacm rule-list oper cmdrule read_only access-operations read,exec
+set nacm rule-list oper cmdrule read_only action permit
+set nacm rule-list IPC04248-adc-admin-rules group [ IPC04248-adc-admin-group ]
+set nacm rule-list IPC04248-adc-admin-rules rule r1 path /orgs/org-services[name='IPC04248']/adc
+set nacm rule-list IPC04248-adc-admin-rules rule r1 access-operations *
+set nacm rule-list IPC04248-adc-admin-rules rule r1 action permit
+set nacm rule-list IPC04248-adc-admin-rules rule r2 path /
+set nacm rule-list IPC04248-adc-admin-rules rule r2 access-operations *
+set nacm rule-list IPC04248-adc-admin-rules rule r2 action deny
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r3 command request
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r3 access-operations *
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r3 action deny
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r4 command shell
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r4 access-operations *
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r4 action deny
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r5 command rollback
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r5 access-operations *
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r5 action deny
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r6 command *
+set nacm rule-list IPC04248-adc-admin-rules cmdrule r6 action permit
+set nacm rule-list IPC04248-cgnat-admin-rules group [ IPC04248-cgnat-admin-group ]
+set nacm rule-list IPC04248-cgnat-admin-rules rule r1 path /orgs/org-services[name='IPC04248']/cgnat
+set nacm rule-list IPC04248-cgnat-admin-rules rule r1 access-operations *
+set nacm rule-list IPC04248-cgnat-admin-rules rule r1 action permit
+set nacm rule-list IPC04248-cgnat-admin-rules rule r2 path /
+set nacm rule-list IPC04248-cgnat-admin-rules rule r2 access-operations *
+set nacm rule-list IPC04248-cgnat-admin-rules rule r2 action deny
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r3 command request
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r3 access-operations *
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r3 action deny
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r4 command shell
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r4 access-operations *
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r4 action deny
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r5 command rollback
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r5 access-operations *
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r5 action deny
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r6 command *
+set nacm rule-list IPC04248-cgnat-admin-rules cmdrule r6 action permit
+set nacm rule-list IPC04248-network-admin-rules group [ IPC04248-network-admin-group ]
+set nacm rule-list IPC04248-network-admin-rules rule r1 path /interfaces
+set nacm rule-list IPC04248-network-admin-rules rule r1 access-operations *
+set nacm rule-list IPC04248-network-admin-rules rule r1 action permit
+set nacm rule-list IPC04248-network-admin-rules rule r2 path /routing-instances
+set nacm rule-list IPC04248-network-admin-rules rule r2 access-operations *
+set nacm rule-list IPC04248-network-admin-rules rule r2 action permit
+set nacm rule-list IPC04248-network-admin-rules rule r3 path /networks
+set nacm rule-list IPC04248-network-admin-rules rule r3 access-operations *
+set nacm rule-list IPC04248-network-admin-rules rule r3 action permit
+set nacm rule-list IPC04248-network-admin-rules cmdrule r4 command request
+set nacm rule-list IPC04248-network-admin-rules cmdrule r4 access-operations *
+set nacm rule-list IPC04248-network-admin-rules cmdrule r4 action deny
+set nacm rule-list IPC04248-network-admin-rules cmdrule r5 command shell
+set nacm rule-list IPC04248-network-admin-rules cmdrule r5 access-operations *
+set nacm rule-list IPC04248-network-admin-rules cmdrule r5 action deny
+set nacm rule-list IPC04248-network-admin-rules cmdrule r6 command rollback
+set nacm rule-list IPC04248-network-admin-rules cmdrule r6 access-operations *
+set nacm rule-list IPC04248-network-admin-rules cmdrule r6 action deny
+set nacm rule-list IPC04248-network-admin-rules cmdrule r7 command *
+set nacm rule-list IPC04248-network-admin-rules cmdrule r7 action permit
+set nacm rule-list IPC04248-oper-rules group [ IPC04248-oper-group ]
+set nacm rule-list IPC04248-oper-rules rule r1 path /orgs/org-services[name='IPC04248']
+set nacm rule-list IPC04248-oper-rules rule r1 access-operations read
+set nacm rule-list IPC04248-oper-rules rule r1 action permit
+set nacm rule-list IPC04248-oper-rules rule r2 path /
+set nacm rule-list IPC04248-oper-rules rule r2 access-operations *
+set nacm rule-list IPC04248-oper-rules rule r2 action deny
+set nacm rule-list IPC04248-oper-rules cmdrule r3 command "request clear"
+set nacm rule-list IPC04248-oper-rules cmdrule r3 access-operations *
+set nacm rule-list IPC04248-oper-rules cmdrule r3 action deny
+set nacm rule-list IPC04248-oper-rules cmdrule r4 command "request system"
+set nacm rule-list IPC04248-oper-rules cmdrule r4 access-operations *
+set nacm rule-list IPC04248-oper-rules cmdrule r4 action deny
+set nacm rule-list IPC04248-oper-rules cmdrule r5 command shell
+set nacm rule-list IPC04248-oper-rules cmdrule r5 access-operations *
+set nacm rule-list IPC04248-oper-rules cmdrule r5 action deny
+set nacm rule-list IPC04248-oper-rules cmdrule r6 command rollback
+set nacm rule-list IPC04248-oper-rules cmdrule r6 access-operations *
+set nacm rule-list IPC04248-oper-rules cmdrule r6 action deny
+set nacm rule-list IPC04248-oper-rules cmdrule r7 command *
+set nacm rule-list IPC04248-oper-rules cmdrule r7 action permit
+set nacm rule-list IPC04248-sdwan-admin-rules group [ IPC04248-sdwan-admin-group ]
+set nacm rule-list IPC04248-sdwan-admin-rules rule r1 path /system/sd-wan
+set nacm rule-list IPC04248-sdwan-admin-rules rule r1 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules rule r1 action permit
+set nacm rule-list IPC04248-sdwan-admin-rules rule r2 path /routing-instances
+set nacm rule-list IPC04248-sdwan-admin-rules rule r2 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules rule r2 action permit
+set nacm rule-list IPC04248-sdwan-admin-rules rule r3 path /orgs/org[name='IPC04248']/sd-wan
+set nacm rule-list IPC04248-sdwan-admin-rules rule r3 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules rule r3 action permit
+set nacm rule-list IPC04248-sdwan-admin-rules rule r4 path /orgs/org-services[name='IPC04248']/lef
+set nacm rule-list IPC04248-sdwan-admin-rules rule r4 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules rule r4 action permit
+set nacm rule-list IPC04248-sdwan-admin-rules rule r5 path /orgs/org-services[name='IPC04248']/ipsec
+set nacm rule-list IPC04248-sdwan-admin-rules rule r5 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules rule r5 action permit
+set nacm rule-list IPC04248-sdwan-admin-rules rule r6 path /orgs/org-services[name='IPC04248']/cgnat
+set nacm rule-list IPC04248-sdwan-admin-rules rule r6 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules rule r6 action permit
+set nacm rule-list IPC04248-sdwan-admin-rules rule r7 path /orgs/org-services[name='IPC04248']/sd-wan
+set nacm rule-list IPC04248-sdwan-admin-rules rule r7 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules rule r7 action permit
+set nacm rule-list IPC04248-sdwan-admin-rules rule r8 path /
+set nacm rule-list IPC04248-sdwan-admin-rules rule r8 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules rule r8 action deny
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r9 command request
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r9 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r9 action deny
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r10 command shell
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r10 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r10 action deny
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r11 command rollback
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r11 access-operations *
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r11 action deny
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r12 command *
+set nacm rule-list IPC04248-sdwan-admin-rules cmdrule r12 action permit
+set nacm rule-list IPC04248-security-admin-rules group [ IPC04248-security-admin-group ]
+set nacm rule-list IPC04248-security-admin-rules rule r1 path /predefineded-actions
+set nacm rule-list IPC04248-security-admin-rules rule r1 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r1 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r2 path /predefineded-appid
+set nacm rule-list IPC04248-security-admin-rules rule r2 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r2 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r3 path /predefined-file-extract-apps
+set nacm rule-list IPC04248-security-admin-rules rule r3 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r3 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r4 path /predefined-file-extract-apps
+set nacm rule-list IPC04248-security-admin-rules rule r4 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r4 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r5 path /predefined-file-types
+set nacm rule-list IPC04248-security-admin-rules rule r5 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r5 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r6 path /predefined-filefilter
+set nacm rule-list IPC04248-security-admin-rules rule r6 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r6 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r7 path /predefined-geoip
+set nacm rule-list IPC04248-security-admin-rules rule r7 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r7 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r8 path /predefined-iprep
+set nacm rule-list IPC04248-security-admin-rules rule r8 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r8 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r9 path /predefined-ips-scanner-parameters
+set nacm rule-list IPC04248-security-admin-rules rule r9 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r9 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r10 path /predefined-ips-scanners
+set nacm rule-list IPC04248-security-admin-rules rule r10 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r10 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r11 path /predefined-ips
+set nacm rule-list IPC04248-security-admin-rules rule r11 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r11 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r12 path /predefined-services
+set nacm rule-list IPC04248-security-admin-rules rule r12 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r12 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r13 path /predefined-url-categories
+set nacm rule-list IPC04248-security-admin-rules rule r13 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r13 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r14 path /predefined-url-reputations
+set nacm rule-list IPC04248-security-admin-rules rule r14 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r14 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r15 path /networks
+set nacm rule-list IPC04248-security-admin-rules rule r15 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r15 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r16 path /orgs/org-services[name='IPC04248']/lef
+set nacm rule-list IPC04248-security-admin-rules rule r16 access-operations read
+set nacm rule-list IPC04248-security-admin-rules rule r16 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r17 path /orgs/org-services[name='IPC04248']/security
+set nacm rule-list IPC04248-security-admin-rules rule r17 access-operations *
+set nacm rule-list IPC04248-security-admin-rules rule r17 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r18 path /orgs/org-services[name='IPC04248']/objects
+set nacm rule-list IPC04248-security-admin-rules rule r18 access-operations *
+set nacm rule-list IPC04248-security-admin-rules rule r18 action permit
+set nacm rule-list IPC04248-security-admin-rules rule r19 path /
+set nacm rule-list IPC04248-security-admin-rules rule r19 access-operations *
+set nacm rule-list IPC04248-security-admin-rules rule r19 action deny
+set nacm rule-list IPC04248-security-admin-rules cmdrule r20 command request
+set nacm rule-list IPC04248-security-admin-rules cmdrule r20 access-operations *
+set nacm rule-list IPC04248-security-admin-rules cmdrule r20 action deny
+set nacm rule-list IPC04248-security-admin-rules cmdrule r21 command shell
+set nacm rule-list IPC04248-security-admin-rules cmdrule r21 access-operations *
+set nacm rule-list IPC04248-security-admin-rules cmdrule r21 action deny
+set nacm rule-list IPC04248-security-admin-rules cmdrule r22 command *
+set nacm rule-list IPC04248-security-admin-rules cmdrule r22 action permit
+set nacm rule-list IPC04248-tenant-admin-rules group [ IPC04248-tenant-admin-group ]
+set nacm rule-list IPC04248-tenant-admin-rules rule r1 path /orgs/org-services[name='IPC04248']
+set nacm rule-list IPC04248-tenant-admin-rules rule r1 access-operations *
+set nacm rule-list IPC04248-tenant-admin-rules rule r1 action permit
+set nacm rule-list IPC04248-tenant-admin-rules rule r2 path /
+set nacm rule-list IPC04248-tenant-admin-rules rule r2 access-operations *
+set nacm rule-list IPC04248-tenant-admin-rules rule r2 action deny
+set nacm rule-list IPC04248-tenant-admin-rules cmdrule r3 command shell
+set nacm rule-list IPC04248-tenant-admin-rules cmdrule r3 access-operations *
+set nacm rule-list IPC04248-tenant-admin-rules cmdrule r3 action deny
+set nacm rule-list IPC04248-tenant-admin-rules cmdrule r4 command rollback
+set nacm rule-list IPC04248-tenant-admin-rules cmdrule r4 access-operations *
+set nacm rule-list IPC04248-tenant-admin-rules cmdrule r4 action deny
+set nacm rule-list IPC04248-tenant-admin-rules cmdrule r5 command *
+set nacm rule-list IPC04248-tenant-admin-rules cmdrule r5 action permit
+set nacm cmd-read-default deny
+set nacm cmd-exec-default deny
+[ok][2020-10-15 12:59:31]
+smurugesan2@VNF-V-SIN000136-cli> 
+2020-10-15 13:59:33,016 - VNF-V-SIN000136 - DEBUG - ====================================================================================================
+2020-10-15 13:59:33,016 - VNF-V-SIN000136 - DEBUG - Cpe current package after upgrade: versa-flexvnf-20191106-113931-80561de-16.1R2S9
+2020-10-15 13:59:33,016 - VNF-V-SIN000136 - DEBUG - Cpe not upgrade to versa-flexvnf-20161208-110445-87bfb51-15.2R3.3-wsm
+2020-10-15 13:59:33,016 - VNF-V-SIN000136 - DEBUG - ====================================================================================================

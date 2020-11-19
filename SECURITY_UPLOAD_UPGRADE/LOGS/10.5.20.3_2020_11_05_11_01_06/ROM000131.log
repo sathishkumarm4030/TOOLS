@@ -1,0 +1,27 @@
+2020-11-05 11:47:10,310 - ROM000131 - DEBUG - ls -ltr /home/versa/packages/fdc_r2s9_patch3.bin
+-rw-r-----+ 1 aaauser versa 32707 Nov  5 08:46 /home/versa/packages/fdc_r2s9_patch3.bin
+[scampost@ROM000131 ~] # 
+2020-11-05 11:47:10,310 - ROM000131 - INFO - ROM000131 file size: 32707
+2020-11-05 11:47:10,711 - ROM000131 - DEBUG - 859902a2f3221d835cdfffb0e63d2a4d  /home/versa/packages/fdc_r2s9_patch3.bin
+[scampost@ROM000131 ~] # 
+2020-11-05 11:47:10,712 - ROM000131 - DEBUG - ROM000131 File Checksum : 859902a2f3221d835cdfffb0e63d2a4d
+2020-11-05 11:47:12,331 - ROM000131 - DEBUG - [root@ROM000131 ~] # 
+2020-11-05 11:47:13,533 - ROM000131 - DEBUG - ec67DpAqYp: command not found
+[root@ROM000131 ~] # 
+2020-11-05 11:47:13,960 - ROM000131 - DEBUG - chmod a+x /home/versa/packages/fdc_r2s9_patch3.bin
+[root@ROM000131 ~] # 
+2020-11-05 11:47:14,360 - ROM000131 - DEBUG - exit
+[scampost@ROM000131 ~] # 
+2020-11-05 11:47:14,360 - ROM000131 - DEBUG - vnf patch execution Logfile : /tmp/packtrack_2020_11_05_11_01_06
+2020-11-05 11:47:14,360 - ROM000131 - DEBUG - sudo /home/versa/packages/fdc_r2s9_patch3.bin > /tmp/packtrack_2020_11_05_11_01_06 2>&1 &
+2020-11-05 11:47:14,761 - ROM000131 - DEBUG - &
+[1] 17287
+[scampost@ROM000131 ~] # 
+2020-11-05 11:47:20,167 - ROM000131 - DEBUG - ..............17287[1]+Donesudo/home/versa/packages/fdc_r2s9_patch3.bin>/tmp/packtrack_2020_11_05_11_01_062>&1[scampost@ROM000131~]#..........
+2020-11-05 11:47:20,968 - ROM000131 - DEBUG - cat /tmp/packtrack_2020_11_05_11_01_06
+Verifying archive integrity... All good.
+Uncompressing Versa DPDK Unbind fix (with wsm check)     0%    78%  100%  
+Installing..
+Checking...
+Done
+[scampost@ROM000131 ~] # 

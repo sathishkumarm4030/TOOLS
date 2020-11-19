@@ -38,18 +38,27 @@ def get_vd_details():
     global cpe_list
     ip = raw_input("Enter Versa Director IP address[10.5.20.3]:\n")
     print "Versa director IP:" + ip
-    ldap_user = raw_input("Enter TACACS Username for making SSH connection to VD:\n")
-    print "Versa director Username:" + ldap_user
-    ldap_passwd = getpass.getpass("Enter TACACS Password:\n")
-    user = raw_input("Enter Username for making REST actions to Versa Director [TACACS@System]:\n")
-    print "Versa director Username:" + user
-    passwd = getpass.getpass("Enter TACACS Password:\n")
-    cpe_user = raw_input("Enter Versa CPE Username [TACACS]:\n")
-    print "Versa CPE Username:" + cpe_user
-    cpe_passwd = getpass.getpass("Enter Versa CPE Password [TACACS]:\n")
-    node_user = raw_input("Enter Versa NODE devices Username [TACACS]:\n")
-    print "Versa NODE devices Username:" + node_user
-    node_passwd = getpass.getpass("Enter Versa NODE Password [TACACS]:\n")
+    ldap_user = raw_input("Enter Tacacs username:\n")
+    print "Username:" + ldap_user
+    ldap_passwd = getpass.getpass("Enter tacacs Password:\n")
+    user = ldap_user
+    passwd = ldap_passwd
+    cpe_user = ldap_user
+    cpe_passwd = ldap_passwd
+    node_user = ldap_user
+    node_passwd = ldap_passwd
+    # ldap_user = raw_input("Enter TACACS Username for making SSH connection to VD:\n")
+    # print "Versa director Username:" + ldap_user
+    # ldap_passwd = getpass.getpass("Enter TACACS Password:\n")
+    # user = raw_input("Enter Username for making REST actions to Versa Director [TACACS@System]:\n")
+    # print "Versa director Username:" + user
+    # passwd = getpass.getpass("Enter TACACS Password:\n")
+    # cpe_user = raw_input("Enter Versa CPE Username [TACACS]:\n")
+    # print "Versa CPE Username:" + cpe_user
+    # cpe_passwd = getpass.getpass("Enter Versa CPE Password [TACACS]:\n")
+    # node_user = raw_input("Enter Versa NODE devices Username [TACACS]:\n")
+    # print "Versa NODE devices Username:" + node_user
+    # node_passwd = getpass.getpass("Enter Versa NODE Password [TACACS]:\n")
     #ip = '10.91.116.35'
     #ldap_user = 'Automated'
     #ldap_passwd = 'Auto@12345'
@@ -71,7 +80,6 @@ def get_vd_details():
     return {'ip' : ip, 'user': user, 'passwd': passwd, 'ldap_user' : ldap_user,\
             'ldap_passwd' : ldap_passwd, 'cpe_user' : cpe_user, 'cpe_passwd' : cpe_passwd ,\
             'node_user': node_user, 'node_passwd': node_passwd}
-
 
 
 #Variables

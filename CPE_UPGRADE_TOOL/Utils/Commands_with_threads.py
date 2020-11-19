@@ -1,5 +1,7 @@
 import time
 import requests
+import netmiko
+import paramiko
 from string import Template
 from netmiko import redispatch
 from netmiko import ConnectHandler
@@ -54,6 +56,9 @@ console.setLevel(logging.INFO)
 console.setFormatter(formatter1)
 logging.getLogger('').addHandler(console)
 
+#print "netmiko_version" + netmiko.__version__
+#print "paramik_version" + paramiko.__version__
+#print dir(netmiko)
 
 def setup_logger(name, filename, level=logging.INFO, state = "MAIN"):
     log_file = logfile_dir + filename  + ".log"
@@ -159,17 +164,26 @@ def take_device_states_in_thread(state = "before_upgrade"):
     loca1_cpe_list = cpe_list
     try:
         threads = []
+        main_logger.debug("intial >> thread count " + str(threading.active_count()))
         for i, rows in loca1_cpe_list.iterrows():
             cpe_name = cpe_list.ix[i, 'device_name_in_vd']
+            main_logger.debug("intial thread count: " + str(threading.active_count()))
             p = threading.Thread(target=run_in_thread_to_take_states, args=(cpe_name, i, state))
             p.start()
+            main_logger.debug("starting thread :" + str(p.name) + " For device " + p._Thread__args[0] + "\n")
+            main_logger.debug("after starting thread>> thread count: " + str(threading.active_count()))
             main_logger.debug(p)
             threads.append(p)
+            time.sleep(2)
         for th in threads:
                 th.join()
+        # for th in threads:
+        #     th.exit()
         main_logger.debug("Exiting Main Thread")
-    except:
-            main_logger.info("Error: unable to start ")
+        main_logger.debug("after exiting main thread>> thread count: " + str(threading.active_count()))
+    except Exception as e:
+            main_logger.info("Error: unable to start thread : Exception >>> "+ str(e))
+    return
 
 
 def take_device_checks_in_thread(state = "before_upgrade"):
@@ -487,23 +501,45 @@ def compare_states():
     global report, cpe_list, parsed_dict, cpe_logger, main_logger, cpe_logger_dict
     for i, rows in cpe_list.iterrows():
         cpe_name = cpe_list.ix[i, 'device_name_in_vd']
-        beforeupgrade = parsed_dict[cpe_name + "before_upgrade"]
-        afterupgrade = parsed_dict[cpe_name + "after_upgrade"]
-
-        upgrade = check_parse(cpe_name, "package", cpe_list.ix[i, 'package_info'], afterupgrade['packageinfo'])
-        if upgrade == "OK":
-            upgrade = "Success - " + beforeupgrade['packageinfo'] + " to " + cpe_list.ix[i, 'package_info']
+        if cpe_name + "before_upgrade" in parsed_dict and cpe_name + "after_upgrade" in parsed_dict:
+            beforeupgrade = parsed_dict[cpe_name + "before_upgrade"]
+            afterupgrade = parsed_dict[cpe_name + "after_upgrade"]
+            if 'packageinfo' not in afterupgrade:
+                upgrade = "NO DATA after upgrade"
+            else:
+                upgrade = check_parse(cpe_name, "package", cpe_list.ix[i, 'package_info'], afterupgrade['packageinfo'])
+                if upgrade == "OK":
+                    upgrade = "Success - " + beforeupgrade['packageinfo'] + " to " + cpe_list.ix[i, 'package_info']
+                else:
+                    upgrade = "Failed to upgrade - " + beforeupgrade['packageinfo'] + " to " + cpe_list.ix[i, 'package_info']
+            if 'interfacelist' not in beforeupgrade and 'interfacelist' not in afterupgrade:
+                interface_match = "NO DATA after upgrade"
+            else:
+                interface_match = check_parse(cpe_name, " interface ", beforeupgrade['interfacelist'], afterupgrade['interfacelist'])
+            if 'bgpnbrlist' not in beforeupgrade and 'bgpnbrlist' not in afterupgrade:
+                bgp_nbr_match = "NO DATA after upgrade"
+            else:
+                bgp_nbr_match = check_parse(cpe_name, " bgp ", beforeupgrade['bgpnbrlist'], afterupgrade['bgpnbrlist'])
+            route_match = "NOT COMPARED"
+            if 'configlist' not in beforeupgrade and 'configlist' not in afterupgrade:
+                config_match = "NO DATA after upgrade"
+            else:
+                config_match = check_parse(cpe_name, " running-config ", beforeupgrade['configlist'],
+                                           afterupgrade['configlist'])
+            # bgp_nbr_match = check_parse(cpe_name, " bgp ", beforeupgrade['bgpnbrlist'], afterupgrade['bgpnbrlist'])
+            # route_match = check_parse(cpe_name, " route ", beforeupgrade['routelist'], afterupgrade['routelist'])
+            # config_match = check_parse(cpe_name, " running-config ", beforeupgrade['configlist'], afterupgrade['configlist'])
+            cpe_result = [cpe_name, upgrade, interface_match, bgp_nbr_match, route_match, config_match]
+            report.append(cpe_result)
         else:
-            upgrade = "Failed to upgrade - " + beforeupgrade['packageinfo'] + " to " + cpe_list.ix[i, 'package_info']
-        interface_match = check_parse(cpe_name, " interface ", beforeupgrade['interfacelist'], afterupgrade['interfacelist'])
-        bgp_nbr_match = check_parse(cpe_name, " bgp ", beforeupgrade['bgpnbrlist'], afterupgrade['bgpnbrlist'])
-        route_match = check_parse(cpe_name, " route ", beforeupgrade['routelist'], afterupgrade['routelist'])
-        config_match = check_parse(cpe_name, " running-config ", beforeupgrade['configlist'], afterupgrade['configlist'])
-        cpe_result = [cpe_name, upgrade, interface_match, bgp_nbr_match, route_match, config_match]
-        report.append(cpe_result)
-
-
-
+            upgrade = "NO DATA"
+            interface_match = "NO DATA"
+            bgp_nbr_match = "NO DATA"
+            route_match = "NO DATA"
+            config_match = "NO DATA"
+            cpe_result = [cpe_name, upgrade, interface_match, bgp_nbr_match, route_match, config_match]
+            report.append(cpe_result)
+    return
 
 
 def cpe_list_print():
@@ -927,7 +963,7 @@ def get_device_list():
         if i['type']=='branch':
             if i['ownerOrg'] != 'Colt':
                 if i['ping-status'] == 'REACHABLE':
-                    if count%15 == 0:
+                    if count%31 == 0:
                         batch += 1
                     device_list.append(i['name'])
                     device_list.append(i['ipAddress'])
@@ -956,7 +992,7 @@ def get_device_list():
 def cpe_upgrade():
     cpe_list_print()
     PreUpgradeActions()
-    UpgradeAction()
+    #UpgradeAction()
     PostUpgradeActions()
     compare_states()
     write_result(report)

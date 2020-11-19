@@ -1,0 +1,667 @@
+2020-11-05 09:45:44,127 - Main - INFO - SCRIPT Started
+2020-11-05 09:45:44,127 - Main - INFO - Result  File : /opt/script/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.5.20.3_2020_11_05_09_45_44//RESULT.csv
+2020-11-05 09:45:44,127 - Main - INFO - LOG FILES Path: /opt/script/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.5.20.3_2020_11_05_09_45_44/
+2020-11-05 09:47:14,974 - Main - DEBUG - total batches : 1
+2020-11-05 09:47:14,975 - Main - DEBUG - batch List : [1]
+2020-11-05 09:47:14,979 - Main - DEBUG - DAY :1
+2020-11-05 09:47:14,979 - Main - DEBUG - Batch : 1
+2020-11-05 09:47:14,979 - Main - INFO - CPEs LIST:
+2020-11-05 09:47:14,979 - Main - INFO - BER000540
+2020-11-05 09:47:14,980 - Main - INFO - BRN000201
+2020-11-05 09:47:14,980 - Main - INFO - BER000996
+2020-11-05 09:47:14,981 - Main - INFO - BER004896
+2020-11-05 09:47:14,981 - Main - INFO - BRU001724
+2020-11-05 09:47:14,981 - Main - INFO - BRU000264
+2020-11-05 09:47:14,981 - Main - INFO - BRU001942
+2020-11-05 09:47:14,982 - Main - INFO - BRU000045
+2020-11-05 09:47:14,982 - Main - INFO - BRU000146
+2020-11-05 09:47:14,982 - Main - INFO - GER003634
+2020-11-05 09:47:14,982 - Main - INFO - GER004746
+2020-11-05 09:47:14,982 - Main - INFO - GER004926
+2020-11-05 09:47:14,983 - Main - INFO - GER006624
+2020-11-05 09:47:14,983 - Main - INFO - HAM000468
+2020-11-05 09:47:14,983 - Main - INFO - HAM000436
+2020-11-05 09:47:14,983 - Main - INFO - HAM000902
+2020-11-05 09:47:14,984 - Main - INFO - NUE000202
+2020-11-05 09:47:14,984 - Main - INFO - NV-VNF-GW1-NYC
+2020-11-05 09:47:14,984 - Main - INFO - NV-WC2-NYC
+2020-11-05 09:47:14,984 - Main - INFO - POL000408
+2020-11-05 09:47:14,985 - Main - INFO - SCN000046
+2020-11-05 09:47:14,985 - Main - INFO - SUI000233
+2020-11-05 09:47:14,985 - Main - INFO - SVQ000099
+2020-11-05 09:47:14,985 - Main - INFO - VCE000040
+2020-11-05 09:47:14,985 - Main - INFO - VNF-V-SIN000136
+2020-11-05 09:47:14,986 - Main - INFO - VNF-V-CES000472
+2020-11-05 09:47:18,018 - Main - DEBUG - 32707
+2020-11-05 09:47:18,022 - Main - DEBUG - 859902a2f3221d835cdfffb0e63d2a4d
+2020-11-05 09:47:18,023 - Main - DEBUG - Source File Checksum : 859902a2f3221d835cdfffb0e63d2a4d
+2020-11-05 09:47:19,030 - Main - INFO - starting thread :Thread-1 For device BER000540
+
+2020-11-05 09:47:19,030 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@192.168.28.213:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:19,597 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:PyRJKVZTfxB4jiFtIagtmWp7FmXxbyL0N4NoNFbAoi0.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:108
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 192.168.28.213
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:19,597 - Main - DEBUG - VD to CPE 192.168.28.213 file transfer Failed.
+2020-11-05 09:47:21,032 - Main - INFO - starting thread :Thread-2 For device BRN000201
+
+2020-11-05 09:47:21,033 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@100.110.2.195:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:21,575 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:OPNhhXXLLEAcis+ZPLYLmkhrI1aVU7KUWgNxyTohUAE.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:123
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.2.195
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:21,576 - Main - DEBUG - VD to CPE 100.110.2.195 file transfer Failed.
+2020-11-05 09:47:23,035 - Main - INFO - starting thread :Thread-3 For device BER000996
+
+2020-11-05 09:47:23,037 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@192.168.28.225:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:23,501 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:0quo+/jKTewCsEzl7b2jPL+cjhQymtrHOff479fxI7c.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:106
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 192.168.28.225
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:23,501 - Main - DEBUG - VD to CPE 192.168.28.225 file transfer Failed.
+2020-11-05 09:47:25,039 - Main - INFO - starting thread :Thread-4 For device BER004896
+
+2020-11-05 09:47:25,039 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@192.168.28.225:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:25,507 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:0quo+/jKTewCsEzl7b2jPL+cjhQymtrHOff479fxI7c.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:106
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 192.168.28.225
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:25,507 - Main - DEBUG - VD to CPE 192.168.28.225 file transfer Failed.
+2020-11-05 09:47:27,041 - Main - INFO - starting thread :Thread-5 For device BRU001724
+
+2020-11-05 09:47:27,042 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@100.110.3.186:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:27,328 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:9AaBK9YrcjolSOQZ064yLUDMi0g4eNptNLyuOVg20x4.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:128
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.3.186
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:27,328 - Main - DEBUG - VD to CPE 100.110.3.186 file transfer Failed.
+2020-11-05 09:47:29,044 - Main - INFO - starting thread :Thread-6 For device BRU000264
+
+2020-11-05 09:47:29,045 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@100.110.2.128:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:29,330 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:VCZ/+lwbZL3RZG5eOz7mHdI9JiuNefKY27xsv++WyOg.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:126
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.2.128
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:29,330 - Main - DEBUG - VD to CPE 100.110.2.128 file transfer Failed.
+2020-11-05 09:47:31,047 - Main - INFO - starting thread :Thread-7 For device BRU001942
+
+2020-11-05 09:47:31,047 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@100.110.3.185:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:31,351 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:MzJGwO27yXdl/GhzFKWcvjEj1LK7Ot/cHZ3mTD0VtL4.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /root/.ssh/known_hosts:127
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.3.185
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:31,351 - Main - DEBUG - VD to CPE 100.110.3.185 file transfer Failed.
+2020-11-05 09:47:33,049 - Main - INFO - starting thread :Thread-8 For device BRU000045
+
+2020-11-05 09:47:33,050 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@100.110.9.86:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:33,374 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:0ay/ABo9kqG6KsmPZhQPybbG2bZCG5Tl6T2LtljNyO4.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:745
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.9.86
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:33,374 - Main - DEBUG - VD to CPE 100.110.9.86 file transfer Failed.
+2020-11-05 09:47:35,052 - Main - INFO - starting thread :Thread-9 For device BRU000146
+
+2020-11-05 09:47:35,052 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@100.110.9.135:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:35,402 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:unWnjutZlT7PInHmUA9TIUDxN8db8vybipgGjwvjF8E.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:930
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.9.135
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:35,403 - Main - DEBUG - VD to CPE 100.110.9.135 file transfer Failed.
+2020-11-05 09:47:37,054 - Main - INFO - starting thread :Thread-10 For device GER003634
+
+2020-11-05 09:47:37,055 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@100.110.8.175:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:37,428 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:PAhQIqNQ9d2mvz+JtX0jLZZcHsc78PCEaRcwbTk9R1k.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:794
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.8.175
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:37,428 - Main - DEBUG - VD to CPE 100.110.8.175 file transfer Failed.
+2020-11-05 09:47:39,057 - Main - INFO - starting thread :Thread-11 For device GER004746
+
+2020-11-05 09:47:39,057 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@192.168.28.212:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:39,424 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:DdWBlQrAqw+Kjp8A7F8BrDMCdVGyvS1IRABvLXL4mts.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:223
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 192.168.28.212
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:39,425 - Main - DEBUG - VD to CPE 192.168.28.212 file transfer Failed.
+2020-11-05 09:47:41,060 - Main - INFO - starting thread :Thread-12 For device GER004926
+
+2020-11-05 09:47:41,060 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@100.110.2.112:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:41,492 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:1SkOiH+DI4+SQ40KmOG4oKohyO+/Dbn22rzKEO4MIq8.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:242
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.2.112
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:41,493 - Main - DEBUG - VD to CPE 100.110.2.112 file transfer Failed.
+2020-11-05 09:47:43,062 - Main - INFO - starting thread :Thread-13 For device GER006624
+
+2020-11-05 09:47:43,063 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@192.168.28.203:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:43,447 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:kQFzdh0teWdozBZNPMaElL2Mt3/jQOoQvvGnRrjXhbs.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:252
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 192.168.28.203
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:43,448 - Main - DEBUG - VD to CPE 192.168.28.203 file transfer Failed.
+2020-11-05 09:47:45,065 - Main - INFO - starting thread :Thread-14 For device HAM000468
+
+2020-11-05 09:47:45,065 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@100.110.3.155:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:45,434 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:toIkL6c0jMWFFI84ccazC2Zl8bbtIwv2FJ9yMYhqf0g.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:283
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.3.155
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:45,434 - Main - DEBUG - VD to CPE 100.110.3.155 file transfer Failed.
+2020-11-05 09:47:47,067 - Main - INFO - starting thread :Thread-15 For device HAM000436
+
+2020-11-05 09:47:47,068 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@192.168.28.180:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:47,489 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:P+m2o01s6b7VhEUd49O1qSnFASxr+1Ee6sI41hHCmL8.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:276
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 192.168.28.180
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:47,489 - Main - DEBUG - VD to CPE 192.168.28.180 file transfer Failed.
+2020-11-05 09:47:49,070 - Main - INFO - starting thread :Thread-16 For device HAM000902
+
+2020-11-05 09:47:49,070 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@100.110.3.183:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:49,490 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:JV5qD+6vk/33VuLK8pxNFNqEUoqNquSk8bm+BjoVYvU.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:280
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.3.183
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:49,491 - Main - DEBUG - VD to CPE 100.110.3.183 file transfer Failed.
+2020-11-05 09:47:51,073 - Main - INFO - starting thread :Thread-17 For device NUE000202
+
+2020-11-05 09:47:51,073 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@192.168.28.224:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:51,490 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:MJo6Hg2waOeNjvAZBd9oB5YOndLCVdL2JXVXPqOw2e0.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:409
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 192.168.28.224
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:51,490 - Main - DEBUG - VD to CPE 192.168.28.224 file transfer Failed.
+2020-11-05 09:47:53,075 - Main - INFO - starting thread :Thread-18 For device NV-VNF-GW1-NYC
+
+2020-11-05 09:47:53,076 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@10.63.4.100:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:53,676 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:tyDN5e7VA4wAwASnr/F4atHV0Hqbf13EqMsUTZT0ve8.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /root/.ssh/known_hosts:17
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 10.63.4.100
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:53,676 - Main - DEBUG - VD to CPE 10.63.4.100 file transfer Failed.
+2020-11-05 09:47:55,078 - Main - INFO - starting thread :Thread-19 For device NV-WC2-NYC
+
+2020-11-05 09:47:55,079 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@10.63.4.103:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:55,681 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:aiLk3dKz2AITMff9vZlJRKZbSWeLOvIc/Aflfet8jp8.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /root/.ssh/known_hosts:18
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 10.63.4.103
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:55,681 - Main - DEBUG - VD to CPE 10.63.4.103 file transfer Failed.
+2020-11-05 09:47:57,081 - Main - INFO - starting thread :Thread-20 For device POL000408
+
+2020-11-05 09:47:57,081 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@100.110.8.72:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:57,582 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:5d/LJAAxZ6P2XAbYi6faqBIWkyJNWssLcX8Cl+kyQ2o.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:183
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.8.72
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:57,583 - Main - DEBUG - VD to CPE 100.110.8.72 file transfer Failed.
+2020-11-05 09:47:59,083 - Main - INFO - starting thread :Thread-21 For device SCN000046
+
+2020-11-05 09:47:59,084 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@192.168.28.204:/home/versa/packages --progress; exit 0
+2020-11-05 09:47:59,444 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:IdPwo9MHPPibqI2W1O9aSprGiGie/V+hfEFSVAdx0IE.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:535
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 192.168.28.204
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:47:59,444 - Main - DEBUG - VD to CPE 192.168.28.204 file transfer Failed.
+2020-11-05 09:48:01,086 - Main - INFO - starting thread :Thread-22 For device SUI000233
+
+2020-11-05 09:48:01,086 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@100.110.3.113:/home/versa/packages --progress; exit 0
+2020-11-05 09:48:01,481 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:A4mj/UhoJ+A5z8iH7tp3lVu2Y3cBFeG3oXdCG/3kxwc.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:571
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.3.113
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:48:01,481 - Main - DEBUG - VD to CPE 100.110.3.113 file transfer Failed.
+2020-11-05 09:48:03,088 - Main - INFO - starting thread :Thread-23 For device SVQ000099
+
+2020-11-05 09:48:03,089 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@100.110.3.160:/home/versa/packages --progress; exit 0
+2020-11-05 09:48:03,561 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:D9BIGG/Aod9CxDkqX0IoB4brqMqiAOxyAOxaZI1Pka4.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:587
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.3.160
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:48:03,561 - Main - DEBUG - VD to CPE 100.110.3.160 file transfer Failed.
+2020-11-05 09:48:05,091 - Main - INFO - starting thread :Thread-24 For device VCE000040
+
+2020-11-05 09:48:05,091 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@192.168.28.67:/home/versa/packages --progress; exit 0
+2020-11-05 09:48:05,620 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:TtDCKXlHvGv8AIED2SeEk0VcPHoAejdmiWzl0AwNuVI.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:609
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 192.168.28.67
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:48:05,620 - Main - DEBUG - VD to CPE 192.168.28.67 file transfer Failed.
+2020-11-05 09:48:07,093 - Main - INFO - starting thread :Thread-25 For device VNF-V-SIN000136
+
+2020-11-05 09:48:07,094 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@100.110.9.217:/home/versa/packages --progress; exit 0
+2020-11-05 09:48:09,096 - Main - INFO - starting thread :Thread-26 For device VNF-V-CES000472
+
+2020-11-05 09:48:09,097 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/fdc_r2s9_patch3.bin scampost@100.110.10.106:/home/versa/packages --progress; exit 0
+2020-11-05 09:48:09,353 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:Bcft1Fb/2ftL/aRPEdfHS7PjaoMZ1XOfhZF6KjsaDd0.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:886
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.9.217
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:48:09,354 - Main - DEBUG - VD to CPE 100.110.9.217 file transfer Failed.
+2020-11-05 09:48:09,398 - Main - DEBUG - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:97qmj2SpQ/8bcd46+z6yEWq7h8OnSHiX11efdIrrw1A.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:1198
+  remove with:
+  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.10.106
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+
+2020-11-05 09:48:09,398 - Main - DEBUG - VD to CPE 100.110.10.106 file transfer Failed.
+2020-11-05 09:48:11,099 - Main - INFO - <<<<<Security patch execution RESULT>>>
+2020-11-05 09:48:11,100 - Main - INFO - 'cpe', 'filename', 'patch_upgrade_status'
+2020-11-05 09:48:11,100 - Main - INFO - ['HAM000468', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:toIkL6c0jMWFFI84ccazC2Zl8bbtIwv2FJ9yMYhqf0g.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:283\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.3.155\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,100 - Main - INFO - ['BER000540', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:PyRJKVZTfxB4jiFtIagtmWp7FmXxbyL0N4NoNFbAoi0.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:108\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 192.168.28.213\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,100 - Main - INFO - ['POL000408', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:5d/LJAAxZ6P2XAbYi6faqBIWkyJNWssLcX8Cl+kyQ2o.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:183\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.8.72\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,100 - Main - INFO - ['SUI000233', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:A4mj/UhoJ+A5z8iH7tp3lVu2Y3cBFeG3oXdCG/3kxwc.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:571\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.3.113\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,101 - Main - INFO - ['SCN000046', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:IdPwo9MHPPibqI2W1O9aSprGiGie/V+hfEFSVAdx0IE.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:535\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 192.168.28.204\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,101 - Main - INFO - ['GER003634', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:PAhQIqNQ9d2mvz+JtX0jLZZcHsc78PCEaRcwbTk9R1k.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:794\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.8.175\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,101 - Main - INFO - ['NV-WC2-NYC', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:aiLk3dKz2AITMff9vZlJRKZbSWeLOvIc/Aflfet8jp8.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ECDSA key in /root/.ssh/known_hosts:18\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 10.63.4.103\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,101 - Main - INFO - ['VNF-V-SIN000136', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:Bcft1Fb/2ftL/aRPEdfHS7PjaoMZ1XOfhZF6KjsaDd0.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:886\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.9.217\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,101 - Main - INFO - ['BRU001724', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:9AaBK9YrcjolSOQZ064yLUDMi0g4eNptNLyuOVg20x4.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:128\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.3.186\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,102 - Main - INFO - ['BRU000264', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:VCZ/+lwbZL3RZG5eOz7mHdI9JiuNefKY27xsv++WyOg.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:126\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.2.128\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,102 - Main - INFO - ['VCE000040', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:TtDCKXlHvGv8AIED2SeEk0VcPHoAejdmiWzl0AwNuVI.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:609\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 192.168.28.67\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,102 - Main - INFO - ['GER006624', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:kQFzdh0teWdozBZNPMaElL2Mt3/jQOoQvvGnRrjXhbs.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:252\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 192.168.28.203\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,102 - Main - INFO - ['GER004926', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:1SkOiH+DI4+SQ40KmOG4oKohyO+/Dbn22rzKEO4MIq8.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:242\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.2.112\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,102 - Main - INFO - ['BRN000201', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:OPNhhXXLLEAcis+ZPLYLmkhrI1aVU7KUWgNxyTohUAE.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:123\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.2.195\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,103 - Main - INFO - ['HAM000436', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:P+m2o01s6b7VhEUd49O1qSnFASxr+1Ee6sI41hHCmL8.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:276\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 192.168.28.180\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,103 - Main - INFO - ['NUE000202', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:MJo6Hg2waOeNjvAZBd9oB5YOndLCVdL2JXVXPqOw2e0.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:409\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 192.168.28.224\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,103 - Main - INFO - ['HAM000902', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:JV5qD+6vk/33VuLK8pxNFNqEUoqNquSk8bm+BjoVYvU.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:280\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.3.183\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,103 - Main - INFO - ['NV-VNF-GW1-NYC', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:tyDN5e7VA4wAwASnr/F4atHV0Hqbf13EqMsUTZT0ve8.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ECDSA key in /root/.ssh/known_hosts:17\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 10.63.4.100\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,103 - Main - INFO - ['VNF-V-CES000472', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:97qmj2SpQ/8bcd46+z6yEWq7h8OnSHiX11efdIrrw1A.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:1198\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.10.106\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,104 - Main - INFO - ['BER004896', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:0quo+/jKTewCsEzl7b2jPL+cjhQymtrHOff479fxI7c.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:106\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 192.168.28.225\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,104 - Main - INFO - ['BRU001942', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:MzJGwO27yXdl/GhzFKWcvjEj1LK7Ot/cHZ3mTD0VtL4.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ECDSA key in /root/.ssh/known_hosts:127\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.3.185\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,104 - Main - INFO - ['BRU000045', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:0ay/ABo9kqG6KsmPZhQPybbG2bZCG5Tl6T2LtljNyO4.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:745\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.9.86\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,104 - Main - INFO - ['BER000996', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:0quo+/jKTewCsEzl7b2jPL+cjhQymtrHOff479fxI7c.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:106\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 192.168.28.225\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,104 - Main - INFO - ['GER004746', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:DdWBlQrAqw+Kjp8A7F8BrDMCdVGyvS1IRABvLXL4mts.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:223\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 192.168.28.212\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,105 - Main - INFO - ['BRU000146', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:unWnjutZlT7PInHmUA9TIUDxN8db8vybipgGjwvjF8E.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:930\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.9.135\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,105 - Main - INFO - ['SVQ000099', 'fdc_r2s9_patch3.bin', 'File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\n@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @\r\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\r\nIT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!\r\nSomeone could be eavesdropping on you right now (man-in-the-middle attack)!\r\nIt is also possible that a host key has just been changed.\r\nThe fingerprint for the ED25519 key sent by the remote host is\nSHA256:D9BIGG/Aod9CxDkqX0IoB4brqMqiAOxyAOxaZI1Pka4.\r\nPlease contact your system administrator.\r\nAdd correct host key in /root/.ssh/known_hosts to get rid of this message.\r\nOffending ED25519 key in /root/.ssh/known_hosts:587\r\n  remove with:\r\n  ssh-keygen -f "/root/.ssh/known_hosts" -R 100.110.3.160\r\nPassword authentication is disabled to avoid man-in-the-middle attacks.\r\nKeyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.\r\nPermission denied (publickey,password).\r\nrsync: connection unexpectedly closed (0 bytes received so far) [sender]\nrsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]\n']
+2020-11-05 09:48:11,106 - Main - INFO - Time elapsed: 0:02:26.979378
+
+2020-11-05 09:48:11,106 - Main - INFO - Result Stored in /opt/script/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.5.20.3_2020_11_05_09_45_44//RESULT.csv
+2020-11-05 09:48:11,106 - Main - INFO - LOG FILES Path: /opt/script/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.5.20.3_2020_11_05_09_45_44/

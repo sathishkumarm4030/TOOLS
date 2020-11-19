@@ -1,0 +1,27 @@
+2020-11-05 11:16:46,102 - DUI000023 - DEBUG - ls -ltr /home/versa/packages/fdc_r2s9_patch3.bin
+-rw-r-----+ 1 aaauser versa 32707 Nov  5 08:20 /home/versa/packages/fdc_r2s9_patch3.bin
+[scampost@DUI000023 ~] # 
+2020-11-05 11:16:46,102 - DUI000023 - INFO - DUI000023 file size: 32707
+2020-11-05 11:16:46,503 - DUI000023 - DEBUG - 859902a2f3221d835cdfffb0e63d2a4d  /home/versa/packages/fdc_r2s9_patch3.bin
+[scampost@DUI000023 ~] # 
+2020-11-05 11:16:46,503 - DUI000023 - DEBUG - DUI000023 File Checksum : 859902a2f3221d835cdfffb0e63d2a4d
+2020-11-05 11:16:48,105 - DUI000023 - DEBUG - [root@DUI000023 ~] # 
+2020-11-05 11:16:49,107 - DUI000023 - DEBUG - ec67DpAqYp: command not found
+[root@DUI000023 ~] # 
+2020-11-05 11:16:49,507 - DUI000023 - DEBUG - chmod a+x /home/versa/packages/fdc_r2s9_patch3.bin
+[root@DUI000023 ~] # 
+2020-11-05 11:16:49,908 - DUI000023 - DEBUG - exit
+[scampost@DUI000023 ~] # 
+2020-11-05 11:16:49,908 - DUI000023 - DEBUG - vnf patch execution Logfile : /tmp/packtrack_2020_11_05_11_01_06
+2020-11-05 11:16:49,908 - DUI000023 - DEBUG - sudo /home/versa/packages/fdc_r2s9_patch3.bin > /tmp/packtrack_2020_11_05_11_01_06 2>&1 &
+2020-11-05 11:16:50,312 - DUI000023 - DEBUG - &
+[1] 9949
+[scampost@DUI000023 ~] # 
+2020-11-05 11:16:55,718 - DUI000023 - DEBUG - ..............9949[1]+Donesudo/home/versa/packages/fdc_r2s9_patch3.bin>/tmp/packtrack_2020_11_05_11_01_062>&1[scampost@DUI000023~]#..........
+2020-11-05 11:16:56,519 - DUI000023 - DEBUG - cat /tmp/packtrack_2020_11_05_11_01_06
+Verifying archive integrity... All good.
+Uncompressing Versa DPDK Unbind fix (with wsm check)     0%    78%  100%  
+Installing..
+Checking...
+Done
+[scampost@DUI000023 ~] # 

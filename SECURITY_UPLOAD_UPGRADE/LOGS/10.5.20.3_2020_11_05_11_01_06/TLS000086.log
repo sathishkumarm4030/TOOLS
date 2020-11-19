@@ -1,0 +1,27 @@
+2020-11-05 11:52:39,083 - TLS000086 - DEBUG - ls -ltr /home/versa/packages/fdc_r2s9_patch3.bin
+-rw-r-----+ 1 aaauser versa 32707 Nov  5 08:43 /home/versa/packages/fdc_r2s9_patch3.bin
+[scampost@TLS000086 ~] # 
+2020-11-05 11:52:39,083 - TLS000086 - INFO - TLS000086 file size: 32707
+2020-11-05 11:52:39,484 - TLS000086 - DEBUG - 859902a2f3221d835cdfffb0e63d2a4d  /home/versa/packages/fdc_r2s9_patch3.bin
+[scampost@TLS000086 ~] # 
+2020-11-05 11:52:39,484 - TLS000086 - DEBUG - TLS000086 File Checksum : 859902a2f3221d835cdfffb0e63d2a4d
+2020-11-05 11:52:40,885 - TLS000086 - DEBUG - [root@TLS000086 ~] # 
+2020-11-05 11:52:41,686 - TLS000086 - DEBUG - ec67DpAqYp: command not found
+[root@TLS000086 ~] # 
+2020-11-05 11:52:42,087 - TLS000086 - DEBUG - chmod a+x /home/versa/packages/fdc_r2s9_patch3.bin
+[root@TLS000086 ~] # 
+2020-11-05 11:52:42,487 - TLS000086 - DEBUG - exit
+[scampost@TLS000086 ~] # 
+2020-11-05 11:52:42,488 - TLS000086 - DEBUG - vnf patch execution Logfile : /tmp/packtrack_2020_11_05_11_01_06
+2020-11-05 11:52:42,488 - TLS000086 - DEBUG - sudo /home/versa/packages/fdc_r2s9_patch3.bin > /tmp/packtrack_2020_11_05_11_01_06 2>&1 &
+2020-11-05 11:52:42,888 - TLS000086 - DEBUG - &
+[1] 29443
+[scampost@TLS000086 ~] # 
+2020-11-05 11:52:48,290 - TLS000086 - DEBUG - ..............29443[1]+Donesudo/home/versa/packages/fdc_r2s9_patch3.bin>/tmp/packtrack_2020_11_05_11_01_062>&1[scampost@TLS000086~]#..........
+2020-11-05 11:52:49,092 - TLS000086 - DEBUG - cat /tmp/packtrack_2020_11_05_11_01_06
+Verifying archive integrity... All good.
+Uncompressing Versa DPDK Unbind fix (with wsm check)     0%    78%  100%  
+Installing..
+Checking...
+Done
+[scampost@TLS000086 ~] # 

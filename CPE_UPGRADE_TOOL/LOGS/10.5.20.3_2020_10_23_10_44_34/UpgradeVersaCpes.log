@@ -1,0 +1,808 @@
+2020-10-23 10:44:34,263 - Main - INFO - SCRIPT Started
+2020-10-23 10:44:34,264 - Main - INFO - Result  File : /opt/script/TOOLS/CPE_UPGRADE_TOOL/LOGS/10.5.20.3_2020_10_23_10_44_34//RESULT.csv
+2020-10-23 10:44:34,264 - Main - INFO - LOG FILES Path: /opt/script/TOOLS/CPE_UPGRADE_TOOL/LOGS/10.5.20.3_2020_10_23_10_44_34/
+2020-10-23 10:48:43,898 - Main - INFO - DAY :1
+2020-10-23 10:48:43,899 - Main - INFO - Batch : 1
+2020-10-23 10:48:43,899 - Main - INFO - BELOW ARE THE CPEs going for Upgrade:
+2020-10-23 10:48:43,900 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:48:43,902 - Main - INFO - AMS000170
+2020-10-23 10:48:43,902 - Main - INFO - ANR000090
+2020-10-23 10:48:43,903 - Main - INFO - ANR008465
+2020-10-23 10:48:43,904 - Main - INFO - BCN000364
+2020-10-23 10:48:43,905 - Main - INFO - BRU000264
+2020-10-23 10:48:43,905 - Main - INFO - BRU000292
+2020-10-23 10:48:43,907 - Main - INFO - BRU002182
+2020-10-23 10:48:43,908 - Main - INFO - BRU007689
+2020-10-23 10:48:43,908 - Main - INFO - GER004948
+2020-10-23 10:48:43,909 - Main - INFO - GNE000168
+2020-10-23 10:48:43,910 - Main - INFO - LYS000049
+2020-10-23 10:48:43,911 - Main - INFO - LYS001123
+2020-10-23 10:48:43,911 - Main - INFO - QFC000514
+2020-10-23 10:48:43,912 - Main - INFO - STO031003
+2020-10-23 10:48:43,913 - Main - INFO - TUR000059
+2020-10-23 10:48:43,914 - Main - INFO - VIE000236
+2020-10-23 10:48:43,914 - Main - INFO - ZAF000035
+2020-10-23 10:48:43,915 - Main - INFO - ZGJ000022
+2020-10-23 10:48:43,916 - Main - INFO - BRU000317
+2020-10-23 10:48:43,916 - Main - INFO - GNE000402
+2020-10-23 10:48:43,917 - Main - INFO - LGG000902
+2020-10-23 10:48:43,918 - Main - INFO - LUX001010
+2020-10-23 10:48:43,919 - Main - INFO - QHA000628
+2020-10-23 10:48:43,919 - Main - INFO - QMO000090
+2020-10-23 10:48:43,920 - Main - INFO - QMO004857
+2020-10-23 10:48:43,921 - Main - INFO - QNM000090
+2020-10-23 10:48:43,921 - Main - INFO - ZGJ000065
+2020-10-23 10:48:43,922 - Main - INFO - MIL001844
+2020-10-23 10:48:43,923 - Main - INFO - VNF-V-SIN000136
+2020-10-23 10:48:43,923 - Main - INFO - BER000356
+2020-10-23 10:48:43,924 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:49:07,324 - Main - INFO - 
+2020-10-23 10:49:13,334 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:49:13,335 - Main - INFO - before_upgrade Actions for : AMS000170
+2020-10-23 10:49:13,335 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:49:13,336 - Main - INFO - CMD>> : request devices device AMS000170 ping
+2020-10-23 10:49:16,341 - Main - INFO - request devices device AMS000170 ping
+result PING 100.110.2.60 (100.110.2.60) 56(84) bytes of data.
+64 bytes from 100.110.2.60: icmp_seq=1 ttl=58 time=15.1 ms
+
+--- 100.110.2.60 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 15.100/15.100/15.100/0.000 ms
+
+[ok][2020-10-23 09:49:15]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:49:16,343 - Main - INFO - CMD>> : request devices device AMS000170 connect
+2020-10-23 10:49:19,348 - Main - INFO - request devices device AMS000170 connect
+result true
+info (smurugesan2) Connected to AMS000170 - 100.110.2.60:2022
+[ok][2020-10-23 09:49:19]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:49:19,348 - Main - INFO - CMD>> : request devices device AMS000170 check-sync
+2020-10-23 10:49:22,353 - Main - INFO - request devices device AMS000170 check-sync
+result in-sync
+[ok][2020-10-23 09:49:21]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:49:22,354 - Main - INFO - AMS000170 is in sync with VD & able to ping & connect
+2020-10-23 10:49:22,355 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:49:22,355 - Main - INFO - before_upgrade Actions for : ANR000090
+2020-10-23 10:49:22,355 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:49:22,356 - Main - INFO - CMD>> : request devices device ANR000090 ping
+2020-10-23 10:49:25,361 - Main - INFO - request devices device ANR000090 ping
+result PING 100.110.9.159 (100.110.9.159) 56(84) bytes of data.
+64 bytes from 100.110.9.159: icmp_seq=1 ttl=58 time=14.0 ms
+
+--- 100.110.9.159 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 14.056/14.056/14.056/0.000 ms
+
+[ok][2020-10-23 09:49:24]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:49:25,361 - Main - INFO - CMD>> : request devices device ANR000090 connect
+2020-10-23 10:49:28,366 - Main - INFO - request devices device ANR000090 connect
+result true
+info (smurugesan2) Connected to ANR000090 - 100.110.9.159:2022
+[ok][2020-10-23 09:49:27]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:49:28,367 - Main - INFO - CMD>> : request devices device ANR000090 check-sync
+2020-10-23 10:49:31,372 - Main - INFO - request devices device ANR000090 check-sync
+result in-sync
+[ok][2020-10-23 09:49:30]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:49:31,372 - Main - INFO - ANR000090 is in sync with VD & able to ping & connect
+2020-10-23 10:49:31,373 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:49:31,373 - Main - INFO - before_upgrade Actions for : ANR008465
+2020-10-23 10:49:31,373 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:49:31,373 - Main - INFO - CMD>> : request devices device ANR008465 ping
+2020-10-23 10:49:34,378 - Main - INFO - request devices device ANR008465 ping
+result PING 100.110.9.136 (100.110.9.136) 56(84) bytes of data.
+64 bytes from 100.110.9.136: icmp_seq=1 ttl=58 time=23.1 ms
+
+--- 100.110.9.136 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 23.127/23.127/23.127/0.000 ms
+
+[ok][2020-10-23 09:49:33]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:49:34,379 - Main - INFO - CMD>> : request devices device ANR008465 connect
+2020-10-23 10:49:37,385 - Main - INFO - request devices device ANR008465 connect
+result true
+info (smurugesan2) Connected to ANR008465 - 100.110.9.136:2022
+[ok][2020-10-23 09:49:37]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:49:37,385 - Main - INFO - CMD>> : request devices device ANR008465 check-sync
+2020-10-23 10:49:40,391 - Main - INFO - request devices device ANR008465 check-sync
+result in-sync
+[ok][2020-10-23 09:49:39]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:49:40,391 - Main - INFO - ANR008465 is in sync with VD & able to ping & connect
+2020-10-23 10:49:40,393 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:49:40,393 - Main - INFO - before_upgrade Actions for : BCN000364
+2020-10-23 10:49:40,393 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:49:40,393 - Main - INFO - CMD>> : request devices device BCN000364 ping
+2020-10-23 10:49:43,398 - Main - INFO - request devices device BCN000364 ping
+result PING 100.110.9.1 (100.110.9.1) 56(84) bytes of data.
+64 bytes from 100.110.9.1: icmp_seq=1 ttl=58 time=38.2 ms
+
+--- 100.110.9.1 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 38.210/38.210/38.210/0.000 ms
+
+[ok][2020-10-23 09:49:42]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:49:43,398 - Main - INFO - CMD>> : request devices device BCN000364 connect
+2020-10-23 10:49:46,404 - Main - INFO - request devices device BCN000364 connect
+result true
+info (smurugesan2) Connected to BCN000364 - 100.110.9.1:2022
+[ok][2020-10-23 09:49:46]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:49:46,404 - Main - INFO - CMD>> : request devices device BCN000364 check-sync
+2020-10-23 10:49:49,409 - Main - INFO - request devices device BCN000364 check-sync
+result in-sync
+[ok][2020-10-23 09:49:48]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:49:49,409 - Main - INFO - BCN000364 is in sync with VD & able to ping & connect
+2020-10-23 10:49:49,410 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:49:49,411 - Main - INFO - before_upgrade Actions for : BRU000264
+2020-10-23 10:49:49,411 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:49:49,411 - Main - INFO - CMD>> : request devices device BRU000264 ping
+2020-10-23 10:49:52,415 - Main - INFO - request devices device BRU000264 ping
+result PING 100.110.2.128 (100.110.2.128) 56(84) bytes of data.
+64 bytes from 100.110.2.128: icmp_seq=1 ttl=58 time=10.9 ms
+
+--- 100.110.2.128 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 10.945/10.945/10.945/0.000 ms
+
+[ok][2020-10-23 09:49:51]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:49:52,415 - Main - INFO - CMD>> : request devices device BRU000264 connect
+2020-10-23 10:49:55,420 - Main - INFO - request devices device BRU000264 connect
+result true
+info (smurugesan2) Connected to BRU000264 - 100.110.2.128:2022
+[ok][2020-10-23 09:49:55]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:49:55,421 - Main - INFO - CMD>> : request devices device BRU000264 check-sync
+2020-10-23 10:49:58,425 - Main - INFO - request devices device BRU000264 check-sync
+result in-sync
+[ok][2020-10-23 09:49:57]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:49:58,426 - Main - INFO - BRU000264 is in sync with VD & able to ping & connect
+2020-10-23 10:49:58,427 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:49:58,427 - Main - INFO - before_upgrade Actions for : BRU000292
+2020-10-23 10:49:58,427 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:49:58,428 - Main - INFO - CMD>> : request devices device BRU000292 ping
+2020-10-23 10:50:01,433 - Main - INFO - request devices device BRU000292 ping
+result PING 100.110.9.131 (100.110.9.131) 56(84) bytes of data.
+64 bytes from 100.110.9.131: icmp_seq=1 ttl=58 time=10.8 ms
+
+--- 100.110.9.131 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 10.811/10.811/10.811/0.000 ms
+
+[ok][2020-10-23 09:50:00]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:50:01,433 - Main - INFO - CMD>> : request devices device BRU000292 connect
+2020-10-23 10:50:04,438 - Main - INFO - request devices device BRU000292 connect
+result true
+info (smurugesan2) Connected to BRU000292 - 100.110.9.131:2022
+[ok][2020-10-23 09:50:04]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:50:04,438 - Main - INFO - CMD>> : request devices device BRU000292 check-sync
+2020-10-23 10:50:07,443 - Main - INFO - request devices device BRU000292 check-sync
+result in-sync
+[ok][2020-10-23 09:50:06]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:50:07,444 - Main - INFO - BRU000292 is in sync with VD & able to ping & connect
+2020-10-23 10:50:07,445 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:50:07,445 - Main - INFO - before_upgrade Actions for : BRU002182
+2020-10-23 10:50:07,445 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:50:07,445 - Main - INFO - CMD>> : request devices device BRU002182 ping
+2020-10-23 10:50:10,450 - Main - INFO - request devices device BRU002182 ping
+result PING 100.110.2.238 (100.110.2.238) 56(84) bytes of data.
+64 bytes from 100.110.2.238: icmp_seq=1 ttl=58 time=15.8 ms
+
+--- 100.110.2.238 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 15.835/15.835/15.835/0.000 ms
+
+[ok][2020-10-23 09:50:09]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:50:10,451 - Main - INFO - CMD>> : request devices device BRU002182 connect
+2020-10-23 10:50:13,456 - Main - INFO - request devices device BRU002182 connect
+result true
+info (smurugesan2) Connected to BRU002182 - 100.110.2.238:2022
+[ok][2020-10-23 09:50:12]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:50:13,456 - Main - INFO - CMD>> : request devices device BRU002182 check-sync
+2020-10-23 10:50:16,460 - Main - INFO - request devices device BRU002182 check-sync
+result in-sync
+[ok][2020-10-23 09:50:15]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:50:16,461 - Main - INFO - BRU002182 is in sync with VD & able to ping & connect
+2020-10-23 10:50:16,462 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:50:16,462 - Main - INFO - before_upgrade Actions for : BRU007689
+2020-10-23 10:50:16,462 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:50:16,462 - Main - INFO - CMD>> : request devices device BRU007689 ping
+2020-10-23 10:50:19,467 - Main - INFO - request devices device BRU007689 ping
+result PING 100.110.9.138 (100.110.9.138) 56(84) bytes of data.
+64 bytes from 100.110.9.138: icmp_seq=1 ttl=58 time=16.8 ms
+
+--- 100.110.9.138 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 16.805/16.805/16.805/0.000 ms
+
+[ok][2020-10-23 09:50:18]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:50:19,467 - Main - INFO - CMD>> : request devices device BRU007689 connect
+2020-10-23 10:50:22,472 - Main - INFO - request devices device BRU007689 connect
+result true
+info (smurugesan2) Connected to BRU007689 - 100.110.9.138:2022
+[ok][2020-10-23 09:50:22]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:50:22,473 - Main - INFO - CMD>> : request devices device BRU007689 check-sync
+2020-10-23 10:50:25,477 - Main - INFO - request devices device BRU007689 check-sync
+result in-sync
+[ok][2020-10-23 09:50:24]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:50:25,478 - Main - INFO - BRU007689 is in sync with VD & able to ping & connect
+2020-10-23 10:50:25,479 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:50:25,479 - Main - INFO - before_upgrade Actions for : GER004948
+2020-10-23 10:50:25,479 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:50:25,479 - Main - INFO - CMD>> : request devices device GER004948 ping
+2020-10-23 10:50:28,484 - Main - INFO - request devices device GER004948 ping
+result PING 100.110.3.10 (100.110.3.10) 56(84) bytes of data.
+64 bytes from 100.110.3.10: icmp_seq=1 ttl=58 time=22.8 ms
+
+--- 100.110.3.10 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 22.802/22.802/22.802/0.000 ms
+
+[ok][2020-10-23 09:50:27]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:50:28,484 - Main - INFO - CMD>> : request devices device GER004948 connect
+2020-10-23 10:50:31,489 - Main - INFO - request devices device GER004948 connect
+result true
+info (smurugesan2) Connected to GER004948 - 100.110.3.10:2022
+[ok][2020-10-23 09:50:31]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:50:31,489 - Main - INFO - CMD>> : request devices device GER004948 check-sync
+2020-10-23 10:50:34,494 - Main - INFO - request devices device GER004948 check-sync
+result in-sync
+[ok][2020-10-23 09:50:33]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:50:34,495 - Main - INFO - GER004948 is in sync with VD & able to ping & connect
+2020-10-23 10:50:34,496 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:50:34,496 - Main - INFO - before_upgrade Actions for : GNE000168
+2020-10-23 10:50:34,496 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:50:34,496 - Main - INFO - CMD>> : request devices device GNE000168 ping
+2020-10-23 10:50:37,501 - Main - INFO - request devices device GNE000168 ping
+result PING 100.110.3.48 (100.110.3.48) 56(84) bytes of data.
+64 bytes from 100.110.3.48: icmp_seq=1 ttl=58 time=17.2 ms
+
+--- 100.110.3.48 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 17.226/17.226/17.226/0.000 ms
+
+[ok][2020-10-23 09:50:36]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:50:37,501 - Main - INFO - CMD>> : request devices device GNE000168 connect
+2020-10-23 10:50:40,507 - Main - INFO - request devices device GNE000168 connect
+result true
+info (smurugesan2) Connected to GNE000168 - 100.110.3.48:2022
+[ok][2020-10-23 09:50:40]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:50:40,508 - Main - INFO - CMD>> : request devices device GNE000168 check-sync
+2020-10-23 10:50:43,512 - Main - INFO - request devices device GNE000168 check-sync
+result in-sync
+[ok][2020-10-23 09:50:42]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:50:43,513 - Main - INFO - GNE000168 is in sync with VD & able to ping & connect
+2020-10-23 10:50:43,514 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:50:43,514 - Main - INFO - before_upgrade Actions for : LYS000049
+2020-10-23 10:50:43,515 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:50:43,515 - Main - INFO - CMD>> : request devices device LYS000049 ping
+2020-10-23 10:50:56,532 - Main - INFO - request devices device LYS000049 ping
+result PING 100.110.2.101 (100.110.2.101) 56(84) bytes of data.
+
+--- 100.110.2.101 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+
+[ok][2020-10-23 09:50:55]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:50:56,533 - Main - INFO - VD --> CPE Request ping failed.
+2020-10-23 10:50:56,536 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:50:56,537 - Main - INFO - before_upgrade Actions for : LYS001123
+2020-10-23 10:50:56,537 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:50:56,537 - Main - INFO - CMD>> : request devices device LYS001123 ping
+2020-10-23 10:50:59,542 - Main - INFO - request devices device LYS001123 ping
+result PING 100.110.3.253 (100.110.3.253) 56(84) bytes of data.
+64 bytes from 100.110.3.253: icmp_seq=1 ttl=58 time=18.4 ms
+
+--- 100.110.3.253 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 18.418/18.418/18.418/0.000 ms
+
+[ok][2020-10-23 09:50:58]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:50:59,543 - Main - INFO - CMD>> : request devices device LYS001123 connect
+2020-10-23 10:51:02,547 - Main - INFO - request devices device LYS001123 connect
+result true
+info (smurugesan2) Connected to LYS001123 - 100.110.3.253:2022
+[ok][2020-10-23 09:51:02]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:51:02,548 - Main - INFO - CMD>> : request devices device LYS001123 check-sync
+2020-10-23 10:51:05,552 - Main - INFO - request devices device LYS001123 check-sync
+result in-sync
+[ok][2020-10-23 09:51:04]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:51:05,553 - Main - INFO - LYS001123 is in sync with VD & able to ping & connect
+2020-10-23 10:51:05,554 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:51:05,554 - Main - INFO - before_upgrade Actions for : QFC000514
+2020-10-23 10:51:05,555 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:51:05,555 - Main - INFO - CMD>> : request devices device QFC000514 ping
+2020-10-23 10:51:08,563 - Main - INFO - request devices device QFC000514 ping
+result PING 100.110.2.232 (100.110.2.232) 56(84) bytes of data.
+64 bytes from 100.110.2.232: icmp_seq=1 ttl=58 time=32.4 ms
+
+--- 100.110.2.232 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 32.462/32.462/32.462/0.000 ms
+
+[ok][2020-10-23 09:51:07]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:51:08,565 - Main - INFO - CMD>> : request devices device QFC000514 connect
+2020-10-23 10:51:11,571 - Main - INFO - request devices device QFC000514 connect
+result true
+info (smurugesan2) Connected to QFC000514 - 100.110.2.232:2022
+[ok][2020-10-23 09:51:11]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:51:11,571 - Main - INFO - CMD>> : request devices device QFC000514 check-sync
+2020-10-23 10:51:14,577 - Main - INFO - request devices device QFC000514 check-sync
+result in-sync
+[ok][2020-10-23 09:51:13]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:51:14,577 - Main - INFO - QFC000514 is in sync with VD & able to ping & connect
+2020-10-23 10:51:14,578 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:51:14,578 - Main - INFO - before_upgrade Actions for : STO031003
+2020-10-23 10:51:14,579 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:51:14,579 - Main - INFO - CMD>> : request devices device STO031003 ping
+2020-10-23 10:51:17,584 - Main - INFO - request devices device STO031003 ping
+result PING 100.110.2.21 (100.110.2.21) 56(84) bytes of data.
+64 bytes from 100.110.2.21: icmp_seq=1 ttl=58 time=36.6 ms
+
+--- 100.110.2.21 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 36.643/36.643/36.643/0.000 ms
+
+[ok][2020-10-23 09:51:16]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:51:17,586 - Main - INFO - CMD>> : request devices device STO031003 connect
+2020-10-23 10:51:20,592 - Main - INFO - request devices device STO031003 connect
+result true
+info (smurugesan2) Connected to STO031003 - 100.110.2.21:2022
+[ok][2020-10-23 09:51:20]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:51:20,592 - Main - INFO - CMD>> : request devices device STO031003 check-sync
+2020-10-23 10:51:23,598 - Main - INFO - request devices device STO031003 check-sync
+result in-sync
+[ok][2020-10-23 09:51:23]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:51:23,600 - Main - INFO - STO031003 is in sync with VD & able to ping & connect
+2020-10-23 10:51:23,602 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:51:23,602 - Main - INFO - before_upgrade Actions for : TUR000059
+2020-10-23 10:51:23,603 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:51:23,603 - Main - INFO - CMD>> : request devices device TUR000059 ping
+2020-10-23 10:51:26,608 - Main - INFO - request devices device TUR000059 ping
+result PING 100.110.2.186 (100.110.2.186) 56(84) bytes of data.
+64 bytes from 100.110.2.186: icmp_seq=1 ttl=58 time=66.2 ms
+
+--- 100.110.2.186 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 66.262/66.262/66.262/0.000 ms
+
+[ok][2020-10-23 09:51:25]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:51:26,609 - Main - INFO - CMD>> : request devices device TUR000059 connect
+2020-10-23 10:51:30,616 - Main - INFO - request devices device TUR000059 connect
+result true
+info (smurugesan2) Connected to TUR000059 - 100.110.2.186:2022
+[ok][2020-10-23 09:51:29]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:51:30,617 - Main - INFO - CMD>> : request devices device TUR000059 check-sync
+2020-10-23 10:51:33,623 - Main - INFO - request devices device TUR000059 check-sync
+result in-sync
+[ok][2020-10-23 09:51:33]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:51:33,625 - Main - INFO - TUR000059 is in sync with VD & able to ping & connect
+2020-10-23 10:51:33,626 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:51:33,626 - Main - INFO - before_upgrade Actions for : VIE000236
+2020-10-23 10:51:33,627 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:51:33,627 - Main - INFO - CMD>> : request devices device VIE000236 ping
+2020-10-23 10:51:36,633 - Main - INFO - request devices device VIE000236 ping
+result PING 100.110.2.57 (100.110.2.57) 56(84) bytes of data.
+64 bytes from 100.110.2.57: icmp_seq=1 ttl=58 time=27.6 ms
+
+--- 100.110.2.57 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 27.668/27.668/27.668/0.000 ms
+
+[ok][2020-10-23 09:51:35]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:51:36,633 - Main - INFO - CMD>> : request devices device VIE000236 connect
+2020-10-23 10:51:39,639 - Main - INFO - request devices device VIE000236 connect
+result true
+info (smurugesan2) Connected to VIE000236 - 100.110.2.57:2022
+[ok][2020-10-23 09:51:39]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:51:39,641 - Main - INFO - CMD>> : request devices device VIE000236 check-sync
+2020-10-23 10:51:42,647 - Main - INFO - request devices device VIE000236 check-sync
+result in-sync
+[ok][2020-10-23 09:51:42]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:51:42,648 - Main - INFO - VIE000236 is in sync with VD & able to ping & connect
+2020-10-23 10:51:42,650 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:51:42,651 - Main - INFO - before_upgrade Actions for : ZAF000035
+2020-10-23 10:51:42,651 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:51:42,652 - Main - INFO - CMD>> : request devices device ZAF000035 ping
+2020-10-23 10:51:45,657 - Main - INFO - request devices device ZAF000035 ping
+result PING 100.110.2.82 (100.110.2.82) 56(84) bytes of data.
+64 bytes from 100.110.2.82: icmp_seq=1 ttl=58 time=193 ms
+
+--- 100.110.2.82 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 193.369/193.369/193.369/0.000 ms
+
+[ok][2020-10-23 09:51:45]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:51:45,659 - Main - INFO - CMD>> : request devices device ZAF000035 connect
+2020-10-23 10:51:50,667 - Main - INFO - request devices device ZAF000035 connect
+result true
+info (smurugesan2) Connected to ZAF000035 - 100.110.2.82:2022
+[ok][2020-10-23 09:51:50]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:51:50,669 - Main - INFO - CMD>> : request devices device ZAF000035 check-sync
+2020-10-23 10:51:54,676 - Main - INFO - request devices device ZAF000035 check-sync
+result in-sync
+[ok][2020-10-23 09:51:54]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:51:54,677 - Main - INFO - ZAF000035 is in sync with VD & able to ping & connect
+2020-10-23 10:51:54,679 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:51:54,680 - Main - INFO - before_upgrade Actions for : ZGJ000022
+2020-10-23 10:51:54,680 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:51:54,681 - Main - INFO - CMD>> : request devices device ZGJ000022 ping
+2020-10-23 10:51:57,686 - Main - INFO - request devices device ZGJ000022 ping
+result PING 100.110.9.35 (100.110.9.35) 56(84) bytes of data.
+64 bytes from 100.110.9.35: icmp_seq=1 ttl=58 time=27.5 ms
+
+--- 100.110.9.35 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 27.521/27.521/27.521/0.000 ms
+
+[ok][2020-10-23 09:51:57]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:51:57,689 - Main - INFO - CMD>> : request devices device ZGJ000022 connect
+2020-10-23 10:52:00,694 - Main - INFO - request devices device ZGJ000022 connect
+result true
+info (smurugesan2) Connected to ZGJ000022 - 100.110.9.35:2022
+[ok][2020-10-23 09:52:00]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:00,696 - Main - INFO - CMD>> : request devices device ZGJ000022 check-sync
+2020-10-23 10:52:03,700 - Main - INFO - request devices device ZGJ000022 check-sync
+result in-sync
+[ok][2020-10-23 09:52:03]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:03,702 - Main - INFO - ZGJ000022 is in sync with VD & able to ping & connect
+2020-10-23 10:52:03,703 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:52:03,704 - Main - INFO - before_upgrade Actions for : BRU000317
+2020-10-23 10:52:03,704 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:52:03,704 - Main - INFO - CMD>> : request devices device BRU000317 ping
+2020-10-23 10:52:06,710 - Main - INFO - request devices device BRU000317 ping
+result PING 100.110.10.64 (100.110.10.64) 56(84) bytes of data.
+64 bytes from 100.110.10.64: icmp_seq=1 ttl=58 time=27.9 ms
+
+--- 100.110.10.64 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 27.927/27.927/27.927/0.000 ms
+
+[ok][2020-10-23 09:52:06]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:06,710 - Main - INFO - CMD>> : request devices device BRU000317 connect
+2020-10-23 10:52:09,716 - Main - INFO - request devices device BRU000317 connect
+result true
+info (smurugesan2) Connected to BRU000317 - 100.110.10.64:2022
+[ok][2020-10-23 09:52:09]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:09,717 - Main - INFO - CMD>> : request devices device BRU000317 check-sync
+2020-10-23 10:52:12,722 - Main - INFO - request devices device BRU000317 check-sync
+result in-sync
+[ok][2020-10-23 09:52:12]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:12,724 - Main - INFO - BRU000317 is in sync with VD & able to ping & connect
+2020-10-23 10:52:12,726 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:52:12,726 - Main - INFO - before_upgrade Actions for : GNE000402
+2020-10-23 10:52:12,727 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:52:12,727 - Main - INFO - CMD>> : request devices device GNE000402 ping
+2020-10-23 10:52:15,733 - Main - INFO - request devices device GNE000402 ping
+result PING 100.110.15.236 (100.110.15.236) 56(84) bytes of data.
+64 bytes from 100.110.15.236: icmp_seq=1 ttl=58 time=25.4 ms
+
+--- 100.110.15.236 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 25.473/25.473/25.473/0.000 ms
+
+[ok][2020-10-23 09:52:15]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:15,736 - Main - INFO - CMD>> : request devices device GNE000402 connect
+2020-10-23 10:52:18,742 - Main - INFO - request devices device GNE000402 connect
+result true
+info (smurugesan2) Connected to GNE000402 - 100.110.15.236:2022
+[ok][2020-10-23 09:52:18]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:18,743 - Main - INFO - CMD>> : request devices device GNE000402 check-sync
+2020-10-23 10:52:21,748 - Main - INFO - request devices device GNE000402 check-sync
+result in-sync
+[ok][2020-10-23 09:52:21]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:21,750 - Main - INFO - GNE000402 is in sync with VD & able to ping & connect
+2020-10-23 10:52:21,751 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:52:21,752 - Main - INFO - before_upgrade Actions for : LGG000902
+2020-10-23 10:52:21,752 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:52:21,753 - Main - INFO - CMD>> : request devices device LGG000902 ping
+2020-10-23 10:52:24,759 - Main - INFO - request devices device LGG000902 ping
+result PING 100.110.15.238 (100.110.15.238) 56(84) bytes of data.
+64 bytes from 100.110.15.238: icmp_seq=1 ttl=58 time=31.9 ms
+
+--- 100.110.15.238 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 31.985/31.985/31.985/0.000 ms
+
+[ok][2020-10-23 09:52:24]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:24,761 - Main - INFO - CMD>> : request devices device LGG000902 connect
+2020-10-23 10:52:27,767 - Main - INFO - request devices device LGG000902 connect
+result true
+info (smurugesan2) Connected to LGG000902 - 100.110.15.238:2022
+[ok][2020-10-23 09:52:27]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:27,768 - Main - INFO - CMD>> : request devices device LGG000902 check-sync
+2020-10-23 10:52:30,774 - Main - INFO - request devices device LGG000902 check-sync
+result in-sync
+[ok][2020-10-23 09:52:30]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:30,775 - Main - INFO - LGG000902 is in sync with VD & able to ping & connect
+2020-10-23 10:52:30,777 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:52:30,777 - Main - INFO - before_upgrade Actions for : LUX001010
+2020-10-23 10:52:30,777 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:52:30,778 - Main - INFO - CMD>> : request devices device LUX001010 ping
+2020-10-23 10:52:33,784 - Main - INFO - request devices device LUX001010 ping
+result PING 100.110.9.140 (100.110.9.140) 56(84) bytes of data.
+64 bytes from 100.110.9.140: icmp_seq=1 ttl=58 time=17.2 ms
+
+--- 100.110.9.140 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 17.222/17.222/17.222/0.000 ms
+
+[ok][2020-10-23 09:52:33]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:33,785 - Main - INFO - CMD>> : request devices device LUX001010 connect
+2020-10-23 10:52:36,791 - Main - INFO - request devices device LUX001010 connect
+result true
+info (smurugesan2) Connected to LUX001010 - 100.110.9.140:2022
+[ok][2020-10-23 09:52:36]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:36,792 - Main - INFO - CMD>> : request devices device LUX001010 check-sync
+2020-10-23 10:52:39,799 - Main - INFO - request devices device LUX001010 check-sync
+result in-sync
+[ok][2020-10-23 09:52:39]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:39,800 - Main - INFO - LUX001010 is in sync with VD & able to ping & connect
+2020-10-23 10:52:39,802 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:52:39,803 - Main - INFO - before_upgrade Actions for : QHA000628
+2020-10-23 10:52:39,803 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:52:39,803 - Main - INFO - CMD>> : request devices device QHA000628 ping
+2020-10-23 10:52:42,809 - Main - INFO - request devices device QHA000628 ping
+result PING 100.110.9.144 (100.110.9.144) 56(84) bytes of data.
+64 bytes from 100.110.9.144: icmp_seq=1 ttl=58 time=43.0 ms
+
+--- 100.110.9.144 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 43.007/43.007/43.007/0.000 ms
+
+[ok][2020-10-23 09:52:42]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:42,812 - Main - INFO - CMD>> : request devices device QHA000628 connect
+2020-10-23 10:52:46,818 - Main - INFO - request devices device QHA000628 connect
+result true
+info (smurugesan2) Connected to QHA000628 - 100.110.9.144:2022
+[ok][2020-10-23 09:52:46]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:46,819 - Main - INFO - CMD>> : request devices device QHA000628 check-sync
+2020-10-23 10:52:49,824 - Main - INFO - request devices device QHA000628 check-sync
+result in-sync
+[ok][2020-10-23 09:52:49]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:49,824 - Main - INFO - QHA000628 is in sync with VD & able to ping & connect
+2020-10-23 10:52:49,825 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:52:49,825 - Main - INFO - before_upgrade Actions for : QMO000090
+2020-10-23 10:52:49,826 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:52:49,826 - Main - INFO - CMD>> : request devices device QMO000090 ping
+2020-10-23 10:52:52,831 - Main - INFO - request devices device QMO000090 ping
+result PING 100.110.9.129 (100.110.9.129) 56(84) bytes of data.
+64 bytes from 100.110.9.129: icmp_seq=1 ttl=58 time=22.4 ms
+
+--- 100.110.9.129 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 22.454/22.454/22.454/0.000 ms
+
+[ok][2020-10-23 09:52:52]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:52,831 - Main - INFO - CMD>> : request devices device QMO000090 connect
+2020-10-23 10:52:55,836 - Main - INFO - request devices device QMO000090 connect
+result true
+info (smurugesan2) Connected to QMO000090 - 100.110.9.129:2022
+[ok][2020-10-23 09:52:55]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:55,837 - Main - INFO - CMD>> : request devices device QMO000090 check-sync
+2020-10-23 10:52:58,842 - Main - INFO - request devices device QMO000090 check-sync
+result in-sync
+[ok][2020-10-23 09:52:58]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:52:58,843 - Main - INFO - QMO000090 is in sync with VD & able to ping & connect
+2020-10-23 10:52:58,845 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:52:58,845 - Main - INFO - before_upgrade Actions for : QMO004857
+2020-10-23 10:52:58,846 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:52:58,846 - Main - INFO - CMD>> : request devices device QMO004857 ping
+2020-10-23 10:53:01,851 - Main - INFO - request devices device QMO004857 ping
+result PING 100.110.9.141 (100.110.9.141) 56(84) bytes of data.
+64 bytes from 100.110.9.141: icmp_seq=1 ttl=58 time=16.9 ms
+
+--- 100.110.9.141 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 16.985/16.985/16.985/0.000 ms
+
+[ok][2020-10-23 09:53:01]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:53:01,853 - Main - INFO - CMD>> : request devices device QMO004857 connect
+2020-10-23 10:53:04,859 - Main - INFO - request devices device QMO004857 connect
+result true
+info (smurugesan2) Connected to QMO004857 - 100.110.9.141:2022
+[ok][2020-10-23 09:53:04]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:53:04,860 - Main - INFO - CMD>> : request devices device QMO004857 check-sync
+2020-10-23 10:53:07,866 - Main - INFO - request devices device QMO004857 check-sync
+result in-sync
+[ok][2020-10-23 09:53:07]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:53:07,867 - Main - INFO - QMO004857 is in sync with VD & able to ping & connect
+2020-10-23 10:53:07,867 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:53:07,868 - Main - INFO - before_upgrade Actions for : QNM000090
+2020-10-23 10:53:07,868 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:53:07,868 - Main - INFO - CMD>> : request devices device QNM000090 ping
+2020-10-23 10:53:10,873 - Main - INFO - request devices device QNM000090 ping
+result PING 100.110.9.130 (100.110.9.130) 56(84) bytes of data.
+64 bytes from 100.110.9.130: icmp_seq=1 ttl=58 time=30.1 ms
+
+--- 100.110.9.130 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 30.140/30.140/30.140/0.000 ms
+
+[ok][2020-10-23 09:53:10]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:53:10,875 - Main - INFO - CMD>> : request devices device QNM000090 connect
+2020-10-23 10:53:13,881 - Main - INFO - request devices device QNM000090 connect
+result true
+info (smurugesan2) Connected to QNM000090 - 100.110.9.130:2022
+[ok][2020-10-23 09:53:13]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:53:13,882 - Main - INFO - CMD>> : request devices device QNM000090 check-sync
+2020-10-23 10:53:16,888 - Main - INFO - request devices device QNM000090 check-sync
+result in-sync
+[ok][2020-10-23 09:53:16]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:53:16,889 - Main - INFO - QNM000090 is in sync with VD & able to ping & connect
+2020-10-23 10:53:16,890 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:53:16,891 - Main - INFO - before_upgrade Actions for : ZGJ000065
+2020-10-23 10:53:16,891 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:53:16,892 - Main - INFO - CMD>> : request devices device ZGJ000065 ping
+2020-10-23 10:53:19,897 - Main - INFO - request devices device ZGJ000065 ping
+result PING 192.168.28.102 (192.168.28.102) 56(84) bytes of data.
+64 bytes from 192.168.28.102: icmp_seq=1 ttl=58 time=18.7 ms
+
+--- 192.168.28.102 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 18.714/18.714/18.714/0.000 ms
+
+[ok][2020-10-23 09:53:19]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:53:19,899 - Main - INFO - CMD>> : request devices device ZGJ000065 connect
+2020-10-23 10:53:22,904 - Main - INFO - request devices device ZGJ000065 connect
+result true
+info (smurugesan2) Connected to ZGJ000065 - 192.168.28.102:2022
+[ok][2020-10-23 09:53:22]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:53:22,906 - Main - INFO - CMD>> : request devices device ZGJ000065 check-sync
+2020-10-23 10:53:25,911 - Main - INFO - request devices device ZGJ000065 check-sync
+result in-sync
+[ok][2020-10-23 09:53:25]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:53:25,912 - Main - INFO - ZGJ000065 is in sync with VD & able to ping & connect
+2020-10-23 10:53:25,913 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:53:25,914 - Main - INFO - before_upgrade Actions for : MIL001844
+2020-10-23 10:53:25,914 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:53:25,915 - Main - INFO - CMD>> : request devices device MIL001844 ping
+2020-10-23 10:53:28,920 - Main - INFO - request devices device MIL001844 ping
+result PING 192.168.28.33 (192.168.28.33) 56(84) bytes of data.
+64 bytes from 192.168.28.33: icmp_seq=1 ttl=58 time=26.1 ms
+
+--- 192.168.28.33 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 26.125/26.125/26.125/0.000 ms
+
+[ok][2020-10-23 09:53:28]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:53:28,921 - Main - INFO - CMD>> : request devices device MIL001844 connect
+2020-10-23 10:53:31,926 - Main - INFO - request devices device MIL001844 connect
+result true
+info (smurugesan2) Connected to MIL001844 - 192.168.28.33:2022
+[ok][2020-10-23 09:53:31]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:53:31,927 - Main - INFO - CMD>> : request devices device MIL001844 check-sync
+2020-10-23 10:53:34,933 - Main - INFO - request devices device MIL001844 check-sync
+result in-sync
+[ok][2020-10-23 09:53:34]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:53:34,933 - Main - INFO - MIL001844 is in sync with VD & able to ping & connect
+2020-10-23 10:53:34,934 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:53:34,934 - Main - INFO - before_upgrade Actions for : VNF-V-SIN000136
+2020-10-23 10:53:34,935 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:53:34,935 - Main - INFO - CMD>> : request devices device VNF-V-SIN000136 ping
+2020-10-23 10:53:37,940 - Main - INFO - request devices device VNF-V-SIN000136 ping
+result PING 100.110.9.217 (100.110.9.217) 56(84) bytes of data.
+64 bytes from 100.110.9.217: icmp_seq=1 ttl=59 time=310 ms
+
+--- 100.110.9.217 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 310.992/310.992/310.992/0.000 ms
+
+[ok][2020-10-23 09:53:37]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:53:37,943 - Main - INFO - CMD>> : request devices device VNF-V-SIN000136 connect
+2020-10-23 10:53:43,954 - Main - INFO - request devices device VNF-V-SIN000136 connect
+result true
+info (smurugesan2) Connected to VNF-V-SIN000136 - 100.110.9.217:2022
+[ok][2020-10-23 09:53:43]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:53:43,956 - Main - INFO - CMD>> : request devices device VNF-V-SIN000136 check-sync
+2020-10-23 10:53:47,963 - Main - INFO - request devices device VNF-V-SIN000136 check-sync
+result in-sync
+[ok][2020-10-23 09:53:47]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:53:47,964 - Main - INFO - VNF-V-SIN000136 is in sync with VD & able to ping & connect
+2020-10-23 10:53:47,966 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:53:47,966 - Main - INFO - before_upgrade Actions for : BER000356
+2020-10-23 10:53:47,967 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-23 10:53:47,967 - Main - INFO - CMD>> : request devices device BER000356 ping
+2020-10-23 10:53:50,973 - Main - INFO - request devices device BER000356 ping
+result PING 100.110.8.225 (100.110.8.225) 56(84) bytes of data.
+64 bytes from 100.110.8.225: icmp_seq=1 ttl=58 time=33.7 ms
+
+--- 100.110.8.225 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 33.700/33.700/33.700/0.000 ms
+
+[ok][2020-10-23 09:53:50]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:53:50,975 - Main - INFO - CMD>> : request devices device BER000356 connect
+2020-10-23 10:53:53,980 - Main - INFO - request devices device BER000356 connect
+result true
+info (smurugesan2) Connected to BER000356 - 100.110.8.225:2022
+[ok][2020-10-23 09:53:53]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:53:53,981 - Main - INFO - CMD>> : request devices device BER000356 check-sync
+2020-10-23 10:53:56,986 - Main - INFO - request devices device BER000356 check-sync
+result in-sync
+[ok][2020-10-23 09:53:56]
+smurugesan2@NV-VD01-PGT> 
+2020-10-23 10:53:56,988 - Main - INFO - BER000356 is in sync with VD & able to ping & connect
+2020-10-23 10:54:19,549 - Main - INFO - 

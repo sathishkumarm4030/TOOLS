@@ -1,0 +1,29 @@
+2020-10-22 16:12:09,544 - Main - INFO - SCRIPT Started
+2020-10-22 16:12:09,545 - Main - INFO - Result  File : /opt/script/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.5.20.3_2020_10_22_16_12_09//RESULT.csv
+2020-10-22 16:12:09,545 - Main - INFO - LOG FILES Path: /opt/script/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.5.20.3_2020_10_22_16_12_09/
+2020-10-22 16:23:06,418 - Main - DEBUG - total batches : 1
+2020-10-22 16:23:06,420 - Main - DEBUG - batch List : [1]
+2020-10-22 16:23:06,427 - Main - DEBUG - DAY :1
+2020-10-22 16:23:06,428 - Main - DEBUG - Batch : 1
+2020-10-22 16:23:06,428 - Main - INFO - CPEs LIST:
+2020-10-22 16:23:06,429 - Main - INFO - AGF000022
+2020-10-22 16:23:09,488 - Main - DEBUG - 177329954
+2020-10-22 16:23:10,111 - Main - DEBUG - 906af0de887864ed7553260abc8f8459
+2020-10-22 16:23:10,111 - Main - DEBUG - Source File Checksum : 906af0de887864ed7553260abc8f8459
+2020-10-22 16:23:11,116 - Main - INFO - starting thread :Thread-1 For device AGF000022
+
+2020-10-22 16:23:11,117 - Main - DEBUG - CMD>> : rsync -v -e 'sshpass -p XXXXXX ssh -o StrictHostKeyChecking=no' /tmp/versa-flexvnf-osspack-20200917.bin smurugesan2@192.168.28.150:/home/versa/packages --progress; exit 0
+2020-10-22 16:23:19,458 - Main - DEBUG - versa-flexvnf-osspack-20200917.bin
+         13,312   0%    0.00kB/s    0:00:00      155,138,048  87%  147.94MB/s    0:00:00      177,329,954 100%  151.25MB/s    0:00:01 (xfr#1, to-chk=0/1)
+
+sent 53,397 bytes  received 93,293 bytes  17,257.65 bytes/sec
+total size is 177,329,954  speedup is 1,208.88
+
+2020-10-22 16:23:19,460 - Main - DEBUG - AGF000022 : file transfer Success
+2020-10-22 16:23:19,460 - Main - INFO - <<<<<Security patch execution RESULT>>>
+2020-10-22 16:23:19,461 - Main - INFO - 'cpe', 'filename', 'patch_upgrade_status'
+2020-10-22 16:23:19,461 - Main - INFO - ['AGF000022', 'versa-flexvnf-osspack-20200917.bin', 'File Transfer Success : Transfered size 177329954']
+2020-10-22 16:23:19,462 - Main - INFO - Time elapsed: 0:11:09.917843
+
+2020-10-22 16:23:19,463 - Main - INFO - Result Stored in /opt/script/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.5.20.3_2020_10_22_16_12_09//RESULT.csv
+2020-10-22 16:23:19,463 - Main - INFO - LOG FILES Path: /opt/script/TOOLS/SECURITY_UPLOAD_UPGRADE/LOGS/10.5.20.3_2020_10_22_16_12_09/

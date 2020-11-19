@@ -1,0 +1,27 @@
+2020-11-05 11:41:58,567 - NV-VNF-GW1-NYC - DEBUG - ls -ltr /home/versa/packages/fdc_r2s9_patch3.bin
+-rw-r-----+ 1 aaauser versa 32707 Nov  5 09:55 /home/versa/packages/fdc_r2s9_patch3.bin
+[scampost@NV-VNF-GW01-NYC ~] # 
+2020-11-05 11:41:58,567 - NV-VNF-GW1-NYC - INFO - NV-VNF-GW1-NYC file size: 32707
+2020-11-05 11:41:58,968 - NV-VNF-GW1-NYC - DEBUG - 859902a2f3221d835cdfffb0e63d2a4d  /home/versa/packages/fdc_r2s9_patch3.bin
+[scampost@NV-VNF-GW01-NYC ~] # 
+2020-11-05 11:41:58,968 - NV-VNF-GW1-NYC - DEBUG - NV-VNF-GW1-NYC File Checksum : 859902a2f3221d835cdfffb0e63d2a4d
+2020-11-05 11:42:00,370 - NV-VNF-GW1-NYC - DEBUG - [root@NV-VNF-GW01-NYC ~] # 
+2020-11-05 11:42:00,971 - NV-VNF-GW1-NYC - DEBUG - ec67DpAqYp: command not found
+[root@NV-VNF-GW01-NYC ~] # 
+2020-11-05 11:42:01,372 - NV-VNF-GW1-NYC - DEBUG - chmod a+x /home/versa/packages/fdc_r2s9_patch3.bin
+[root@NV-VNF-GW01-NYC ~] # 
+2020-11-05 11:42:01,773 - NV-VNF-GW1-NYC - DEBUG - exit
+[scampost@NV-VNF-GW01-NYC ~] # 
+2020-11-05 11:42:01,773 - NV-VNF-GW1-NYC - DEBUG - vnf patch execution Logfile : /tmp/packtrack_2020_11_05_11_01_06
+2020-11-05 11:42:01,773 - NV-VNF-GW1-NYC - DEBUG - sudo /home/versa/packages/fdc_r2s9_patch3.bin > /tmp/packtrack_2020_11_05_11_01_06 2>&1 &
+2020-11-05 11:42:02,207 - NV-VNF-GW1-NYC - DEBUG - &
+[1] 18766
+[scampost@NV-VNF-GW01-NYC ~] # 
+2020-11-05 11:42:07,612 - NV-VNF-GW1-NYC - DEBUG - ..............18766[1]+Donesudo/home/versa/packages/fdc_r2s9_patch3.bin>/tmp/packtrack_2020_11_05_11_01_062>&1[scampost@NV-VNF-GW01-NYC~]#..........
+2020-11-05 11:42:08,414 - NV-VNF-GW1-NYC - DEBUG - cat /tmp/packtrack_2020_11_05_11_01_06
+Verifying archive integrity... All good.
+Uncompressing Versa DPDK Unbind fix (with wsm check)     0%    78%  100%  
+Installing..
+Checking...
+Done
+[scampost@NV-VNF-GW01-NYC ~] # 

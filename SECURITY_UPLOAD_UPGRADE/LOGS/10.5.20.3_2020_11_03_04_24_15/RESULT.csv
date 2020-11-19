@@ -1,0 +1,607 @@
+cpe,filename,file_upload
+AMS000718,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+AMS000126,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+AMS000208,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+AMS009998,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+AMS000206,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+AMS000603,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+AMS000894,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BCN000885,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BCN000041,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BCN000042,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BCN000902,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BCN000389,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BCN000348,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BCN000363,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BCN000015,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BCN001125,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BCN000949,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BCN001378,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BCN000932,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BCN000920,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BCN007999,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BCN004315,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BCN000928,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BER000996,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:0quo+/jKTewCsEzl7b2jPL+cjhQymtrHOff479fxI7c.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:106
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 192.168.28.225
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+BER000010,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BER000439,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BER005236,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BER004896,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:0quo+/jKTewCsEzl7b2jPL+cjhQymtrHOff479fxI7c.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:106
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 192.168.28.225
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+BER000064,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BER000081,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BCN059084,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BER000067,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BCN008749,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BRS000074,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BER009767,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BER009768,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BRU000006,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BRU000007,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BRS001104,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BHX000505,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BHX000900,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BHX000368,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BRU001160,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BRU000045,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:0ay/ABo9kqG6KsmPZhQPybbG2bZCG5Tl6T2LtljNyO4.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:745
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 100.110.9.86
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+BRU001199,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BRU000146,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:unWnjutZlT7PInHmUA9TIUDxN8db8vybipgGjwvjF8E.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:930
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 100.110.9.135
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+BRU000016,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BRU000105,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BRU000927,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BRU000108,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BRU000924,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BRU001942,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:MzJGwO27yXdl/GhzFKWcvjEj1LK7Ot/cHZ3mTD0VtL4.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /root/.ssh/known_hosts:127
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 100.110.3.185
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+BRU009092,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BRU001954,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BRU009495,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BRU009496,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BRU001738,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BSL002655,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+BRU001724,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:9AaBK9YrcjolSOQZ064yLUDMi0g4eNptNLyuOVg20x4.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:128
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 100.110.3.186
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+DUB001010,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+DUB000605,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+CGN000282,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+CGN000803,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+CES000915,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+DUS000095,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+CNO000500,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+CNO000079,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+CES024530,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+CES000259,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+EAN000090,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+FRA000312,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+DUS000161,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+EAN000064,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+FRA000276,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+EAN000150,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+EAN000185,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+EAN002729,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+ESS00881,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+EAN000181,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+GER005079,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+FRA000971,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+GER004948,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+FRA000724,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+GER003463,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+GER000291,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+GER003634,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:PAhQIqNQ9d2mvz+JtX0jLZZcHsc78PCEaRcwbTk9R1k.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:794
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 100.110.8.175
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+GER003980,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+GER000546,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+GER005056,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+GER005083,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+GNE024545,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+GER005131,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+GER006624,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:kQFzdh0teWdozBZNPMaElL2Mt3/jQOoQvvGnRrjXhbs.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:252
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 192.168.28.203
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+GNE005413,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+GER007256,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+GNE000408,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+GER005245,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+GNE000406,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+GER007777,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+HAM000436,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:P+m2o01s6b7VhEUd49O1qSnFASxr+1Ee6sI41hHCmL8.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:276
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 192.168.28.180
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+HAM000468,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:toIkL6c0jMWFFI84ccazC2Zl8bbtIwv2FJ9yMYhqf0g.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:283
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 100.110.3.155
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+HAM000902,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:JV5qD+6vk/33VuLK8pxNFNqEUoqNquSk8bm+BjoVYvU.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:280
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 100.110.3.183
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+HAM000440,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+HAJ000410,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+HAM000512,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+HAM001128,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+HAM005888,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+HAJ000433,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+HAM002990,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LIS000984,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LIS001260,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LON000106,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+HUN000064,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LDS000051,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LIS004682,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LDS000011,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+HUN000011,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LON000167,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LIS000205,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LON003944,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LON000970,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LON007789,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LON000473,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LON00855,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LON002223,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LON003653,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LON006363,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LON009102,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LON000597,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LUX000091,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+MAD000609,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LYS000400,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LUX000222,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+MAD000292,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+MAD000549,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LYS005415,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LON009972,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LON009568,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+LON009929,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+MRU000200,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+MIL001371,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+MAD002202,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+MUC000410,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+MSR000020,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+MAD003600,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+MRU000365,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+MIL001332,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+MHG002202,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+MSR000945,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+MUC001172,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NEA000198,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NLD000950,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+MUC002895,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+MUC002894,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NEA000086,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+MUC000957,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+MUC000967,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,"File Transfer Failed : ssh: connect to host 100.110.8.57 port 22: Connection timed out
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+MUC000630,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NLD000902,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NUE000202,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:MJo6Hg2waOeNjvAZBd9oB5YOndLCVdL2JXVXPqOw2e0.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:409
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 192.168.28.224
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+NLD000955,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NLD000956,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NUE000032,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NOR000202,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NOR000200,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NOW000354,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NUE000015,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NOW000302,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NOW000304,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-CGW1-XBT,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-CGW5-XBT,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-CGW2-FRA,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-CGW3-FRA,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-CGW4-XBT,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-CGW4-FRA,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-CGW2-XBT,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-CGW1-FRA,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-CGW3-XBT,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-CGW5-FRA,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-CGW7-XBT,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-CGW6-XBT,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-FW01-BRU,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-FW01-MAD,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-CGW6-FRA,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-CGW8-XBT,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-FW01-XBT,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-FW01-FRA,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-CGW7-FRA,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-CGW8-FRA,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-GW1-BRU,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-GW1-SIN,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-FW02-XBT,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-FW02-FRA,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-GW1-HKG,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-GW1-NYC,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:tyDN5e7VA4wAwASnr/F4atHV0Hqbf13EqMsUTZT0ve8.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /root/.ssh/known_hosts:17
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 10.63.4.100
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+NV-VNF-FW02-BRU,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-GW1-FRA,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-FW02-MAD,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-GW1-MAD,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-GW2-FRA,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-GW2-TYO,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-GW2-SIN,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-GW1-TYO,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-GW2-NYC,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-GW1-XBT,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-GW2-HKG,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-GW2-BRU,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-GW2-MAD,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-VNF-GW2-XBT,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-WC1-TYO,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-WC1-HKG,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-WC2-BRU,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-WC1-FRA,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-WC1-NYC,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-WC2-FRA,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-WC1-XBT,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-WC1-MAD,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-WC1-BRU,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-WC1-SIN,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+PAR002703,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+PAR000965,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-WC2-HKG,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-WC2-XBT,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-WC2-TYO,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+PAR000155,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-WC2-MAD,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+NV-WC2-NYC,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:aiLk3dKz2AITMff9vZlJRKZbSWeLOvIc/Aflfet8jp8.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /root/.ssh/known_hosts:18
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 10.63.4.103
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+NV-WC2-SIN,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+PAR003163,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+PAR006923,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+QVA000051,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+PRT021310,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+POX000600,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+PUF000049,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+PAR003602,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+PUF000200,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+QHA000135,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+POX000514,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+QHA000035,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+QVA000064,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+QWU000029,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+RDG003641,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+ROM000607,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+QWU000051,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+RDG000206,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+RDG000204,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+RDG003649,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+ROM000661,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+RTM000005,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SCO000606,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SCN000046,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:IdPwo9MHPPibqI2W1O9aSprGiGie/V+hfEFSVAdx0IE.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:535
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 192.168.28.204
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+SCO000204,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SCO000047,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SCO000900,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SCO000353,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SCO000354,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+RTM000305,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SCO000424,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SCO000445,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SIN000007,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SIN000400,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SIN000129,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SIN000090,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SIN000345,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SIN000108,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SIN000079,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SIN000082,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SIN000113,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SIN000080,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+STO000325,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SOW000027,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SOE000168,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SOW000020,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+STO000910,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SOE000149,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SUI000020,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SOE000420,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SIN003463,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+STO000087,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SUI000072,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+UWP000023,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+UWE000030,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SUI000902,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SUI000233,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:A4mj/UhoJ+A5z8iH7tp3lVu2Y3cBFeG3oXdCG/3kxwc.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:571
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 100.110.3.113
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+SUI000964,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+WAL000550,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+VNF-V-SIN000136,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:Bcft1Fb/2ftL/aRPEdfHS7PjaoMZ1XOfhZF6KjsaDd0.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:886
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 100.110.9.217
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+SUI000288,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+SUI009435,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+XBG000020,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+XBT008985,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+XBT000083,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+ZAZ000021,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+WAL000551,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+ZRH000903,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+XBT002346,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799
+ZAZ000008,versa-flexvnf-20200606-211353-63668a2-20.2.2.bin,File Transfer Success : Transfered size 651397799

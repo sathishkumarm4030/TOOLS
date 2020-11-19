@@ -1,0 +1,27 @@
+2020-11-05 11:46:04,191 - QLS000102 - DEBUG - ls -ltr /home/versa/packages/fdc_r2s9_patch3.bin
+-rw-r-----+ 1 aaauser versa 32707 Nov  5 08:44 /home/versa/packages/fdc_r2s9_patch3.bin
+[scampost@QLS000102 ~] # 
+2020-11-05 11:46:04,191 - QLS000102 - INFO - QLS000102 file size: 32707
+2020-11-05 11:46:04,592 - QLS000102 - DEBUG - 859902a2f3221d835cdfffb0e63d2a4d  /home/versa/packages/fdc_r2s9_patch3.bin
+[scampost@QLS000102 ~] # 
+2020-11-05 11:46:04,592 - QLS000102 - DEBUG - QLS000102 File Checksum : 859902a2f3221d835cdfffb0e63d2a4d
+2020-11-05 11:46:05,994 - QLS000102 - DEBUG - [root@QLS000102 ~] # 
+2020-11-05 11:46:06,996 - QLS000102 - DEBUG - ec67DpAqYp: command not found
+[root@QLS000102 ~] # 
+2020-11-05 11:46:07,396 - QLS000102 - DEBUG - chmod a+x /home/versa/packages/fdc_r2s9_patch3.bin
+[root@QLS000102 ~] # 
+2020-11-05 11:46:07,797 - QLS000102 - DEBUG - exit
+[scampost@QLS000102 ~] # 
+2020-11-05 11:46:07,797 - QLS000102 - DEBUG - vnf patch execution Logfile : /tmp/packtrack_2020_11_05_11_01_06
+2020-11-05 11:46:07,797 - QLS000102 - DEBUG - sudo /home/versa/packages/fdc_r2s9_patch3.bin > /tmp/packtrack_2020_11_05_11_01_06 2>&1 &
+2020-11-05 11:46:08,198 - QLS000102 - DEBUG - &
+[1] 12857
+[scampost@QLS000102 ~] # 
+2020-11-05 11:46:13,601 - QLS000102 - DEBUG - ..............12857[1]+Donesudo/home/versa/packages/fdc_r2s9_patch3.bin>/tmp/packtrack_2020_11_05_11_01_062>&1[scampost@QLS000102~]#..........
+2020-11-05 11:46:14,402 - QLS000102 - DEBUG - cat /tmp/packtrack_2020_11_05_11_01_06
+Verifying archive integrity... All good.
+Uncompressing Versa DPDK Unbind fix (with wsm check)     0%    78%  100%  
+Installing..
+Checking...
+Done
+[scampost@QLS000102 ~] # 

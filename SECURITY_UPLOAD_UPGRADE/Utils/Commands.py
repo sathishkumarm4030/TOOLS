@@ -331,7 +331,7 @@ def get_device_list(oper_type='patch_upgrade'):
                 if count%15 == 0:
                     batch += 1
             else:
-                if count%11 == 0:
+                if count%31 == 0:
                     batch += 1
             device_list.append(i['name'])
             device_list.append(i['ipAddress'])
@@ -778,14 +778,14 @@ def Modify_vshell_file():
             main_logger.info("starting thread :" + str(th.name) + " For device " + th._Thread__args[0] + "\n")
             # print "DEVICE NAME: " + th._Thread__args[0]
             th.start()
-
+	    time.sleep(2)
         print threading.activeCount()
 
         for th in threads:
             th.join()
 
-        for th in threads:
-            th.exit()
+        #for th in threads:
+            #th.exit()
 
         print threading.activeCount()
             # thrd_objs.start()
@@ -793,11 +793,12 @@ def Modify_vshell_file():
             # thrd_objs.join()
             # thread.start_new_thread(run_thread_for_upgrade, (cpe_name, dev_dict, i))
             # print " starting thread for " + str(i)
-    except:
-        main_logger.info("Error: unable to start Thread")
+    #except:
+        #main_logger.info("Error: unable to start Thread")
         # sec_result = run_thread_for_upgrade(cpe_name, dev_dict, i)
         # device_report[cpe_name] += [sec_result]
-
+    except Exception as e:
+            main_logger.info("Error: unable to start thread : Exception >>> "+ str(e))
     main_logger.info("<<<<<Vshell modfication result RESULT>>>")
     main_logger.info("'cpe', 'filename', 'Vshell modification'")
     for dev, sec_patch_result in device_report.iteritems():
@@ -841,14 +842,14 @@ def sec_patch_upgrade_devices():
             main_logger.info("starting thread :" + str(th.name) + " For device " + th._Thread__args[0] + "\n")
             # print "DEVICE NAME: " + th._Thread__args[0]
             th.start()
-
+	    time.sleep(2)
         #print threading.activeCount()
 
         for th in threads:
             th.join()
 
-        for th in threads:
-            th.exit()
+        #for th in threads:
+            #th.exit()
 
         #print threading.activeCount()
             # thrd_objs.start()
@@ -856,11 +857,12 @@ def sec_patch_upgrade_devices():
             # thrd_objs.join()
             # thread.start_new_thread(run_thread_for_upgrade, (cpe_name, dev_dict, i))
             # print " starting thread for " + str(i)
-    except:
-        main_logger.debug("Error: unable to start ")
+    #except:
+        #main_logger.debug("Error: unable to start ")
         # sec_result = run_thread_for_upgrade(cpe_name, dev_dict, i)
         # device_report[cpe_name] += [sec_result]
-
+    except Exception as e:
+            main_logger.info("Error: unable to start thread : Exception >>> "+ str(e))
     main_logger.info("<<<<<Security patch execution RESULT>>>")
     main_logger.info("'cpe', 'filename', 'patch_upgrade_status'")
     for dev, sec_patch_result in device_report.iteritems():
@@ -900,17 +902,19 @@ def sec_package_upgrade_devices(sec_pkg_vers_number):
             main_logger.info("starting thread :" + str(th.name) + " For device " + th._Thread__args[0] + "\n")
             # print "DEVICE NAME: " + th._Thread__args[0]
             th.start()
-
+            time.sleep(2)
         #print threading.activeCount()
 
         for th in threads:
             th.join()
 
-        for th in threads:
-            th.exit()
-    except:
+        #for th in threads:
+            #th.exit()
+    #except:
         # main_logger.debug("Error: unable to start Thread for " + cpe_name)
-        main_logger.debug("CPENAME:>>" + cpe_name)
+        #main_logger.debug("CPENAME:>>" + cpe_name)
+    except Exception as e:
+        main_logger.info("Error: unable to start thread : Exception >>> "+ str(e))
     main_logger.info("<<<<<Security package execution RESULT>>>")
     main_logger.info("'cpe', 'filename', 'package_upgrade_status'")
     for dev, sec_patch_result in device_report.iteritems():
@@ -958,18 +962,20 @@ def package_upload_to_devices():
             main_logger.info("starting thread :" + str(th.name) + " For device " + th._Thread__args[1] + "\n")
             # print "DEVICE NAME: " + th._Thread__args[0]
             th.start()
+	    time.sleep(2)
         #print threading.activeCount()
 
         for th in threads:
             th.join()
 
-        for th in threads:
-            th.exit()
-    except:
-            main_logger.debug("Error: unable to start ")
+        #for th in threads:
+            #th.exit()
+    #except:
+            #main_logger.debug("Error: unable to start ")
             # sec_result = run_thread_for_upgrade(cpe_name, dev_dict, i)
             # device_report[cpe_name] += [sec_result]
-
+    except Exception as e:
+            main_logger.info("Error: unable to start thread : Exception >>> "+ str(e))
     main_logger.info("<<<<<Security patch execution RESULT>>>")
     main_logger.info("'cpe', 'filename', 'patch_upgrade_status'")
     for dev, sec_patch_result in device_report.iteritems():
@@ -1181,14 +1187,14 @@ def flexvnf_patch_upgrade_devices():
             main_logger.info("starting thread :" + str(th.name) + " For device " + th._Thread__args[0] + "\n")
             # print "DEVICE NAME: " + th._Thread__args[0]
             th.start()
-
+	    time.sleep(2)
         #print threading.activeCount()
 
         for th in threads:
             th.join()
 
-        for th in threads:
-            th.exit()
+        #for th in threads:
+            #th.exit()
 
         #print threading.activeCount()
             # thrd_objs.start()
@@ -1196,11 +1202,12 @@ def flexvnf_patch_upgrade_devices():
             # thrd_objs.join()
             # thread.start_new_thread(run_thread_for_upgrade, (cpe_name, dev_dict, i))
             # print " starting thread for " + str(i)
-    except:
-        main_logger.debug("Error: unable to start ")
+    #except:
+        #main_logger.debug("Error: unable to start ")
         # sec_result = run_thread_for_upgrade(cpe_name, dev_dict, i)
         # device_report[cpe_name] += [sec_result]
-
+    except Exception as e:
+            main_logger.info("Error: unable to start thread : Exception >>> "+ str(e))
     main_logger.info("<<<<<patch execution RESULT>>>")
     main_logger.info("'cpe', 'filename', 'patch_upgrade_status'")
     for dev, sec_patch_result in device_report.iteritems():

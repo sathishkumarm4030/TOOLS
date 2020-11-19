@@ -1,0 +1,23 @@
+2020-11-05 11:15:10,616 - BWE000030 - DEBUG - ls -ltr /home/versa/packages/fdc_r2s9_patch3.bin
+-rw-r-----+ 1 aaauser versa 32707 Nov  5 08:18 /home/versa/packages/fdc_r2s9_patch3.bin
+[scampost@BWE000030 ~] # 
+2020-11-05 11:15:10,616 - BWE000030 - INFO - BWE000030 file size: 32707
+2020-11-05 11:15:11,017 - BWE000030 - DEBUG - 859902a2f3221d835cdfffb0e63d2a4d  /home/versa/packages/fdc_r2s9_patch3.bin
+[scampost@BWE000030 ~] # 
+2020-11-05 11:15:11,017 - BWE000030 - DEBUG - BWE000030 File Checksum : 859902a2f3221d835cdfffb0e63d2a4d
+2020-11-05 11:15:22,449 - BWE000030 - DEBUG - sudo: unable to resolve host BWE000030
+
+2020-11-05 11:15:23,451 - BWE000030 - DEBUG - ec67DpAqYp: command not found
+[root@BWE000030 ~] # 
+2020-11-05 11:15:23,852 - BWE000030 - DEBUG - chmod a+x /home/versa/packages/fdc_r2s9_patch3.bin
+[root@BWE000030 ~] # 
+2020-11-05 11:15:24,253 - BWE000030 - DEBUG - exit
+[scampost@BWE000030 ~] # 
+2020-11-05 11:15:24,253 - BWE000030 - DEBUG - vnf patch execution Logfile : /tmp/packtrack_2020_11_05_11_01_06
+2020-11-05 11:15:24,253 - BWE000030 - DEBUG - sudo /home/versa/packages/fdc_r2s9_patch3.bin > /tmp/packtrack_2020_11_05_11_01_06 2>&1 &
+2020-11-05 11:15:24,653 - BWE000030 - DEBUG - &
+[1] 23677
+[scampost@BWE000030 ~] # 
+2020-11-05 11:15:30,055 - BWE000030 - DEBUG - ..............23677[scampost@BWE000030~]#..........
+2020-11-05 11:15:30,875 - BWE000030 - DEBUG - cat /tmp/packtrack_2020_11_05_11_01_06
+[scampost@BWE000030 ~] # 

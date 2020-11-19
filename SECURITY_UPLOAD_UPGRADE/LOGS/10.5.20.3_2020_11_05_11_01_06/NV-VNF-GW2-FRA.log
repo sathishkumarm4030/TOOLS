@@ -1,0 +1,27 @@
+2020-11-05 11:42:07,829 - NV-VNF-GW2-FRA - DEBUG - ls -ltr /home/versa/packages/fdc_r2s9_patch3.bin
+-rw-r-----+ 1 aaauser versa 32707 Nov  5 08:41 /home/versa/packages/fdc_r2s9_patch3.bin
+[scampost@NV-VNF-GW02-FRA ~] # 
+2020-11-05 11:42:07,829 - NV-VNF-GW2-FRA - INFO - NV-VNF-GW2-FRA file size: 32707
+2020-11-05 11:42:08,230 - NV-VNF-GW2-FRA - DEBUG - 859902a2f3221d835cdfffb0e63d2a4d  /home/versa/packages/fdc_r2s9_patch3.bin
+[scampost@NV-VNF-GW02-FRA ~] # 
+2020-11-05 11:42:08,230 - NV-VNF-GW2-FRA - DEBUG - NV-VNF-GW2-FRA File Checksum : 859902a2f3221d835cdfffb0e63d2a4d
+2020-11-05 11:42:09,632 - NV-VNF-GW2-FRA - DEBUG - [root@NV-VNF-GW02-FRA ~] # 
+2020-11-05 11:42:10,233 - NV-VNF-GW2-FRA - DEBUG - ec67DpAqYp: command not found
+[root@NV-VNF-GW02-FRA ~] # 
+2020-11-05 11:42:10,633 - NV-VNF-GW2-FRA - DEBUG - chmod a+x /home/versa/packages/fdc_r2s9_patch3.bin
+[root@NV-VNF-GW02-FRA ~] # 
+2020-11-05 11:42:11,034 - NV-VNF-GW2-FRA - DEBUG - exit
+[scampost@NV-VNF-GW02-FRA ~] # 
+2020-11-05 11:42:11,034 - NV-VNF-GW2-FRA - DEBUG - vnf patch execution Logfile : /tmp/packtrack_2020_11_05_11_01_06
+2020-11-05 11:42:11,034 - NV-VNF-GW2-FRA - DEBUG - sudo /home/versa/packages/fdc_r2s9_patch3.bin > /tmp/packtrack_2020_11_05_11_01_06 2>&1 &
+2020-11-05 11:42:11,435 - NV-VNF-GW2-FRA - DEBUG - &
+[1] 15190
+[scampost@NV-VNF-GW02-FRA ~] # 
+2020-11-05 11:42:16,841 - NV-VNF-GW2-FRA - DEBUG - ..............15190[1]+Donesudo/home/versa/packages/fdc_r2s9_patch3.bin>/tmp/packtrack_2020_11_05_11_01_062>&1[scampost@NV-VNF-GW02-FRA~]#..........
+2020-11-05 11:42:17,642 - NV-VNF-GW2-FRA - DEBUG - cat /tmp/packtrack_2020_11_05_11_01_06
+Verifying archive integrity... All good.
+Uncompressing Versa DPDK Unbind fix (with wsm check)     0%    78%  100%  
+Installing..
+Checking...
+Done
+[scampost@NV-VNF-GW02-FRA ~] # 

@@ -1,0 +1,12 @@
+2020-09-23 13:14:13,071 - Main - INFO - SCRIPT Started
+2020-09-23 13:14:35,309 - Main - INFO - 
+2020-09-23 13:14:41,318 - Main - DEBUG - versa: smurugesan2@NV-VD01-PGT>
+2020-09-23 13:14:41,319 - Main - DEBUG - <netmiko.versa.versa_ssh.VersaSSH object at 0x7f7e2a8bd290> connection opened
+2020-09-23 13:14:46,328 - Main - INFO - show configuration devices device * state admin-state |  match southbound-locked | display set | except ScratchPad | except DataStore |  nomore
+[ok][2020-09-23 12:14:45]
+smurugesan2@NV-VD01-PGT> 
+2020-09-23 13:14:46,440 - Main - INFO - SCRIPT Ended
+2020-09-23 13:14:46,441 - Main - INFO - Time elapsed: 0:00:33.369596
+
+2020-09-23 13:14:46,441 - Main - INFO - LOG FILE Path: /opt/script/TOOLS/SOUTH_BOUND_LOCKED_DEVICES/LOGS/10.5.20.3_2020_09_23_13_14_13_070439/
+2020-09-23 13:14:46,442 - Main - INFO - RECORD File: /opt/script/TOOLS/SOUTH_BOUND_LOCKED_DEVICES/09_2020_southboundlocked.xlsx

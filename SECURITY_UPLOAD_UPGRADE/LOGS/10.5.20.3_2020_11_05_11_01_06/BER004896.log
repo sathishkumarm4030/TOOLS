@@ -1,0 +1,28 @@
+2020-11-05 11:12:00,943 - BER004896 - DEBUG - ls -ltr /home/versa/packages/fdc_r2s9_patch3.bin
+-rw-r-----+ 1 aaauser versa 32707 Nov  5 09:59 /home/versa/packages/fdc_r2s9_patch3.bin
+[scampost@BER000996 ~] # 
+2020-11-05 11:12:00,944 - BER004896 - INFO - BER004896 file size: 32707
+2020-11-05 11:12:01,344 - BER004896 - DEBUG - 859902a2f3221d835cdfffb0e63d2a4d  /home/versa/packages/fdc_r2s9_patch3.bin
+[scampost@BER000996 ~] # 
+2020-11-05 11:12:01,345 - BER004896 - DEBUG - BER004896 File Checksum : 859902a2f3221d835cdfffb0e63d2a4d
+2020-11-05 11:12:02,746 - BER004896 - DEBUG - [root@BER000996 ~] # 
+2020-11-05 11:12:03,150 - BER004896 - DEBUG - ec67DpAqYp: command not found
+[root@BER000996 ~] # 
+2020-11-05 11:12:03,551 - BER004896 - DEBUG - chmod a+x /home/versa/packages/fdc_r2s9_patch3.bin
+[root@BER000996 ~] # 
+2020-11-05 11:12:03,952 - BER004896 - DEBUG - exit
+[scampost@BER000996 ~] # 
+2020-11-05 11:12:03,952 - BER004896 - DEBUG - vnf patch execution Logfile : /tmp/packtrack_2020_11_05_11_01_06
+2020-11-05 11:12:03,952 - BER004896 - DEBUG - sudo /home/versa/packages/fdc_r2s9_patch3.bin > /tmp/packtrack_2020_11_05_11_01_06 2>&1 &
+2020-11-05 11:12:04,367 - BER004896 - DEBUG - &
+[1] 22566
+-bash: /tmp/packtrack_2020_11_05_11_01_06: cannot overwrite existing file
+[scampost@BER000996 ~] # 
+2020-11-05 11:12:09,773 - BER004896 - DEBUG - ..............22566[1]+Exit1sudo/home/versa/packages/fdc_r2s9_patch3.bin>/tmp/packtrack_2020_11_05_11_01_062>&1[scampost@BER000996~]#..........
+2020-11-05 11:12:10,578 - BER004896 - DEBUG - cat /tmp/packtrack_2020_11_05_11_01_06
+Verifying archive integrity... All good.
+Uncompressing Versa DPDK Unbind fix (with wsm check)     0%    78%  100%  
+Installing..
+Checking...
+Done
+[scampost@BER000996 ~] # 

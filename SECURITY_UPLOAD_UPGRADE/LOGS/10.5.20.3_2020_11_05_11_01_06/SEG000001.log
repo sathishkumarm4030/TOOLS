@@ -1,0 +1,6 @@
+2020-11-05 11:48:33,677 - SEG000001 - DEBUG - ls -ltr /home/versa/packages/fdc_r2s9_patch3.bin
+ls: cannot access /home/versa/packages/fdc_r2s9_patch3.bin: No such file or directory
+[scampost@SEG000001 ~] # 
+2020-11-05 11:48:33,678 - SEG000001 - INFO - SEG000001 : ls -ltr /home/versa/packages/fdc_r2s9_patch3.bin
+ls: cannot access /home/versa/packages/fdc_r2s9_patch3.bin: No such file or directory
+[scampost@SEG000001 ~] # 

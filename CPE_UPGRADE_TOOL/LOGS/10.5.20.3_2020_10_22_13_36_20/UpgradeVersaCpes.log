@@ -1,0 +1,138 @@
+2020-10-22 13:36:20,893 - Main - INFO - SCRIPT Started
+2020-10-22 13:36:20,894 - Main - INFO - Result  File : /opt/script/TOOLS/CPE_UPGRADE_TOOL/LOGS/10.5.20.3_2020_10_22_13_36_20//RESULT.csv
+2020-10-22 13:36:20,894 - Main - INFO - LOG FILES Path: /opt/script/TOOLS/CPE_UPGRADE_TOOL/LOGS/10.5.20.3_2020_10_22_13_36_20/
+2020-10-22 13:44:56,475 - Main - INFO - DAY :1
+2020-10-22 13:44:56,476 - Main - INFO - Batch : 1
+2020-10-22 13:44:56,476 - Main - INFO - BELOW ARE THE CPEs going for Upgrade:
+2020-10-22 13:44:56,477 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-22 13:44:56,479 - Main - INFO - AGF000022
+2020-10-22 13:44:56,479 - Main - INFO - AGP000094
+2020-10-22 13:44:56,480 - Main - INFO - AMS000089
+2020-10-22 13:44:56,481 - Main - INFO - AMS000095
+2020-10-22 13:44:56,482 - Main - INFO - AMS000099
+2020-10-22 13:44:56,482 - Main - INFO - AMS000118
+2020-10-22 13:44:56,483 - Main - INFO - AMS000126
+2020-10-22 13:44:56,484 - Main - INFO - AMS000170
+2020-10-22 13:44:56,485 - Main - INFO - AMS000206
+2020-10-22 13:44:56,485 - Main - INFO - AMS000208
+2020-10-22 13:44:56,486 - Main - INFO - AMS000342
+2020-10-22 13:44:56,487 - Main - INFO - AMS000344
+2020-10-22 13:44:56,487 - Main - INFO - AMS000603
+2020-10-22 13:44:56,488 - Main - INFO - AMS000631
+2020-10-22 13:44:56,489 - Main - INFO - AMS000718
+2020-10-22 13:44:56,489 - Main - INFO - AMS000832
+2020-10-22 13:44:56,490 - Main - INFO - AMS000894
+2020-10-22 13:44:56,491 - Main - INFO - AMS001320
+2020-10-22 13:44:56,491 - Main - INFO - AMS004633
+2020-10-22 13:44:56,492 - Main - INFO - AMS009998
+2020-10-22 13:44:56,493 - Main - INFO - ANE000031
+2020-10-22 13:44:56,494 - Main - INFO - ANG000013
+2020-10-22 13:44:56,494 - Main - INFO - ANG000014
+2020-10-22 13:44:56,495 - Main - INFO - ANG000025
+2020-10-22 13:44:56,496 - Main - INFO - ANR000009
+2020-10-22 13:44:56,497 - Main - INFO - ANR000090
+2020-10-22 13:44:56,497 - Main - INFO - ANR000097
+2020-10-22 13:44:56,498 - Main - INFO - ANR000170
+2020-10-22 13:44:56,499 - Main - INFO - ANR000304
+2020-10-22 13:44:56,499 - Main - INFO - ANR000498
+2020-10-22 13:44:56,500 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-22 13:45:19,932 - Main - INFO - 
+2020-10-22 13:45:25,941 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-22 13:45:25,942 - Main - INFO - before_upgrade Actions for : AGF000022
+2020-10-22 13:45:25,942 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-22 13:45:25,942 - Main - INFO - CMD>> : request devices device AGF000022 ping
+2020-10-22 13:45:28,947 - Main - INFO - request devices device AGF000022 ping
+result PING 192.168.28.150 (192.168.28.150) 56(84) bytes of data.
+64 bytes from 192.168.28.150: icmp_seq=1 ttl=58 time=62.1 ms
+
+--- 192.168.28.150 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 62.126/62.126/62.126/0.000 ms
+
+[ok][2020-10-22 12:45:28]
+smurugesan2@NV-VD01-PGT> 
+2020-10-22 13:45:28,949 - Main - INFO - CMD>> : request devices device AGF000022 connect
+2020-10-22 13:45:32,955 - Main - INFO - request devices device AGF000022 connect
+result true
+info (smurugesan2) Connected to AGF000022 - 192.168.28.150:2022
+[ok][2020-10-22 12:45:32]
+smurugesan2@NV-VD01-PGT> 
+2020-10-22 13:45:32,956 - Main - INFO - CMD>> : request devices device AGF000022 check-sync
+2020-10-22 13:45:35,961 - Main - INFO - request devices device AGF000022 check-sync
+result in-sync
+[ok][2020-10-22 12:45:35]
+smurugesan2@NV-VD01-PGT> 
+2020-10-22 13:45:35,962 - Main - INFO - AGF000022 is in sync with VD & able to ping & connect
+2020-10-22 13:45:35,963 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-22 13:45:35,964 - Main - INFO - before_upgrade Actions for : AGP000094
+2020-10-22 13:45:35,964 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-22 13:45:35,965 - Main - INFO - CMD>> : request devices device AGP000094 ping
+2020-10-22 13:45:38,970 - Main - INFO - request devices device AGP000094 ping
+result PING 100.110.3.1 (100.110.3.1) 56(84) bytes of data.
+64 bytes from 100.110.3.1: icmp_seq=1 ttl=58 time=41.9 ms
+
+--- 100.110.3.1 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 41.933/41.933/41.933/0.000 ms
+
+[ok][2020-10-22 12:45:38]
+smurugesan2@NV-VD01-PGT> 
+2020-10-22 13:45:38,972 - Main - INFO - CMD>> : request devices device AGP000094 connect
+2020-10-22 13:45:41,977 - Main - INFO - request devices device AGP000094 connect
+result true
+info (smurugesan2) Connected to AGP000094 - 100.110.3.1:2022
+[ok][2020-10-22 12:45:41]
+smurugesan2@NV-VD01-PGT> 
+2020-10-22 13:45:41,978 - Main - INFO - CMD>> : request devices device AGP000094 check-sync
+2020-10-22 13:45:44,983 - Main - INFO - request devices device AGP000094 check-sync
+result in-sync
+[ok][2020-10-22 12:45:44]
+smurugesan2@NV-VD01-PGT> 
+2020-10-22 13:45:44,984 - Main - INFO - AGP000094 is in sync with VD & able to ping & connect
+2020-10-22 13:45:44,985 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-22 13:45:44,986 - Main - INFO - before_upgrade Actions for : AMS000089
+2020-10-22 13:45:44,986 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-22 13:45:44,987 - Main - INFO - CMD>> : request devices device AMS000089 ping
+2020-10-22 13:45:47,992 - Main - INFO - request devices device AMS000089 ping
+result PING 100.110.8.21 (100.110.8.21) 56(84) bytes of data.
+64 bytes from 100.110.8.21: icmp_seq=1 ttl=58 time=67.5 ms
+
+--- 100.110.8.21 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 67.597/67.597/67.597/0.000 ms
+
+[ok][2020-10-22 12:45:47]
+smurugesan2@NV-VD01-PGT> 
+2020-10-22 13:45:47,993 - Main - INFO - CMD>> : request devices device AMS000089 connect
+2020-10-22 13:45:52,000 - Main - INFO - request devices device AMS000089 connect
+result true
+info (smurugesan2) Connected to AMS000089 - 100.110.8.21:2022
+[ok][2020-10-22 12:45:51]
+smurugesan2@NV-VD01-PGT> 
+2020-10-22 13:45:52,000 - Main - INFO - CMD>> : request devices device AMS000089 check-sync
+2020-10-22 13:45:55,005 - Main - INFO - request devices device AMS000089 check-sync
+result in-sync
+[ok][2020-10-22 12:45:54]
+smurugesan2@NV-VD01-PGT> 
+2020-10-22 13:45:55,005 - Main - INFO - AMS000089 is in sync with VD & able to ping & connect
+2020-10-22 13:45:55,006 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-22 13:45:55,007 - Main - INFO - before_upgrade Actions for : AMS000095
+2020-10-22 13:45:55,007 - Main - INFO - <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+2020-10-22 13:45:55,007 - Main - INFO - CMD>> : request devices device AMS000095 ping
+2020-10-22 13:45:58,012 - Main - INFO - request devices device AMS000095 ping
+result PING 100.110.8.26 (100.110.8.26) 56(84) bytes of data.
+64 bytes from 100.110.8.26: icmp_seq=1 ttl=58 time=57.1 ms
+
+--- 100.110.8.26 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 57.136/57.136/57.136/0.000 ms
+
+[ok][2020-10-22 12:45:57]
+smurugesan2@NV-VD01-PGT> 
+2020-10-22 13:45:58,012 - Main - INFO - CMD>> : request devices device AMS000095 connect
+2020-10-22 13:46:02,019 - Main - INFO - request devices device AMS000095 connect
+result true
+info (smurugesan2) Connected to AMS000095 - 100.110.8.26:2022
+[ok][2020-10-22 12:46:01]
+smurugesan2@NV-VD01-PGT> 
+2020-10-22 13:46:02,019 - Main - INFO - CMD>> : request devices device AMS000095 check-sync

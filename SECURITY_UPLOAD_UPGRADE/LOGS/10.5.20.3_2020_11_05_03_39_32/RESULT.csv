@@ -1,0 +1,640 @@
+cpe,filename,file_upload
+ZRH000552,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004232,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER003610,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZRH002220,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004792,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004791,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER003795,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004291,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004476,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZRH000189,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004614,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZRH000206,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004826,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004012,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZRH000904,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004481,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004480,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004487,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004520,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZRH000802,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZRH000841,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZRH000963,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER003967,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004367,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004016,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004746,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:DdWBlQrAqw+Kjp8A7F8BrDMCdVGyvS1IRABvLXL4mts.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:223
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 192.168.28.212
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+ZRH000982,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004743,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZRH000214,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004769,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005311,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005312,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004835,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004994,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005110,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004895,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005030,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005190,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004970,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004925,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004926,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:1SkOiH+DI4+SQ40KmOG4oKohyO+/Dbn22rzKEO4MIq8.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:242
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 100.110.2.112
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+GER004868,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004962,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004846,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005307,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005306,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004829,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004828,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005308,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005323,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005126,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005104,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004888,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005211,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005216,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004891,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005183,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004918,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004935,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER004877,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005358,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005359,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005341,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005338,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005339,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005336,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005337,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005352,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005335,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005356,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005331,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005982,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER006609,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER006152,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER006625,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005350,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005779,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005329,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005328,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005327,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005347,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005344,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005365,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005367,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005457,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER006409,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005349,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005626,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005764,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER005762,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER009888,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER009889,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER009499,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER006939,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER008468,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER008789,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER006723,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER008629,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER007006,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER011111,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER008121,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER009012,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER009010,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER009014,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER008727,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER011224,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER011124,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER007870,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER006937,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER007770,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER007771,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER012342,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER009006,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER009002,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER009003,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER008737,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER009020,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER009021,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER009988,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER009779,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GOT000026,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GOA000200,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GNE000294,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER043814,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER012987,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GNE000023,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER045779,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER012356,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GOT000036,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER012343,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER543267,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GOT000035,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GNE000403,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER022963,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GNE000404,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER243771,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER024576,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER122334,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER122335,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER012346,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER012345,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER031212,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER234516,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GNE000053,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GNE000402,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GNE000178,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER112233,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GER112234,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GOA000322,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GNE000168,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GVA000288,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GVA000242,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GRO002590,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAJ000080,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAJ000085,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAJ000658,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAM000082,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAJ003124,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GRO000050,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GRO000055,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GRO002588,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAJ000345,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAM000670,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAJ000024,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAM000908,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GVA000291,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GVA000292,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAM000965,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAM000943,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAM000900,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GVA000888,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAJ000667,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAM000981,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAJ001263,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAM000502,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GVA000519,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAJ000592,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAJ000593,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAG000358,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+GVA002314,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ITA000210,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HKG000224,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+JAE000001,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ITA000460,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LGG000902,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAM006542,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ITA000501,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAM001132,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAM005788,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAM002514,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HUN000062,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HUN000063,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HUN000060,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LIG000015,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HKG000235,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HKG000074,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ITA000485,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ITA000484,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LEJ000204,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LIL000091,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LEJ000099,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LAT000011,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAM009908,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LAT000010,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+JAE000018,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LEJ007248,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HUN000059,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LEJ008546,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+JPN000066,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+HAM002675,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LRH000063,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LUX000985,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LIS000470,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LYS000410,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LYS000411,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LIS000900,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LON000968,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LIS000025,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LIL000195,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LIS000689,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LIS000725,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LUG000003,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LIS000272,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LUG000602,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LON000671,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LUG000278,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LIS000408,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LMC000004,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LUX000414,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LON000592,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LIL000344,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LUX001010,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LUG000137,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LIS000012,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LON000171,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LIS000559,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LIS000557,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LON002113,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LIS009635,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LIS000989,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MIL000962,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MIL000826,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MGL000030,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MGL000032,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MAD000880,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MAD000012,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MAD000013,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+LYS007531,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MHG000075,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MIL000204,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MHG008748,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MAD000761,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MAD001216,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MIL000665,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MIL000648,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MAD000235,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MCM000004,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MIL000956,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MAD002354,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MIL000235,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MIL001370,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MIL000996,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MIL000490,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MIL000553,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MIL000552,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MEX000018,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MIL000101,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MIL001844,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MAD004852,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MEX000017,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MUC001171,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MRS000073,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MUC000581,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+NAP000065,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+NTE000048,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MUC000278,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+NLD000557,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+NCE000481,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+NLD002666,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+NLD002700,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+NCY000063,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+NTE000401,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+NOW000104,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+NLD000610,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MUC000285,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MUC000932,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+OPO000046,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MUC000018,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+NLD001532,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MUC000051,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+NLD000054,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+NOW000300,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MUC000733,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+NCY000072,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MIL009023,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+MPL000142,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+NLD000629,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+NAP000046,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+NUE000332,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+NAP000043,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+POL000407,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+PGF000030,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+POL000081,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QBQ000202,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+POL000408,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:5d/LJAAxZ6P2XAbYi6faqBIWkyJNWssLcX8Cl+kyQ2o.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:183
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 100.110.8.72
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+POL000409,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QBS000085,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+PRT003465,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+POL000307,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ORE000066,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+POL000024,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+POL000366,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+PUF000036,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+PUF000038,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+PAR000376,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QBQ000035,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QBQ000033,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+PAR001139,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QBS000078,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+PAR000408,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+PMF000054,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QAM000057,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+POL000332,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+PGX000030,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ORE000052,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QAL000033,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+POX000196,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+PIS000005,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QCM000120,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QBQ000200,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QLS000195,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QHA000628,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QLS000196,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QHA000765,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QMZ000024,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QMO004857,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QHA000600,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QGN000050,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QPB000005,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QYR000027,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QLS000102,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QGL000053,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QHA000202,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QHA048807,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QHA000402,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QNM000016,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,"File Transfer Failed : ssh: connect to host 100.110.10.99 port 22: Connection timed out
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+QGN000002,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QFC000514,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QPA000066,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QFC000511,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QHA000026,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QNM000090,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QPA000090,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QHA000021,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QLJ000148,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QLJ000020,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QVA000028,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QGL000003,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QMO000090,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+QGL000004,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+RTM000810,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+RUS000027,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+RUS000021,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SEG000050,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SIN000130,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SIN000119,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ROM000142,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+RUS000100,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+RUS000049,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+RUS000048,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ROM000294,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SOE000294,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ROM000522,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+RAN000002,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SIN000112,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+RUS000034,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+RUS000017,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ROM008979,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ROM000131,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+RUS000035,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+RUS000019,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SEG000001,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,"File Transfer Failed : ssh: connect to host 100.110.8.1 port 22: Connection timed out
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+SIN000049,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+RUM000902,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+RTM000533,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SOE000051,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ROM000095,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+STO000064,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ROM001132,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+STO000041,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+STO000495,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+STO000351,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+STO000514,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+STR002314,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000352,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000311,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000313,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000190,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+STO000646,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+STO000661,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000014,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000294,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+STR004587,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000155,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+STO000528,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+STR000080,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000055,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+STO000902,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000327,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000326,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+STO031003,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+STO031002,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+STO000805,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000125,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+STO000820,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+STO000632,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000069,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000141,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000119,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000029,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000940,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI008648,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000946,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+TRN000364,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI008561,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI008560,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000704,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000400,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI008649,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI002896,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000504,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI001075,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+TFR000019,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000857,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI006468,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI000581,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+TRN000145,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+TRN000064,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+TLN000395,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI008556,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI008557,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SWE000053,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI008555,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SWE000055,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SWE000054,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI008558,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SUI060370,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+SVQ000099,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:D9BIGG/Aod9CxDkqX0IoB4brqMqiAOxyAOxaZI1Pka4.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:587
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 100.110.3.160
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+TRN002171,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+TLS000086,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VAL000052,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+UAE000050,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+TSF000045,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE000236,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+TRS000017,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+TUR000052,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIC000027,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE000900,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+TUR000059,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VCE000040,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,"File Transfer Failed : @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ED25519 key sent by the remote host is
+SHA256:TtDCKXlHvGv8AIED2SeEk0VcPHoAejdmiWzl0AwNuVI.
+Please contact your system administrator.
+Add correct host key in /root/.ssh/known_hosts to get rid of this message.
+Offending ED25519 key in /root/.ssh/known_hosts:609
+  remove with:
+  ssh-keygen -f ""/root/.ssh/known_hosts"" -R 192.168.28.67
+Password authentication is disabled to avoid man-in-the-middle attacks.
+Keyboard-interactive authentication is disabled to avoid man-in-the-middle attacks.
+Permission denied (publickey,password).
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: unexplained error (code 255) at io.c(226) [sender=3.1.1]
+"
+TUR000035,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VCE000101,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE000940,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+UAE000022,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VAL000065,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+UDN000017,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+UDN000016,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE000942,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+TSF000054,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+USA039198,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE000398,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VAF000028,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+TUR000044,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+UWE000027,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE000807,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+UIP000043,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE000142,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE000109,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+TUR000060,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+URO008243,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VLC000842,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE001198,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VLC000752,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE001204,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VRS002139,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE001203,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE000972,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE000951,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+XBT000084,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VRN000056,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VRN000078,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE000984,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE000982,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+XBT000991,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VRS000246,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE002351,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE003636,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+XBT000168,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE003672,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+XBT000377,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+XBT000233,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VNE000012,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VRS000903,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VLC008564,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VRS008778,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE001234,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE001027,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+XBK000055,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+VIE001067,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+XBT000357,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZGJ000291,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZGJ000033,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZLM000175,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZGJ000035,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZGJ000034,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+XDR000087,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+XPS000102,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZGJ000065,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZIA000033,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZLM000291,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZAF000042,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZAF000035,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZAF000034,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+XPS000513,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZGJ000022,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZIA000022,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZIA000021,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZIA000027,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZIA000026,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZIA000025,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZIA000024,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZGJ000853,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+XPS000174,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+XBT003232,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+XBT009135,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZAZ000002,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+XBT005763,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZAF000029,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZAF000006,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZGJ000055,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZMO000093,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZMO000200,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829
+ZNQ000027,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm.bin,File Transfer Success : Transfered size 650677829

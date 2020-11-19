@@ -1,0 +1,27 @@
+2020-11-05 11:47:00,575 - RDG000206 - DEBUG - ls -ltr /home/versa/packages/fdc_r2s9_patch3.bin
+-rw-r-----+ 1 aaauser versa 32707 Nov  5 08:46 /home/versa/packages/fdc_r2s9_patch3.bin
+[scampost@RDG000206 ~] # 
+2020-11-05 11:47:00,576 - RDG000206 - INFO - RDG000206 file size: 32707
+2020-11-05 11:47:00,976 - RDG000206 - DEBUG - 859902a2f3221d835cdfffb0e63d2a4d  /home/versa/packages/fdc_r2s9_patch3.bin
+[scampost@RDG000206 ~] # 
+2020-11-05 11:47:00,976 - RDG000206 - DEBUG - RDG000206 File Checksum : 859902a2f3221d835cdfffb0e63d2a4d
+2020-11-05 11:47:02,378 - RDG000206 - DEBUG - [root@RDG000206 ~] # 
+2020-11-05 11:47:02,979 - RDG000206 - DEBUG - ec67DpAqYp: command not found
+[root@RDG000206 ~] # 
+2020-11-05 11:47:03,380 - RDG000206 - DEBUG - chmod a+x /home/versa/packages/fdc_r2s9_patch3.bin
+[root@RDG000206 ~] # 
+2020-11-05 11:47:03,781 - RDG000206 - DEBUG - exit
+[scampost@RDG000206 ~] # 
+2020-11-05 11:47:03,781 - RDG000206 - DEBUG - vnf patch execution Logfile : /tmp/packtrack_2020_11_05_11_01_06
+2020-11-05 11:47:03,781 - RDG000206 - DEBUG - sudo /home/versa/packages/fdc_r2s9_patch3.bin > /tmp/packtrack_2020_11_05_11_01_06 2>&1 &
+2020-11-05 11:47:04,181 - RDG000206 - DEBUG - &
+[1] 16299
+[scampost@RDG000206 ~] # 
+2020-11-05 11:47:09,584 - RDG000206 - DEBUG - ..............16299[1]+Donesudo/home/versa/packages/fdc_r2s9_patch3.bin>/tmp/packtrack_2020_11_05_11_01_062>&1[scampost@RDG000206~]#..........
+2020-11-05 11:47:10,385 - RDG000206 - DEBUG - cat /tmp/packtrack_2020_11_05_11_01_06
+Verifying archive integrity... All good.
+Uncompressing Versa DPDK Unbind fix (with wsm check)     0%    78%  100%  
+Installing..
+Checking...
+Done
+[scampost@RDG000206 ~] # 
