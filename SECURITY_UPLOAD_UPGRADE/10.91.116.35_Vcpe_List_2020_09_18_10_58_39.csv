@@ -1,2 +1,0 @@
-device_name_in_vd,ip,day,batch,org,type,softwareVersion,ping-status,sync-status,serialNo,model,existing-packageName
-CPE-21-BLR-SINGLE-CPE-MPLSONLY-IPC00073,20.20.73.21,1,1,IPC00073,branch,20.2.2-GA 63668a2 20200606,REACHABLE,IN_SYNC,KSA4310,FWA-1010VC,versa-flexvnf-20200606-211402-63668a2-20.2.2-wsm

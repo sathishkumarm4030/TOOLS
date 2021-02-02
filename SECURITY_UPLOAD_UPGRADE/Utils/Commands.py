@@ -579,7 +579,18 @@ def file_upload(source_file, dest_name, dest_ip, dev_user, dev_passwd, index_pas
     device_report[dest_name] = [dest_name, source_file, result]
     return
 
-
+def do_file_check_ncconnect(netconnect, cpe_name, cpe_user, cpe_passwd, filename, cpe_logger):
+    global file_size, source_md5_checksum, oss_patch_version
+    netconnect.send_command_expect("shell ", strip_prompt=False, strip_command=False, expect_string = "\$|#")
+    dest_file_detail = netconnect.send_command_expect("ls -ltr /var/lib/vs/.files/.ncconnect", strip_prompt=False, strip_command=False)
+    cpe_logger.debug(dest_file_detail)
+    if "No such file or directory" in dest_file_detail:
+        cpe_logger.info(cpe_name + " : "+ dest_file_detail)
+        return dest_file_detail
+    else:
+        file_owner = re.search("\S+ \S+ (\S+ \S+) \S+ \S+  \S+ \S+ /var/lib/vs/.files/.ncconnect", dest_file_detail).group(1)
+        cpe_logger.info(cpe_name + " file owner: " + file_owner)
+        return file_owner
 
 def sec_pkg_execute(netconnect, cpe_name, cpe_user, cpe_passwd, filename, cpe_logger):
     global file_size, source_md5_checksum, oss_patch_version
@@ -706,6 +717,22 @@ def run_thread_for_upgrade(cpe_name, cpe_user, cpe_passwd, dev_dict, i):
     close_connection(netconnect)
     return
 
+def run_thread_for_check_ncconnect_file(cpe_name, cpe_user, cpe_passwd, dev_dict, i):
+    global device_report, cpe_list
+    cpe_logger = setup_logger(cpe_name, cpe_name)
+    cpe_logger_dict[cpe_name] = cpe_logger
+    netconnect = make_connection_return_conn_fail(dev_dict)
+    if isinstance(netconnect, str) and "CONN_ERR:" in netconnect:
+        result = netconnect
+        device_report[cpe_name] += [result]
+        return
+    sec_result = do_file_check_ncconnect(netconnect, cpe_name, cpe_user, cpe_passwd, 'ncconnect', cpe_logger)
+    device_report[cpe_name] += [sec_result]
+    # close_cross_connection(netconnect)
+    close_connection(netconnect)
+    return
+
+
 def run_thread_for_package_upgrade(cpe_name, cpe_user, cpe_passwd, dev_dict, i, sec_pkg_vers_number):
     global source_file, device_report, cpe_list
     cpe_logger = setup_logger(cpe_name, cpe_name)
@@ -806,7 +833,67 @@ def Modify_vshell_file():
     for dev_key in device_report:
         result_list.append(device_report[dev_key])
 
+def check_devices_ncconnect_file():
+    global File_tr_Success, File_tr_Failed, upload_report, result_list
+    global report, cpe_list, parsed_dict, cpe_logger, cpe_logger_dict, source_file
+    global device_report
+    cpe_list_print()
+    time.sleep(2)
+    device_report = {}
+    try:
+        threads = []
+        for i, rows in cpe_list.iterrows():
+            cpe_name = cpe_list.ix[i, 'device_name_in_vd']
+            cpe_ip = cpe_list.ix[i, 'ip']
+            cpe_type = cpe_list.ix[i, 'type']
+            if cpe_type == 'branch':
+                dev_username = vd_dict['cpe_user']
+                dev_passwd =  vd_dict['cpe_passwd']
+            else:
+                dev_username = vd_dict['node_user']
+                dev_passwd =  vd_dict['node_passwd']
 
+            dev_dict = {
+                "device_type": 'versa', "ip": cpe_ip, \
+                "username": dev_username, "password": dev_passwd, \
+                "port": '22'
+            }
+            source_file = ".ncconnect"
+            device_report[cpe_name] = [cpe_name, source_file]
+            thrd_objs = threading.Thread(target=run_thread_for_check_ncconnect_file, args=(cpe_name, dev_username, dev_passwd, dev_dict, i))
+            # thrd_objs.setDaemon(True)
+            threads.append(thrd_objs)
+        for th in threads:
+            main_logger.info("starting thread :" + str(th.name) + " For device " + th._Thread__args[0] + "\n")
+            # print "DEVICE NAME: " + th._Thread__args[0]
+            th.start()
+	    time.sleep(2)
+        #print threading.activeCount()
+
+        for th in threads:
+            th.join()
+
+        #for th in threads:
+            #th.exit()
+
+        #print threading.activeCount()
+            # thrd_objs.start()
+            # thrd_objs.join()
+            # thrd_objs.join()
+            # thread.start_new_thread(run_thread_for_upgrade, (cpe_name, dev_dict, i))
+            # print " starting thread for " + str(i)
+    #except:
+        #main_logger.debug("Error: unable to start ")
+        # sec_result = run_thread_for_upgrade(cpe_name, dev_dict, i)
+        # device_report[cpe_name] += [sec_result]
+    except Exception as e:
+            main_logger.info("Error: unable to start thread : Exception >>> "+ str(e))
+    main_logger.info("<<<<<File permission check RESULT>>>")
+    main_logger.info("'cpe', 'filename', 'owner'")
+    for dev, sec_patch_result in device_report.iteritems():
+        main_logger.info(sec_patch_result)
+    for dev_key in device_report:
+        result_list.append(device_report[dev_key])
 
 def sec_patch_upgrade_devices():
     global File_tr_Success, File_tr_Failed, upload_report, result_list
@@ -1027,6 +1114,26 @@ def DO_Sec_patch_Upgrade():
         main_logger.info("Batch : " + str(singlebatch))
         sec_patch_upgrade_devices()
     write_result(result_list, 'sec_patch_execuiton')
+
+def Check_ncconnect_permission():
+    global source_file, result_list
+    time.sleep(1)
+    global cpe_list, batch
+    build_csv(get_device_list())
+    raw_input("Edit " + cpe_list_file_name +" & Press enter to continue")
+    csv_data_read = pd.read_csv(cpe_list_file_name)
+    batches = max(csv_data_read['batch'])
+    batches_list = csv_data_read['batch'].drop_duplicates().sort_values().values
+    main_logger.info("total batches : " +  str(csv_data_read['batch'].drop_duplicates().count()))
+    main_logger.info("batch List : " + str(batches_list))
+    for singlebatch in batches_list:
+        cpe_list = read_csv_file(cpe_list_file_name, day, singlebatch)
+        main_logger.info("DAY :" + str(day))
+        main_logger.info("Batch : " + str(singlebatch))
+        check_devices_ncconnect_file()
+    write_result(result_list, 'file_permission_check')
+
+
 
 def DO_Sec_package_Upgrade():
     global source_file, result_list
