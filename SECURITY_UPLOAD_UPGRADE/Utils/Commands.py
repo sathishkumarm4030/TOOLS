@@ -723,8 +723,7 @@ def run_thread_for_check_ncconnect_file(cpe_name, cpe_user, cpe_passwd, dev_dict
     cpe_logger = setup_logger(cpe_name, cpe_name)
     cpe_logger_dict[cpe_name] = cpe_logger
     netconnect = make_connection_return_conn_fail(dev_dict)
-    if isinstance(netconnect, str):
-        cpe_logger.info(netconnect)
+    cpe_logger.info(netconnect)
     if isinstance(netconnect, str) and "CONN_ERR:" in netconnect:
         result = netconnect
         device_report[cpe_name] += [result]
