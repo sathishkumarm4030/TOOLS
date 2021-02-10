@@ -588,9 +588,10 @@ def do_file_check_ncconnect(netconnect, cpe_name, cpe_user, cpe_passwd, filename
         cpe_logger.info(cpe_name + " : "+ dest_file_detail)
         return dest_file_detail
     else:
-        file_owner = re.search("\S+ \S+ (\S+ \S+) \S+ \S+  \S+ \S+ /var/lib/vs/.files/.ncconnect", dest_file_detail).group(1)
+        file_owner = re.search("\S+\s+\S+\s+(\S+\s+\S+)\s+\S+\s+\S+\s+\S+\s+\S+\s+/var/lib/vs/.files/.ncconnect", dest_file_detail).group(1)
         cpe_logger.info(cpe_name + " file owner: " + file_owner)
         return file_owner
+
 
 def sec_pkg_execute(netconnect, cpe_name, cpe_user, cpe_passwd, filename, cpe_logger):
     global file_size, source_md5_checksum, oss_patch_version
@@ -722,6 +723,8 @@ def run_thread_for_check_ncconnect_file(cpe_name, cpe_user, cpe_passwd, dev_dict
     cpe_logger = setup_logger(cpe_name, cpe_name)
     cpe_logger_dict[cpe_name] = cpe_logger
     netconnect = make_connection_return_conn_fail(dev_dict)
+    if isinstance(netconnect, str):
+        cpe_logger.info(netconnect)
     if isinstance(netconnect, str) and "CONN_ERR:" in netconnect:
         result = netconnect
         device_report[cpe_name] += [result]
