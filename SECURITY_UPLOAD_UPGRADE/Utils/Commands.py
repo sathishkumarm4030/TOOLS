@@ -722,7 +722,6 @@ def run_thread_for_check_ncconnect_file(cpe_name, cpe_user, cpe_passwd, dev_dict
     global device_report, cpe_list
     cpe_logger = setup_logger(cpe_name, cpe_name)
     cpe_logger_dict[cpe_name] = cpe_logger
-    dev_dict['fast_cli'] = False
     netconnect = make_connection_return_conn_fail(dev_dict)
     cpe_logger.info(netconnect)
     if isinstance(netconnect, str) and "CONN_ERR:" in netconnect:
@@ -859,7 +858,7 @@ def check_devices_ncconnect_file():
             dev_dict = {
                 "device_type": 'versa', "ip": cpe_ip, \
                 "username": dev_username, "password": dev_passwd, \
-                "port": '22', "fast_cli": False
+                "port": '22', "global_delay_factor": 2
             }
             source_file = ".ncconnect"
             device_report[cpe_name] = [cpe_name, source_file]
