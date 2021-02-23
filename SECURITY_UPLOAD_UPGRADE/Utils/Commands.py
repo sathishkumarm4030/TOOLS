@@ -618,13 +618,13 @@ def sec_pkg_execute(netconnect, cpe_name, cpe_user, cpe_passwd, filename, cpe_lo
         cpe_logger.info(md5_err_info)
         return md5_err_info
     #chmod of bin file
-    cpe_logger.debug(netconnect.send_command_expect("sudo bash\n", expect_string = ":|\$|#"))
-    cpe_logger.debug(netconnect.send_command_expect(cpe_passwd + "\n", expect_string = "\$|#"))
+    #cpe_logger.debug(netconnect.send_command_expect("sudo bash\n", expect_string = ":|\$|#"))
+    #cpe_logger.debug(netconnect.send_command_expect(cpe_passwd + "\n", expect_string = "\$|#"))
     # time.sleep(1)
-    cpe_logger.debug(netconnect.send_command_expect("chmod a+x /home/versa/packages/" + filename, strip_prompt=False, strip_command=False, expect_string = "\$|#"))
+    cpe_logger.debug(netconnect.send_command_expect("sudo chmod a+x /home/versa/packages/" + filename, strip_prompt=False, strip_command=False, expect_string = "\$|#"))
     # time.sleep(1)
 
-    cpe_logger.debug(netconnect.send_command_expect("exit\n", expect_string = "\$|#"))
+    #cpe_logger.debug(netconnect.send_command_expect("exit\n", expect_string = "\$|#"))
     # time.sleep(1)
     sec_exec_logs_file = "/tmp/packtrack_" + currtime
     cpe_logger.debug("Security pack execution Logfile : " + sec_exec_logs_file)
@@ -633,11 +633,11 @@ def sec_pkg_execute(netconnect, cpe_name, cpe_user, cpe_passwd, filename, cpe_lo
     cpe_logger.debug(netconnect.send_command_expect(cmd_exec_sec_pack + "\n", expect_string = "\$|#"))
     time.sleep(5)
     try:
-        script_process_id = netconnect.send_command_expect("echo $!", expect_string = "\$|#")
+        script_process_id = netconnect.send_command_expect("sudo echo $!", expect_string = "\$|#")
     except IOError as IE:
         cpe_logger.info(IE)
-        cpe_logger.info(netconnect.send_command_expect("ps -ef | grep " + filename + " | grep -v grep ", expect_string = "\$"))
-        script_process_id = netconnect.send_command_expect("ps -ef | grep \"sudo /home/versa/packages/" + filename + "\""\
+        cpe_logger.info(netconnect.send_command_expect("sudo ps -ef | grep " + filename + " | grep -v grep ", expect_string = "\$"))
+        script_process_id = netconnect.send_command_expect("sudo ps -ef | grep \"sudo /home/versa/packages/" + filename + "\""\
                                                            + " | grep -v grep | awk '{print  $2}'", expect_string = "\$|#")
         # return "Failed: Unable to get Process ID "
     script_process_id = re.sub(r"[\n\t\s\']*", "", script_process_id)
@@ -645,14 +645,14 @@ def sec_pkg_execute(netconnect, cpe_name, cpe_user, cpe_passwd, filename, cpe_lo
     if script_process_id == "":
         return "Failed: Process not found "
     timer = 0
-    while script_process_id in netconnect.send_command_expect("ps -ef | grep -w " + script_process_id + " | grep -v grep", expect_string = "\$|#"):
+    while script_process_id in netconnect.send_command_expect("sudo ps -ef | grep -w " + script_process_id + " | grep -v grep", expect_string = "\$|#"):
         cpe_logger.debug("process timer value : " + str(timer))
         if timer > 120:
             return filename + " : " + script_process_id + " Process running more than 120 secs"
         cpe_logger.info(cpe_name + " : " + script_process_id + " process alive")
         timer += 5
         time.sleep(5)
-    bin_process = netconnect.send_command_expect("cat " + sec_exec_logs_file, strip_prompt=False, strip_command=False, expect_string = "\$|#")
+    bin_process = netconnect.send_command_expect("sudo cat " + sec_exec_logs_file, strip_prompt=False, strip_command=False, expect_string = "\$|#")
     cpe_logger.debug(bin_process)
     if 'All packages are already at latest version' in bin_process:
         return filename + " Patch execution already done. All packages are already at latest version"
@@ -722,6 +722,7 @@ def run_thread_for_check_ncconnect_file(cpe_name, cpe_user, cpe_passwd, dev_dict
     global device_report, cpe_list
     cpe_logger = setup_logger(cpe_name, cpe_name)
     cpe_logger_dict[cpe_name] = cpe_logger
+    dev_dict['fast_cli'] = False
     netconnect = make_connection_return_conn_fail(dev_dict)
     cpe_logger.info(netconnect)
     if isinstance(netconnect, str) and "CONN_ERR:" in netconnect:
@@ -858,7 +859,7 @@ def check_devices_ncconnect_file():
             dev_dict = {
                 "device_type": 'versa', "ip": cpe_ip, \
                 "username": dev_username, "password": dev_passwd, \
-                "port": '22'
+                "port": '22', "fast_cli": False
             }
             source_file = ".ncconnect"
             device_report[cpe_name] = [cpe_name, source_file]
